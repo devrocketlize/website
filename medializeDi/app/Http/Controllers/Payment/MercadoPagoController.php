@@ -58,7 +58,7 @@ class MercadoPagoController extends Controller
     $preference_data = array(
       'items' => array(
         array(
-          'title' => $servico->quantidade . ' ' . $servico->tiposervico->desc . ' no ' . $servico->tiposervico->media->desc . ' ' . $pedido->nomeCliente . ' ' . $pedido->emailCliente . ' '. $pedido->link,
+          'title' => $servico->quantidade . ' ' . $servico->tiposervico->desc . ' no ' . $servico->tiposervico->media->desc . ' por ' . $pedido->emailCliente,
           'quantity' => 1,
           'currency_id' => 'BRL',
           'unit_price' => (float) $pedido->valor,

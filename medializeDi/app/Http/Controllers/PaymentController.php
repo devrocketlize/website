@@ -7,6 +7,7 @@ use App\Servico;
 use App\Pedido;
 use App\Pagamento;
 use Mail;
+use App\Media;
 
 class PaymentController extends Controller
 {
@@ -51,6 +52,8 @@ class PaymentController extends Controller
 
   public function obrigado($pagamento)
   {
+    $medias = Media::all();
+
     if ($pagamento != null) {
       // Informações do Pedido
       $pedido = Pedido::find($pagamento);
