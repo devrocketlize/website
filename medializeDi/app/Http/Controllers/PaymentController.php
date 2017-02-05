@@ -21,7 +21,7 @@ class PaymentController extends Controller
     $pedido = new Pedido();
     $pedido->servico_id = $servico->id;
     $pedido->valor = $servico->preco;
-    $pedido->nomeCliente = $request->nome;
+    $pedido->nomeCliente = $request->nome.' '.$request->sobrenome;
     $pedido->emailCliente = $request->email;
     $pedido->link = $request->link;
     $pedido->whatsapp = $request->whatsapp;
@@ -79,16 +79,11 @@ class PaymentController extends Controller
         
         //Email Teste para casos relacionados a caixa de Spam, envio demorado e alteracoes da aplicação.
 
-        Mail::send(['text' => 'mailAndre'], $data, function($message) use ($nomeCliente) {
-          $message->to('testsendmailsmm@gmail.com', 'Serviço Marketing')->subject('Pedido relalizado por ' . $nomeCliente);
-          $message->from('noreply@shopmmarketing.com');
+        Mail::send(['text' => 'mail'], $data, function($message) use ($nomeCliente) {
+          $message->to('paulo.hncandido@gmail.com', 'Serviço Marketing')->subject('Pedido relalizado por ' . $nomeCliente);
+          $message->from('newsletter@rocketlize.com');
         });
-
-        //Email para André
-        Mail::send(['text' => 'mailAndre'], $data, function($message) use ($nomeCliente) {
-          $message->to('servicos@smcurtidas.com', 'Serviço Marketing')->subject('Pedido relalizado por ' . $nomeCliente);
-          $message->from('noreply@shopmmarketing.com');
-        });
+  
     }
 
     return view('compra-sucesso');

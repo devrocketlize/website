@@ -41,7 +41,11 @@
 
 <div class="c-content-box c-size-lg">
     <div class="container">
-        <form class="c-shop-form-1">
+        <form action="/checkout/{{ $servico->id }}" method="POST" class="c-shop-form-1">
+            {{ csrf_field() }}
+
+            <input type="hidden" name="pagamento" value="mercadopago">
+            
             <div class="row">
                 <!-- BEGIN: ADDRESS FORM -->
                 <div class="col-md-7 c-padding-20">
@@ -55,10 +59,10 @@
                             <div class="row">
                                 <div class="form-group col-md-6">
                                     <label class="control-label">Nome</label>
-                                    <input type="text" class="form-control c-square c-theme" placeholder="Nome"> </div>
+                                    <input type="text" name="nome" class="form-control c-square c-theme" placeholder="Nome"> </div>
                                 <div class="col-md-6">
                                     <label class="control-label">Sobrenome</label>
-                                    <input type="text" class="form-control c-square c-theme" placeholder="Sobrenome"> </div>
+                                    <input type="text" name="sobrenome" class="form-control c-square c-theme" placeholder="Sobrenome"> </div>
                             </div>
                         </div>
                     </div>
@@ -68,10 +72,10 @@
                             <div class="row">
                                 <div class="form-group col-md-6">
                                     <label class="control-label">Email</label>
-                                    <input type="email" class="form-control c-square c-theme" placeholder="seuemail@mail.com"> </div>
+                                    <input type="email" name="email" class="form-control c-square c-theme" placeholder="seuemail@mail.com"> </div>
                                 <div class="col-md-6">
                                     <label class="control-label">Telefone</label>
-                                    <input type="tel" class="form-control c-square c-theme" placeholder="(99)99999-9999"> </div>
+                                    <input type="tel" name="whatsapp" class="form-control c-square c-theme" placeholder="(99)99999-9999"> </div>
                             </div>
                         </div>
                     </div>
@@ -81,7 +85,7 @@
                             <div class="row">
                                 <div class="form-group col-md-12">
                                     <label class="control-label">Link da rede social</label>
-                                    <input type="email" class="form-control c-square c-theme" placeholder="https://instagram.com/seu.perfil"> 
+                                    <input type="text" name="link" class="form-control c-square c-theme" placeholder="https://instagram.com/seu.perfil"> 
                                 </div>
                             </div>
                         </div>
@@ -94,7 +98,7 @@
                                     <label class="control-label">Modelo de comentário</label>
                                     <br />
                                     <small>Forneça comentários relacionados ao que você desejaria na caixa abaixo</small>
-                                    <textarea rows="10" class="form-control c-square c-theme" > </textarea> 
+                                    <textarea name="comentario" rows="10" class="form-control c-square c-theme" > </textarea> 
                                 </div>
                             </div>
                         </div>
@@ -131,7 +135,7 @@
                                     <a href="shop-product-details.html" class="c-theme-link">Forma de pagamento</a>
                                 </div>
                                 <div class="col-md-6 c-font-20">
-                                    <p class="">PayPal</p>
+                                    <p class="">Mercadopago</p>
                                 </div>
                             </li>
                           
@@ -167,14 +171,15 @@
                                         <label for="checkbox1-11">
                                             <span class="inc"></span>
                                             <span class="check"></span>
-                                            <span class="box"></span> Eu li e concordo com os <a href="#">Termos de uso e Políticas de pricacidade</a> </label>
+                                            <input type="checkbox" name="termos class="box" /> Eu li e concordo com os <a href="#">Termos de uso e Políticas de pricacidade</a> </label>
                                     </div>
                                 </div>
                             </li>
                             <li class="row">
                                 <div class="form-group col-md-12" role="group">
-                                    <button type="submit" class="btn btn-lg c-theme-btn c-btn-square c-btn-uppercase c-btn-bold">Pagar</button>
-                                    <button type="submit" class="btn btn-lg btn-default c-btn-square c-btn-uppercase c-btn-bold">Cancelar</button>
+                                    <input type="submit" class="btn btn-lg c-theme-btn c-btn-square c-btn-uppercase c-btn-bold" value="Pagar" />
+                                    <a href="{{ url('/comprar-' . $servico->tiposervico->link . '-' . $servico->tiposervico->media->link) }}
+                                " class="btn btn-lg btn-default c-btn-square c-btn-uppercase c-btn-bold"> Cancelar</a>
                                 </div>
                             </li>
                         </ul>
