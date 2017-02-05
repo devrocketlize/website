@@ -18,7 +18,7 @@ class MercadoPagoController extends Controller
     /*
      * Definição da URL de Retorno
      */
-    'returnUrl' => 'http://localhost:8000',
+    'returnUrl' => 'https://rocketlize.com',
     //'returnUrl' => 'http://www.rocketlize.com',
     /*
      * Credenciais de DESENVOLVIMENTO
