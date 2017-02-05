@@ -6,7 +6,7 @@
     <!-- BEGIN HEAD -->
     <head>
         <meta charset="utf-8" />
-        <title>Medialize - Marketing para redes sociais</title>
+        <title>Rocketlize - Marketing para redes sociais</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -57,9 +57,9 @@
                     <div class="c-navbar-wrapper clearfix">
                         <div class="c-brand c-pull-left">
                             <a href="/" class="c-logo">
-                                <img src="assets/base/img/layout/logos/logo-3.png" alt="Medialize" class="c-desktop-logo">
-                                <img src="assets/base/img/layout/logos/logo-3.png" alt="Medialize" class="c-desktop-logo-inverse">
-                                <img src="assets/base/img/layout/logos/logo-3.png" alt="Medialize" class="c-mobile-logo"> </a>
+                                <img src="assets/base/img/layout/logos/logo-3.png" alt="Rocketlize" class="c-desktop-logo">
+                                <img src="assets/base/img/layout/logos/logo-3.png" alt="Rocketlize" class="c-desktop-logo-inverse">
+                                <img src="assets/base/img/layout/logos/logo-3.png" alt="Rocketlize" class="c-mobile-logo"> </a>
                             <button class="c-hor-nav-toggler" type="button" data-target=".c-mega-menu">
                                 <span class="c-line"></span>
                                 <span class="c-line"></span>
@@ -295,7 +295,7 @@
                         <div class="owl-carousel owl-theme c-theme c-owl-nav-center" data-single-item="true" data-slide-speed="5000" data-rtl="false">
                             <div class="item">
                                 <div class="c-testimonial">
-                                    <p> “Empresa fantástica, imaginem pessoas qualificadas, extremamente educadas para lidarem com atendimento? Pois bem... são esses rapazes e essas moças da Medialize, e o serviço de extrema confiança.” </p>
+                                    <p> “Empresa fantástica, imaginem pessoas qualificadas, extremamente educadas para lidarem com atendimento? Pois bem... são esses rapazes e essas moças da Rocketlize, e o serviço de extrema confiança.” </p>
                                     <h3>
                                         <span class="c-name c-theme">Maria Lúcia</span>, Blogueira. </h3>
                                 </div>
@@ -357,9 +357,9 @@
                     <div class="row">
                         <div class="col-md-6 c-footer-4-p-right">
                             <div class="c-content-title-1">
-                               <img src="https://placeholdit.imgix.net/~text?txtsize=14&txt=180%C3%9755&w=180&h=55" alt="Medialize" title="Medialize">
+                               <img src="https://placeholdit.imgix.net/~text?txtsize=14&txt=180%C3%9755&w=180&h=55" alt="Rocketlize" title="Rocketlize">
                             </div>
-                            <p class="c-about"> <strong>Medialize</strong> é uma empresa especializada em marketing digital para agências e (ou) entusiastas que almejam engajamento e destaque em mídias sociais como <strong>Instagram</strong>, <strong>Facebook</strong>, <strong>YouTube</strong>, <strong>Twitter</strong> e <strong>SoundCloud</strong>. </p>
+                            <p class="c-about"> <strong>Rocketlize</strong> é uma empresa especializada em marketing digital para agências e (ou) entusiastas que almejam engajamento e destaque em mídias sociais como <strong>Instagram</strong>, <strong>Facebook</strong>, <strong>YouTube</strong>, <strong>Twitter</strong> e <strong>SoundCloud</strong>. </p>
                             <div class="c-links">
                                 <ul class="c-nav">
                                     <li>
@@ -382,7 +382,7 @@
                                 </li>
                                 
                             </ul>
-                            <p class="c-about">© 2014 - 2017 Medialize - Todos os direitos reservados</p>
+                            <p class="c-about">© 2014 - 2017 Rocketlize - Todos os direitos reservados</p>
                         </div>
                         <div class="col-md-6 c-footer-4-p-left">
                             <div class="c-feedback">

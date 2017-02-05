@@ -82,7 +82,7 @@
 	        <div class="row">
 	            <div class="col-md-12">
 	                <div class="c-content-title-1 c-margin-b-60">
-	                    <h3 class="c-center c-font-uppercase c-font-bold"> Mas como vou adquirir as campanhas com a Medialize? </h3>
+	                    <h3 class="c-center c-font-uppercase c-font-bold"> Mas como vou adquirir as campanhas com a Rocketlize? </h3>
 	                    <div class="c-line-center"></div>
 	                    <p class="c-center c-font-uppercase c-font-17"> Não se preocupe, separamos um explicação prévia para você conseguir usufruir dos nossos serviços da melhor maneira possível sem complicações! </p>
 	                </div>
