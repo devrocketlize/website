@@ -4,7 +4,12 @@
     </IfModule>
 
     RewriteEngine On
+    
+    # Force HTTPS Domain
 
+    RewriteCond %{SERVER_PORT} 80 
+    RewriteRule ^(.*)$ https://rocketlize.com/$1 [R,L]
+    
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)/$ /$1 [L,R=301]
