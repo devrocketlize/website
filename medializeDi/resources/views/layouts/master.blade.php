@@ -13,37 +13,37 @@
         <meta content="" name="description" />
         <meta content="" name="author" />
         <!-- BEGIN GLOBAL MANDATORY STYLES -->
-        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&amp;subset=all' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&amp;subset=all' rel='stylesheet' type='text/css'>
 
         <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 
 
-        <link href="{{ asset('assets/plugins/socicon/socicon.css')}}" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('assets/plugins/bootstrap-social/bootstrap-social.css')}}" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('assets/plugins/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('assets/plugins/simple-line-icons/simple-line-icons.min.css')}}" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('assets/plugins/animate/animate.min.css')}}" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('assets/plugins/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ url('assets/plugins/socicon/socicon.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ url('assets/plugins/bootstrap-social/bootstrap-social.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ url('assets/plugins/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ url('assets/plugins/simple-line-icons/simple-line-icons.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ url('assets/plugins/animate/animate.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ url('assets/plugins/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
         <!-- END GLOBAL MANDATORY STYLES -->
         
         <!-- BEGIN: BASE PLUGINS  -->
-        <link href="{{ asset('assets/plugins/revo-slider/css/settings.css')}}" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('assets/plugins/revo-slider/css/layers.css')}}" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('assets/plugins/revo-slider/css/navigation.css')}}" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('assets/plugins/cubeportfolio/css/cubeportfolio.min.css')}}" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('assets/plugins/owl-carousel/assets/owl.carousel.css')}}" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('assets/plugins/fancybox/jquery.fancybox.css')}}" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('assets/plugins/slider-for-bootstrap/css/slider.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ url('assets/plugins/revo-slider/css/settings.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ url('assets/plugins/revo-slider/css/layers.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ url('assets/plugins/revo-slider/css/navigation.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ url('assets/plugins/cubeportfolio/css/cubeportfolio.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ url('assets/plugins/owl-carousel/assets/owl.carousel.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ url('assets/plugins/fancybox/jquery.fancybox.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ url('assets/plugins/slider-for-bootstrap/css/slider.css')}}" rel="stylesheet" type="text/css" />
         <!-- END: BASE PLUGINS -->
         
         <!-- BEGIN: PAGE STYLES -->
-        <link href="{{ asset('assets/plugins/ilightbox/css/ilightbox.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ url('assets/plugins/ilightbox/css/ilightbox.css')}}" rel="stylesheet" type="text/css" />
         <!-- END: PAGE STYLES -->
         <!-- BEGIN THEME STYLES -->
-        <link href="{{ asset('assets/base/css/plugins.css')}}" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('assets/base/css/components.css')}}" id="style_components" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('assets/base/css/themes/default.css')}}" rel="stylesheet" id="style_theme" type="text/css" />
-        <link href="{{ asset('assets/base/css/custom.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ url('assets/base/css/plugins.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ url('assets/base/css/components.css')}}" id="style_components" rel="stylesheet" type="text/css" />
+        <link href="{{ url('assets/base/css/themes/default.css')}}" rel="stylesheet" id="style_theme" type="text/css" />
+        <link href="{{ url('assets/base/css/custom.css')}}" rel="stylesheet" type="text/css" />
         <!-- END THEME STYLES -->
         <link rel="shortcut icon" href="{{ asset('favicon.ico')}}" /> </head>
 
@@ -187,32 +187,32 @@
         <!--[if lt IE 9]>
     <script src="../assets/global/plugins/excanvas.min.js"></script> 
     <![endif]-->
-        <script src="{{ asset('assets/plugins/jquery.min.js')}}" type="text/javascript"></script>
-        <script src="{{ asset('assets/plugins/jquery-migrate.min.js')}}" type="text/javascript"></script>
-        <script src="{{ asset('assets/plugins/bootstrap/js/bootstrap.min.js')}}" type="text/javascript"></script>
-        <script src="{{ asset('assets/plugins/jquery.easing.min.js')}}" type="text/javascript"></script>
-        <script src="{{ asset('assets/plugins/reveal-animate/wow.js')}}" type="text/javascript"></script>
-        <script src="{{ asset('assets/base/js/scripts/reveal-animate/reveal-animate.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/jquery.min.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/jquery-migrate.min.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/bootstrap/js/bootstrap.min.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/jquery.easing.min.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/reveal-animate/wow.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/base/js/scripts/reveal-animate/reveal-animate.js')}}" type="text/javascript"></script>
         <!-- END: CORE PLUGINS -->
         <!-- BEGIN: LAYOUT PLUGINS -->
-        <script src="{{ asset('assets/plugins/revo-slider/js/jquery.themepunch.tools.min.js')}}" type="text/javascript"></script>
-        <script src="assets/plugins/revo-slider/js/jquery.themepunch.revolution.min.js" type="text/javascript"></script>
-        <script src="{{ asset('assets/plugins/revo-slider/js/extensions/revolution.extension.slideanims.min.js')}}" type="text/javascript"></script>
-        <script src="{{ asset('assets/plugins/revo-slider/js/extensions/revolution.extension.layeranimation.min.js')}}" type="text/javascript"></script>
-        <script src="{{ asset('assets/plugins/revo-slider/js/extensions/revolution.extension.navigation.min.js')}}" type="text/javascript"></script>
-        <script src="{{ asset('assets/plugins/revo-slider/js/extensions/revolution.extension.video.min.js')}}" type="text/javascript"></script>
-        <script src="{{ asset('assets/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js')}}" type="text/javascript"></script>
-        <script src="{{ asset('assets/plugins/owl-carousel/owl.carousel.min.js')}}" type="text/javascript"></script>
-        <script src="{{ asset('assets/plugins/counterup/jquery.waypoints.min.js')}}" type="text/javascript"></script>
-        <script src="{{ asset('assets/plugins/counterup/jquery.counterup.min.js')}}" type="text/javascript"></script>
-        <script src="{{ asset('assets/plugins/fancybox/jquery.fancybox.pack.js')}}" type="text/javascript"></script>
-        <script src="{{ asset('assets/plugins/smooth-scroll/jquery.smooth-scroll.js')}}" type="text/javascript"></script>
-        <script src="{{ asset('assets/plugins/slider-for-bootstrap/js/bootstrap-slider.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/revo-slider/js/jquery.themepunch.tools.min.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/revo-slider/js/jquery.themepunch.revolution.min.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/revo-slider/js/extensions/revolution.extension.slideanims.min.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/revo-slider/js/extensions/revolution.extension.layeranimation.min.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/revo-slider/js/extensions/revolution.extension.navigation.min.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/revo-slider/js/extensions/revolution.extension.video.min.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/owl-carousel/owl.carousel.min.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/counterup/jquery.waypoints.min.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/counterup/jquery.counterup.min.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/fancybox/jquery.fancybox.pack.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/smooth-scroll/jquery.smooth-scroll.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/slider-for-bootstrap/js/bootstrap-slider.js')}}" type="text/javascript"></script>
         <!-- END: LAYOUT PLUGINS -->
         <!-- BEGIN: THEME SCRIPTS -->
-        <script src="{{ asset('assets/base/js/components.js')}}" type="text/javascript"></script>
-        <script src="{{ asset('assets/base/js/components-shop.js')}}" type="text/javascript"></script>
-        <script src="{{ asset('assets/base/js/app.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/base/js/components.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/base/js/components-shop.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/base/js/app.js')}}" type="text/javascript"></script>
         <script>
             $(document).ready(function()
             {
@@ -221,14 +221,14 @@
         </script>
         <!-- END: THEME SCRIPTS -->
         <!-- BEGIN: PAGE SCRIPTS -->
-        <script src="{{ asset('assets/base/js/scripts/revo-slider/slider-4.js')}}" type="text/javascript"></script>
-        <script src="{{ asset('assets/plugins/isotope/isotope.pkgd.min.js')}}" type="text/javascript"></script>
-        <script src="{{ asset('assets/plugins/isotope/imagesloaded.pkgd.min.js')}}" type="text/javascript"></script>
-        <script src="{{ asset('assets/plugins/isotope/packery-mode.pkgd.min.js')}}" type="text/javascript"></script>
-        <script src="{{ asset('assets/plugins/ilightbox/js/jquery.requestAnimationFrame.js')}}" type="text/javascript"></script>
-        <script src="{{ asset('assets/plugins/ilightbox/js/jquery.mousewheel.js')}}" type="text/javascript"></script>
-        <script src="{{ asset('assets/plugins/ilightbox/js/ilightbox.packed.js')}}" type="text/javascript"></script>
-        <script src="{{ asset('assets/base/js/scripts/pages/isotope-gallery.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/base/js/scripts/revo-slider/slider-4.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/isotope/isotope.pkgd.min.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/isotope/imagesloaded.pkgd.min.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/isotope/packery-mode.pkgd.min.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/ilightbox/js/jquery.requestAnimationFrame.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/ilightbox/js/jquery.mousewheel.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/ilightbox/js/ilightbox.packed.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/base/js/scripts/pages/isotope-gallery.js')}}" type="text/javascript"></script>
         <!-- END: PAGE SCRIPTS -->
         <!-- END: LAYOUT/BASE/BOTTOM -->
     <script>
