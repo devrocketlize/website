@@ -13,49 +13,41 @@ class PaymentController extends Controller
 {
   public function checkout($id, Request $request){
 
-    if(is_int($id)){
-
-      // Objeto do Serviço Vendido
-        $servico = Servico::find($id);
-        if($servico == null)
-          abort(400);
-
-        // Cria Pedido
-        $pedido = new Pedido();
-        $pedido->servico_id = $servico->id;
-        $pedido->valor = $servico->preco;
-        $pedido->nomeCliente = $request->nome.' '.$request->sobrenome;
-        $pedido->emailCliente = $request->email;
-        $pedido->link = $request->link;
-        $pedido->whatsapp = $request->whatsapp;
-        $pedido->save();
-
-        // Cria Pagamento para o Pedido
-        $pagamento = new Pagamento();
-        $pagamento->pedido_id = $pedido->id;
-        $pagamento->provedor = $request->pagamento;
-        $pagamento->save();
-
-        switch ($pagamento->provedor) {
-          case 'paypal':
-            return redirect()->to('/paypal/pagamento/' . $pedido->id);
-            break;
-          case 'pagseguro':
-            return redirect()->to('/pagseguro/pagamento/' . $pedido->id);
-            break;
-          case 'mercadopago':
-            return redirect()->to('/mercadopago/pagamento/' . $pedido->id);
-            break;
-          case 'mercadopago':
-            return redirect()->to('/mercadopago/pagamento/' . $pedido->id);
-            break;
-        }
-    
-    }else{
-
+    // Objeto do Serviço Vendido
+    $servico = Servico::find($id);
+    if($servico == null)
       abort(400);
+
+    // Cria Pedido
+    $pedido = new Pedido();
+    $pedido->servico_id = $servico->id;
+    $pedido->valor = $servico->preco;
+    $pedido->nomeCliente = $request->nome.' '.$request->sobrenome;
+    $pedido->emailCliente = $request->email;
+    $pedido->link = $request->link;
+    $pedido->whatsapp = $request->whatsapp;
+    $pedido->save();
+
+    // Cria Pagamento para o Pedido
+    $pagamento = new Pagamento();
+    $pagamento->pedido_id = $pedido->id;
+    $pagamento->provedor = $request->pagamento;
+    $pagamento->save();
+
+    switch ($pagamento->provedor) {
+      case 'paypal':
+        return redirect()->to('/paypal/pagamento/' . $pedido->id);
+        break;
+      case 'pagseguro':
+        return redirect()->to('/pagseguro/pagamento/' . $pedido->id);
+        break;
+      case 'mercadopago':
+        return redirect()->to('/mercadopago/pagamento/' . $pedido->id);
+        break;
+      case 'mercadopago':
+        return redirect()->to('/mercadopago/pagamento/' . $pedido->id);
+        break;
     }
-    
   }
 
   public function obrigado($pagamento)
