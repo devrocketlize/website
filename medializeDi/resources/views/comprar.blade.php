@@ -178,7 +178,7 @@
                             <li class="row">
                                 <div class="form-group col-md-12" role="group">
                                     <input type="submit" class="btn btn-lg c-theme-btn c-btn-square c-btn-uppercase c-btn-bold" value="Pagar" />
-                                    <a href="{{-- url('/comprar-' . $servico->tiposervico->link . '-' . $servico->tiposervico->media->link) --}}
+                                    <a href="{{ url('/comprar-' . $servico->tiposervico->link . '-' . $servico->tiposervico->media->link) }}
                                 " class="btn btn-lg btn-default c-btn-square c-btn-uppercase c-btn-bold"> Cancelar</a>
                                 </div>
                             </li>
