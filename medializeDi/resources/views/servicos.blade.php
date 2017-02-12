@@ -61,7 +61,7 @@
 		                    <li class="list-group-item">Parcelamos até em 12x</li>
 
 		                </ul>
-		                <div class="price-table-footer"> <a href="{{ url('/comprar-' . $tipo->link . '-' . $media->link . '/'. $servico->id) }}" class="btn btn-lg c-btn-green c-btn-square c-btn-border-2x">COMPRAR</a> </div>
+		                <div class="price-table-footer"> <a href="{{ url('/comprar-' . $tipo->link . '-' . $media->link . '/'. $servico->seo) }}" class="btn btn-lg c-btn-green c-btn-square c-btn-border-2x">COMPRAR</a> </div>
 		            </div>
 		            <!-- END Price Table Item -->
 		        

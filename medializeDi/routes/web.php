@@ -18,7 +18,7 @@ Route::get('deposito', 'MasterController@deposito');
 //Route::get('/comprar/{media}/{service}/{id}', 'ServicoController@comprar');
 
 Route::get('/comprar-{service}-{media}', 'ServicoController@index');
-Route::get('/comprar-{service}-{media}/{id}', 'ServicoController@comprar');
+Route::get('/comprar-{service}-{media}/{seo}', 'ServicoController@comprar');
 
 Route::get('/atendimento', function() {
   return view('atendimento', ['medias' => App\Media::all()]);

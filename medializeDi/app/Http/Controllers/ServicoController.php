@@ -26,11 +26,11 @@ class ServicoController extends Controller
     return view('servicos', compact('medias', 'media', 'tipo'));
   }
 
-  public function comprar($service, $media, $id)
+  public function comprar($service, $media, $seo)
   {
     $medias = Media::all();
 
-    $servico = Servico::find($id);
+    $servico = Servico::find($seo);
 
     //$servico = Servico::where('quantidade', $quantidade)->get();
 
