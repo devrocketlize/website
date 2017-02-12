@@ -123,10 +123,10 @@
                             
                             <li class="row c-margin-b-15 c-margin-t-15">
                                 <div class="col-md-6 c-font-20">
-                                    <a href="shop-product-details.html" class="c-theme-link">Nome do serviço e mídia</a>
+                                    <a href="shop-product-details.html" class="c-theme-link">{{ $servico->tiposervico->desc }} no {{ $servico->tiposervico->media->desc }}</a>
                                 </div>
                                 <div class="col-md-6 c-font-20">
-                                    <p class="">1000</p>
+                                    <p class=""> {{ $servico->quantidade }}</p>
                                 </div>
                             </li>
 
@@ -150,7 +150,7 @@
                                 </div>
                                 <div class="col-md-6 c-font-20">
                                     <p class="c-font-bold c-font-30"> R$
-                                        <span class="c-shipping-total">00.00</span>
+                                        <span class="c-shipping-total"> {{ str_replace('.', ',', $servico->preco) }}</span>
                                     </p>
                                 </div>
                             </li>
