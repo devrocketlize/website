@@ -29,10 +29,11 @@ class ServicoController extends Controller
   public function comprar($service, $media, $seo)
   {
 
-    
     $medias = Media::all();
 
     //$servico = Servico::find($seo);
+
+    trim(strip_tags($seo));
 
     $servico = Servico::where('seo', $seo)->first();
     

@@ -41,7 +41,7 @@ Route::get('/blog', function () {
  * Todos os gateways de pagamento utilizados aqui são versões menores dos códigos
  * utilizados na SM Curtidas. As rotas e métodos de assinaturas foram removidos.
  */
-Route::post('checkout/{id}', 'PaymentController@checkout');
+Route::post('pagar/{id}', 'PaymentController@checkout');
 Route::get('obrigado/{pagamento}', 'PaymentController@obrigado');
 
 Route::group(['prefix' => 'paypal'], function () {

@@ -41,7 +41,7 @@
 
 <div class="c-content-box c-size-lg">
     <div class="container">
-        <form action="/checkout/{{ $servico->id }}" method="POST" class="c-shop-form-1">
+        <form action="/pagar/{{ $servico->id }}" method="POST" class="c-shop-form-1">
             {{-- csrf_field() --}}
 
             <input type="hidden" name="pagamento" value="mercadopago">
