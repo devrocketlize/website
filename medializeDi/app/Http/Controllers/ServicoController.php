@@ -37,9 +37,7 @@ class ServicoController extends Controller
     $servico = Servico::where('seo', $seo)->first();
     
     if($servico == null)
-      abort(404);
-
-    dd($servico);
+      abort(404);   
 
     return view('comprar', compact('medias', 'servico'));
   }
