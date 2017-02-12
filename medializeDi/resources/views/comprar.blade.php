@@ -171,7 +171,7 @@
                                         <label for="checkbox1-11">
                                             <span class="inc"></span>
                                             <span class="check"></span>
-                                            <input type="checkbox" name="termos" class="box" required="" /> Eu li e concordo com os <a href="#">Termos de uso e Políticas de pricacidade</a> </label>
+                                            <input type="checkbox" name="termos" class="box"/> Eu li e concordo com os <a href="#">Termos de uso e Políticas de pricacidade</a> </label>
                                     </div>
                                 </div>
                             </li>
