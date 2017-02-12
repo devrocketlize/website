@@ -11,7 +11,7 @@
 <div class="c-layout-breadcrumbs-1 c-subtitle c-fonts-uppercase c-fonts-bold c-bordered c-bordered-both">
     <div class="container">
         <div class="c-page-title c-pull-left">
-            <h1 class="c-font-uppercase c-font-sbold">Efetuar pagamento - {{ $servico->tiposervico->desc }} no {{-- $servico->tiposervico->media->desc --}}</h1>
+            <h1 class="c-font-uppercase c-font-sbold">Efetuar pagamento - {{ $servico->tiposervico->desc }} no {{ $servico->tiposervico->media->desc }}</h1>
    
         </div>
         <ul class="c-page-breadcrumbs c-theme-nav c-pull-right c-fonts-regular">
@@ -20,7 +20,7 @@
             </li>
             <li>/</li>
             <li>
-                <a href="{{-- url('/comprar-' . $servico->tiposervico->link . '-' . $servico->tiposervico->media->link) --}}">Compre {{--ucfirst($servico->tiposervico->link)--}} no {{-- $servico->tiposervico->media->desc --}}</a>
+                <a href="{{ url('/comprar-' . $servico->tiposervico->link . '-' . $servico->tiposervico->media->link) }}">Compre {{ucfirst($servico->tiposervico->link)}} no {{ $servico->tiposervico->media->desc }}</a>
             </li>
             <li>/</li>
             <li>
