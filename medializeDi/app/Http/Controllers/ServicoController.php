@@ -35,8 +35,6 @@ class ServicoController extends Controller
     //$servico = Servico::find($seo);
 
     $servico = Servico::where('seo', $seo)->get();
-
-    dd($servico);
     
     if($servico == null)
       abort(404);
