@@ -30,14 +30,13 @@ class ServicoController extends Controller
   {
 
     
-    
     $medias = Media::all();
-
-    dd($medias);
 
     //$servico = Servico::find($seo);
 
     $servico = Servico::where('seo', $seo)->get();
+
+    dd($servico);
     
     if($servico == null)
       abort(404);
