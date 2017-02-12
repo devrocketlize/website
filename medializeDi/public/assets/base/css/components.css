@@ -6400,8 +6400,8 @@ h1 {
     transition-duration: 0.3s; }
   .c-checkbox label > span.inc {
     background: #fff;
-    left: -10px;
-    top: -10px;
+    left: 0px;
+    top: 0px;
     height: 38px;
     width: 38px;
     opacity: 0;
