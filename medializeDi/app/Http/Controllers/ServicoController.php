@@ -39,6 +39,8 @@ class ServicoController extends Controller
     if($servico == null)
       abort(404);
 
+    dd($servico);
+
     return view('comprar', compact('medias', 'servico'));
   }
 }
