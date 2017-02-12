@@ -29,9 +29,11 @@ class ServicoController extends Controller
   public function comprar($service, $media, $seo)
   {
 
-    dd($seo);
+    
     
     $medias = Media::all();
+
+    dd($medias);
 
     //$servico = Servico::find($seo);
 
