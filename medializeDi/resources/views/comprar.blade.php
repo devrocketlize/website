@@ -126,7 +126,7 @@
                                     <a href="shop-product-details.html" class="c-theme-link">{{ $servico->tiposervico->desc }} no {{ $servico->tiposervico->media->desc }}</a>
                                 </div>
                                 <div class="col-md-6 c-font-20">
-                                    <p class=""> {{ $servico->quantidade }}</p>
+                                    <p class="">{{ number_format($servico->quantidade, 0, '', '.') }}}</p>
                                 </div>
                             </li>
 
@@ -171,7 +171,7 @@
                                         <label for="checkbox1-11">
                                             <span class="inc"></span>
                                             <span class="check"></span>
-                                            <input type="checkbox" name="termos class="box" /> Eu li e concordo com os <a href="#">Termos de uso e Políticas de pricacidade</a> </label>
+                                            <input type="checkbox" name="termos" class="box" /> Eu li e concordo com os <a href="#">Termos de uso e Políticas de pricacidade</a> </label>
                                     </div>
                                 </div>
                             </li>
