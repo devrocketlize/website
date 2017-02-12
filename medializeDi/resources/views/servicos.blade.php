@@ -43,7 +43,7 @@
 		            <!-- Price Table Item -->
 		            <div class="price-table text-center">
 		                <div class="price-table-heading">
-		                    <h4 class="title">{{ $servico->quantidade }} {{ $tipo->desc }}</h4>
+		                    <h4 class="title">{{ number_format($servico->quantidade, 0, '', '.') }} {{ $tipo->desc }}</h4>
 		                </div>
 		                <div class="price-table-body">
 		                    <p class="value">R$ {{ str_replace('.', ',', $servico->preco) }} <!--<small>/month</small>--></p>
@@ -52,7 +52,7 @@
 		                    
 		                    <li class="list-group-item"><strong>NÃO</strong> precisamos da sua senha</li>
 
-		                    <li class="list-group-item">Entregamos {{ $tipo->entrega }} </li>
+		                    <li class="list-group-item">Entregamos {{ $servico->entrega }} </li>
 
 		                    <li class="list-group-item">Seu perfil apenas precisa ser público</li>
 
