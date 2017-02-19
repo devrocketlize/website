@@ -91,6 +91,7 @@
                         </div>
                     </div>
 
+                    @if($servico->plano == 3)
                     <div class="row">
                         <div class="form-group col-md-12">
                             <div class="row">
@@ -103,6 +104,8 @@
                             </div>
                         </div>
                     </div>
+                    @endif
+
                     <!-- BILLING ADDRESS -->
                 </div>
                 <!-- END: ADDRESS FORM -->
