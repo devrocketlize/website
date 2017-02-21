@@ -109,7 +109,7 @@
 	                        </span>
 	                    </div>
 	                    <div class="c-title c-font-20 c-font-bold c-font-uppercase">2. Efetue o pagamento</div>
-	                    <div class="c-description c-font-17"> Ao chegar em nossa tela para fornecer as informações que precisamos para processar seu pedido, todo e qualquer <strong>dado passado estará seguro</strong>. O PayPal será acionado e você já pode pagar. </div>
+	                    <div class="c-description c-font-17"> Ao chegar em nossa tela para fornecer as informações que precisamos para processar seu pedido, todo e qualquer <strong>dado passado estará seguro</strong>. O Mercadopago será acionado e você já pode pagar. </div>
 	                    
 	                </div>
 	            </div>

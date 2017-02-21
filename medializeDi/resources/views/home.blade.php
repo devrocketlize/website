@@ -165,7 +165,7 @@
                                 <div class="tp-caption customin customout" data-x="center" data-y="center" data-hoffset="" data-voffset="-30" data-speed="500" data-start="1000" data-transform_idle="o:1;" data-transform_in="rX:0.5;scaleX:0.75;scaleY:0.75;o:0;s:500;e:Back.easeInOut;"
                                 data-transform_out="rX:0.5;scaleX:0.75;scaleY:0.75;o:0;s:600;e:Back.easeInOut;" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600">
                                     <h3 class="c-main-title-square c-font-55 c-font-bold c-font-center c-font-uppercase c-font-white c-block"> TORNANDO REALIDADE SEU SONHO,
-                                        <br>VENHA MEDIALIZAR :-P </h3>
+                                        <br>VENHA VIRALIZAR :-P </h3>
                                 </div>
                                 <div class="tp-caption lft" data-x="center" data-y="center" data-voffset="130" data-speed="900" data-start="2000" data-transform_idle="o:1;" data-transform_in="x:100;y:100;rX:120;scaleX:0.75;scaleY:0.75;o:0;s:900;e:Back.easeInOut;"
                                 data-transform_out="x:100;y:100;rX:120;scaleX:0.75;scaleY:0.75;o:0;s:900;e:Back.easeInOut;">
@@ -220,7 +220,7 @@
                                         <div class="c-line-left c-bg-blue-3 c-theme-bg"></div>
                                     </div>
                                     <div class="c-text wow animate fadeInLeft">Primar pela segurança de seus dados fornecidos e entregar serviços de qualidade sem precisar de senha são alguns dos nossos diferenciais.</div>
-                                    <img class="c-photo img-responsive wow animate fadeInUp" width="420" alt="" src="https://placeholdit.imgix.net/~text?txtsize=39&txt=420%C3%97350&w=420&h=350" /> </div>
+                                    <img class="c-photo img-responsive wow animate fadeInUp" width="420" alt="" src="../assets/base/img/layout/home/medias.jpg" /> </div>
                             </div>
                             <div class="col-md-5">
                                 <div class="c-content-accordion-1 c-theme wow animate fadeInRight">
@@ -244,7 +244,7 @@
                                                 </h4>
                                             </div>
                                             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                                <div class="panel-body c-font-18">  Pague com todos os cartões de crédito ou débito em ambiente seguro feito em até 12x com PayPal. </div>
+                                                <div class="panel-body c-font-18">  Pague com todos os cartões de crédito ou débito em ambiente seguro feito em até 12x com Mercadopago. </div>
                                             </div>
                                         </div>
                                         <div class="panel">
@@ -279,7 +279,7 @@
             @include('layouts/cards')
             
             <!-- BEGIN: CONTENT/TESTIMONIALS/TESTIMONIALS-3 -->
-            <div class="c-content-box c-size-lg c-bg-parallax" style="background-image: url(https://placeholdit.imgix.net/~text?txtsize=144&txt=1920%C3%971000&w=1920&h=1000)">
+            <div class="c-content-box c-size-lg c-bg-parallax" style="background-image: url(../assets/base/img/layout/home/clients.jpg)">
                 <div class="container">
                     <!-- Begin: testimonials 1 component -->
                     <div class="c-content-testimonials-1" data-slider="owl">

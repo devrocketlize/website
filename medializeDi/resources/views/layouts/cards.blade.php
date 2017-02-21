@@ -29,7 +29,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="c-image c-overlay-object" data-height="height" style="background-image: url(https://placeholdit.imgix.net/~text?txtsize=56&txt=600%C3%97600&w=600&h=600)"></div>
+                                <div class="c-image c-overlay-object" data-height="height" style="background-image: url(../assets/base/img/layout/home/segbrreaisinsta.jpg)"></div>
                             </div>
                         </div>
                     </div>
@@ -58,7 +58,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="c-image c-overlay-object" data-height="height" style="background-image: url(https://placeholdit.imgix.net/~text?txtsize=56&txt=600%C3%97600&w=600&h=600)"></div>
+                                <div class="c-image c-overlay-object" data-height="height" style="background-image: url(../assets/base/img/layout/home/facecurfan.jpg)"></div>
                             </div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="c-image c-overlay-object" data-height="height" style="background-image: url(https://placeholdit.imgix.net/~text?txtsize=56&txt=600%C3%97600&w=600&h=600)"></div>
+                                <div class="c-image c-overlay-object" data-height="height" style="background-image: url(../assets/base/img/layout/home/inscritosyt.jpg)"></div>
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -105,14 +105,14 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="c-image c-overlay-object" data-height="height" style="background-image: url(https://placeholdit.imgix.net/~text?txtsize=56&txt=600%C3%97600&w=600&h=600)"></div>
+                                <div class="c-image c-overlay-object" data-height="height" style="background-image: url(../assets/base/img/layout/home/downsound.jpg)"></div>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="c-tile-content c-content-v-center" data-height="height">
                                 <div class="c-wrapper">
                                     <div class="c-body c-center">
-                                        <h3 class="c-tile-title c-font-25 c-line-height-34 c-font-uppercase c-font-bold c-font-white"> PLAYS NO SOUNDCLOUD </h3>
+                                        <h3 class="c-tile-title c-font-25 c-line-height-34 c-font-uppercase c-font-bold c-font-white"> DOWNLOADS NO SOUNDCLOUD </h3>
                                         
                                         <a href="#" class="btn btn-sm c-btn-white c-btn-uppercase c-btn-bold c-btn-border-1x c-btn-square">COMPRAR</a>
                                     </div>
