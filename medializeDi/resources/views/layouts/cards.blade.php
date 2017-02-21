@@ -14,7 +14,7 @@
                                 <div class="c-wrapper">
                                     <div class="c-body c-center">
                                         <h3 class="c-tile-title c-font-25 c-line-height-34 c-font-uppercase c-font-bold c-font-white"> SEGUIDORES BRASILEIROS REAIS NO INSTAGRAM </h3>
-                                        <a href="#" class="btn btn-sm c-btn-white c-btn-uppercase c-btn-bold c-btn-border-1x c-btn-square">COMPRAR</a>
+                                        <a href="https://rocketlize.com/comprar-seguidoresbrasileiros-instagram" class="btn btn-sm c-btn-white c-btn-uppercase c-btn-bold c-btn-border-1x c-btn-square">COMPRAR</a>
                                     </div>
                                 </div>
                             </div>
@@ -43,7 +43,7 @@
                                 <div class="c-wrapper">
                                     <div class="c-body c-center">
                                         <h3 class="c-tile-title c-font-25 c-line-height-34 c-font-uppercase c-font-bold c-font-white"> CURTIDAS EM FAN PAGE NO FACEBOOK </h3>
-                                        <a href="#" class="btn btn-sm c-btn-white c-btn-uppercase c-btn-bold c-btn-border-1x c-btn-square">COMPRAR</a>
+                                        <a href="https://rocketlize.com/comprar-curtidasfanpage-facebook" class="btn btn-sm c-btn-white c-btn-uppercase c-btn-bold c-btn-border-1x c-btn-square">COMPRAR</a>
                                     </div>
                                 </div>
                             </div>
@@ -84,7 +84,7 @@
                                 <div class="c-wrapper">
                                     <div class="c-body c-center">
                                         <h3 class="c-tile-title c-font-25 c-line-height-34 c-font-uppercase c-font-bold c-font-white"> INSCRITOS NO YOUTUBE </h3>
-                                        <a href="#" class="btn btn-sm c-btn-white c-btn-uppercase c-btn-bold c-btn-border-1x c-btn-square">COMPRAR</a>
+                                        <a href="https://rocketlize.com/comprar-inscritos-youtube" class="btn btn-sm c-btn-white c-btn-uppercase c-btn-bold c-btn-border-1x c-btn-square">COMPRAR</a>
                                     </div>
                                 </div>
                             </div>
@@ -114,7 +114,7 @@
                                     <div class="c-body c-center">
                                         <h3 class="c-tile-title c-font-25 c-line-height-34 c-font-uppercase c-font-bold c-font-white"> DOWNLOADS NO SOUNDCLOUD </h3>
                                         
-                                        <a href="#" class="btn btn-sm c-btn-white c-btn-uppercase c-btn-bold c-btn-border-1x c-btn-square">COMPRAR</a>
+                                        <a href="https://rocketlize.com/comprar-downloads-soundcloud" class="btn btn-sm c-btn-white c-btn-uppercase c-btn-bold c-btn-border-1x c-btn-square">COMPRAR</a>
                                     </div>
                                 </div>
                             </div>
