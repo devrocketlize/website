@@ -138,7 +138,7 @@
                                 </div>
                                 <div class="tp-caption lft" data-x="center" data-y="center" data-voffset="110" data-speed="900" data-start="2000" data-transform_idle="o:1;" data-transform_in="x:100;y:100;rX:120;scaleX:0.75;scaleY:0.75;o:0;s:500;e:Back.easeInOut;"
                                 data-transform_out="x:100;y:100;rX:120;scaleX:0.75;scaleY:0.75;o:0;s:500;e:Back.easeInOut;">
-                                    <a href="#" class="c-action-btn btn btn-lg c-btn-square c-theme-btn c-btn-bold c-btn-uppercase">SEGUIDORES BRASILEIROS REAIS</a>
+                                    <a href="https://rocketlize.com/comprar-seguidoresbrasileiros-instagram" class="c-action-btn btn btn-lg c-btn-square c-theme-btn c-btn-bold c-btn-uppercase">SEGUIDORES BRASILEIROS REAIS</a>
                                 </div>
                             </li>
                             <!--END -->
@@ -152,7 +152,7 @@
                                 </div>
                                 <div class="tp-caption lft" data-x="center" data-y="center" data-voffset="110" data-speed="900" data-start="2000" data-transform_idle="o:1;" data-transform_in="x:100;y:100;rX:120;scaleX:0.75;scaleY:0.75;o:0;s:900;e:Back.easeInOut;"
                                 data-transform_out="x:100;y:100;rX:120;scaleX:0.75;scaleY:0.75;o:0;s:900;e:Back.easeInOut;">
-                                    <a href="#" class="c-action-btn btn btn-lg c-btn-square c-theme-btn c-btn-bold c-btn-uppercase">CURTIDAS FAN PAGE</a>
+                                    <a href="https://rocketlize.com/comprar-curtidasfanpage-facebook" class="c-action-btn btn btn-lg c-btn-square c-theme-btn c-btn-bold c-btn-uppercase">CURTIDAS FAN PAGE</a>
                                 </div>
                             </li>
                             <!--END -->
@@ -169,7 +169,7 @@
                                 </div>
                                 <div class="tp-caption lft" data-x="center" data-y="center" data-voffset="130" data-speed="900" data-start="2000" data-transform_idle="o:1;" data-transform_in="x:100;y:100;rX:120;scaleX:0.75;scaleY:0.75;o:0;s:900;e:Back.easeInOut;"
                                 data-transform_out="x:100;y:100;rX:120;scaleX:0.75;scaleY:0.75;o:0;s:900;e:Back.easeInOut;">
-                                    <a href="#" class="c-action-btn btn btn-lg c-btn-square c-theme-btn c-btn-bold c-btn-uppercase">INSCRITOS NO YOUTUBE</a>
+                                    <a href="https://rocketlize.com/comprar-inscritos-youtube" class="c-action-btn btn btn-lg c-btn-square c-theme-btn c-btn-bold c-btn-uppercase">INSCRITOS NO YOUTUBE</a>
                                 </div>
                             </li>
                             <!--END -->
