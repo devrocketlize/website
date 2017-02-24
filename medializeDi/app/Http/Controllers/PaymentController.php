@@ -26,6 +26,10 @@ class PaymentController extends Controller
     $pedido->emailCliente = $request->email;
     $pedido->link = $request->link;
     $pedido->whatsapp = $request->whatsapp;
+
+    //Testar como o pedido está sendo momtado
+    dd($pedido);
+
     $pedido->save();
 
     // Cria Pagamento para o Pedido
