@@ -135,7 +135,7 @@ class MercadoPagoController extends Controller
         }
       }
 
-      return response('Ok', 200);
+      echo json_encode(200);
     }
   
 }

@@ -57,5 +57,5 @@ Route::group(['prefix' => 'pagseguro'], function () {
 Route::group(['prefix' => 'mercadopago'], function () {
   Route::get('pagamento/{id}', ['as' => 'mercadopago.pagamento', 'uses' => 'Payment\MercadoPagoController@pagamento']);
   Route::get('retorno', ['as' => 'mercadopago.retorno', 'uses' => 'Payment\MercadoPagoController@retorno']);
-  Route::get('notificacao/{request}', ['as' => 'mercadopago.notificacao', 'uses' => 'Payment\MercadoPagoController@notificacao'])->middleware('cors');
+  Route::get('notificacao', ['as' => 'mercadopago.notificacao', 'uses' => 'Payment\MercadoPagoController@notificacao'])->middleware('cors');
 });
