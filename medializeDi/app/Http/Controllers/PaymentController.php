@@ -30,9 +30,9 @@ class PaymentController extends Controller
 
     $url = $pedido->servico_linkBtn = $servico->linkBtn;
 
-    dd($url);
-    
     $pedido->save();
+
+    dd($url);
 
     //Envi o cliente para a tela de pagamento
     return redirect()->to('/paypal/pagamento/' . $pedido->id);
