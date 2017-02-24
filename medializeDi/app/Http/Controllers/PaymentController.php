@@ -28,10 +28,14 @@ class PaymentController extends Controller
     $pedido->link = $request->link;
     $pedido->whatsapp = $request->whatsapp;
 
-    //Testar como o pedido está sendo momtado
-    dd($pedido);
+    $url = $pedido->servico_linkBtn = $servico->linkBtn;
 
+    dd($url);
+    
     $pedido->save();
+
+    //Envi o cliente para a tela de pagamento
+    return redirect()->to('/paypal/pagamento/' . $pedido->id);
 
     // Cria Pagamento para o Pedido
     $pagamento = new Pagamento();
