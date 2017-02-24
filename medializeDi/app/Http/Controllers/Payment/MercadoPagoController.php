@@ -109,4 +109,33 @@ class MercadoPagoController extends Controller
       return redirect()->to('/obrigado');
     }
   }
+
+   public function notificacao(Request $request) {
+      if(isset($request->id, $request->topic)) {
+
+        $payment_info = $this->mp->get_payment_info($request->id);
+
+        if ($payment_info["status"] == 200) {
+            if($request->topic == 'merchant_order') {
+                // Recuperar Pedido pelo ID
+                $pagamento = Pagamento::find($payment_info['application_id']);
+
+                $pagamento->referencia = $payment_info['preference_id'];
+                $pagamento->statusCompra = $payment_info['status'];
+                $pagamento->save();
+            
+            } else if($request->topic == 'payment') {
+                // Recuperar Pedido pelo ID
+                $pagamento = Pagamento::find($payment_info['external_reference']);
+
+                $pagamento->referencia = $payment_info['preference_id'];
+                $pagamento->statusCompra = $payment_info['id'];
+                $pagamento->save();
+            }
+        }
+      }
+
+      return response('Ok', 200);
+    }
+  
 }
