@@ -32,10 +32,8 @@ class PaymentController extends Controller
 
     $pedido->save();
 
-    dd($url);
-
     //Envi o cliente para a tela de pagamento
-    return redirect()->to('/paypal/pagamento/' . $pedido->id);
+    return redirect()->to($url);
 
     // Cria Pagamento para o Pedido
     $pagamento = new Pagamento();
