@@ -38,10 +38,9 @@ class PaymentController extends Controller
 
       return redirect()->to('https://rocketlize.com');
 
-    }else{
+    }
 
       return redirect()->to($url);
-    }
 
     // Cria Pagamento para o Pedido
     //$pagamento = new Pagamento();
