@@ -21,6 +21,7 @@ class PaymentController extends Controller
     // Cria Pedido
     $pedido = new Pedido();
     $pedido->servico_id = $servico->id;
+    $pedido->servico_linkBtn = $servico->linkBtn;
     $pedido->valor = $servico->preco;
     $pedido->nomeCliente = $request->nome.' '.$request->sobrenome;
     $pedido->emailCliente = $request->email;
