@@ -38,31 +38,31 @@ class PaymentController extends Controller
 
       return redirect()->to('https://rocketlize.com');
 
+    }else{
+      return redirect()->to($url);
     }
 
-      return redirect()->to($url);
-
     // Cria Pagamento para o Pedido
-    //$pagamento = new Pagamento();
-    //$pagamento->pedido_id = $pedido->id;
-    //$pagamento->provedor = $request->pagamento;
-    //$pagamento->save();
+    $pagamento = new Pagamento();
+    $pagamento->pedido_id = $pedido->id;
+    $pagamento->provedor = $request->pagamento;
+    $pagamento->save();
 
-    //switch ($pagamento->provedor) {
-      //case 'paypal':
-        //return redirect()->to('/paypal/pagamento/' . $pedido->id);
-        //break;
-      //case 'pagseguro':
-        //return redirect()->to('/pagseguro/pagamento/' . $pedido->id);
-        //break;
-      //case 'mercadopago':
-        //return redirect()->to('/mercadopago/pagamento/' . $pedido->id);
-       // break;
-      //case 'mercadopago':
-        //return redirect()->to('/mercadopago/pagamento/' . $pedido->id);
-       // break;
-   // }
-  //}
+    switch ($pagamento->provedor) {
+      case 'paypal':
+        return redirect()->to('/paypal/pagamento/' . $pedido->id);
+        break;
+      case 'pagseguro':
+        return redirect()->to('/pagseguro/pagamento/' . $pedido->id);
+        break;
+      case 'mercadopago':
+        return redirect()->to('/mercadopago/pagamento/' . $pedido->id);
+        break;
+      case 'mercadopago':
+        return redirect()->to('/mercadopago/pagamento/' . $pedido->id);
+        break;
+    }
+  }
 
   public function obrigado($pagamento)
   {
