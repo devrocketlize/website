@@ -28,8 +28,7 @@ return [
     | the Mailgun mail service which will provide reliable deliveries.
     |
     */
-
-    'host' => env('MAIL_HOST', 'smtp-web.kinghost.net'),
+ 'host' => env('MAIL_HOST', 'mail.autolikegram.com'),
 
     /*
     |--------------------------------------------------------------------------
@@ -42,7 +41,7 @@ return [
     |
     */
 
-    'port' => env('MAIL_PORT', 587),
+    'port' => env('MAIL_PORT', 26),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,8 +55,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'newsletter@rocketlize.com'),
-        'name' => env('MAIL_FROM_NAME', 'Newsletter da Rocketlize'),
+        'address' => 'contato@autolikegram.com',
+        'name' => 'SM Curtidas',
     ],
 
     /*
@@ -86,16 +85,27 @@ return [
 
     'username' => env('MAIL_USERNAME'),
 
+    /*
+    |--------------------------------------------------------------------------
+    | SMTP Server Password
+    |--------------------------------------------------------------------------
+    |
+    | Here you may set the password required by your SMTP server to send out
+    | messages from your application. This will be given to the server on
+    | connection so that the application will be able to send messages.
+    |
+    */
+
     'password' => env('MAIL_PASSWORD'),
 
     /*
     |--------------------------------------------------------------------------
-    | Markdown Mail Settings
+    | Sendmail System Path
     |--------------------------------------------------------------------------
     |
-    | If you are using Markdown based email rendering, you may configure your
-    | theme and component paths here, allowing you to customize the design
-    | of the emails. Or, you may simply stick with the Laravel defaults!
+    | When using the "sendmail" driver to send e-mails, we will need to know
+    | the path to where Sendmail lives on this server. A default path has
+    | been provided here, which will work well on most of your systems.
     |
     */
 
