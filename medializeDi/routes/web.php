@@ -47,7 +47,7 @@ Route::post('subscribe', 'NewsletterController@subscribe');
 Route::get('unsubscribe', 'NewsletterController@show' );
 Route::post('unsubscribe', 'NewsletterController@unsubscribe' );
 
-Route::post('contato', 'ContatoControlle@enviarMensagem' )
+Route::post('contato', 'ContatoControlle@enviarMensagem' );
 
 Route::get('obrigado/{pagamento}', 'PaymentController@obrigado');
 
