@@ -6,7 +6,7 @@
 
 @section('conteudo')
 
-	<section>
+	<section class="sectionUn">
 		<div class="container">
 			<div class="row">
 
