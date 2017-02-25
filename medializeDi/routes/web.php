@@ -45,6 +45,7 @@ Route::post('pagar/{id}', 'PaymentController@checkout');
 
 Route::post('subscribe', 'NewsletterController@subscribe');
 Route::get('unsubscribe', 'NewsletterController@show' );
+Route::post('unsubscribe', 'NewsletterController@unsubscribe' );
 
 Route::get('obrigado/{pagamento}', 'PaymentController@obrigado');
 
