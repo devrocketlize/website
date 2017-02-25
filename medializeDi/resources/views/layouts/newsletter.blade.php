@@ -10,6 +10,7 @@
                 <div class="col-sm-6">
                 <div id="newsMessage" class="alert alert-success alert-dismissible"></div>
                     <form method="POST" enctype="multipart/form-data" id="subscribeForm">
+                        {{ csrf_field() }}
                         <div class="input-group input-group-lg">
                             <input type="text" name="email" id="email" class="form-control input-lg" placeholder="Seu email aqui!">
                             <span class="input-group-btn">
