@@ -326,19 +326,16 @@
                     <div class="c-content-subscribe-form-1">
                         <div class="row">
                             <div class="col-sm-6">
-                                <h3 class="c-title c-font-30 c-font-uppercase c-font-bold">Inscreva-se em nossa newsletter</h3>
-                                <div class="c-body c-font-16 c-font-uppercase c-font-sbold">Quer receber dicas incríveis de crescimento nas redes sociais? Como bombar seu blog? Quais mídias engajar ao seu site? Ofertas fantásticas? Inscreva-se!</div>
-                            </div>
-                            <div class="col-sm-6">
-                                <form action="#">
-                                    <div class="input-group input-group-lg">
-                                        <input type="text" class="form-control input-lg" placeholder="Seu email aqui!">
-                                        <span class="input-group-btn">
-                                            <button type="submit" class="btn c-theme-btn c-btn-uppercase btn-lg c-btn-bold c-btn-square">INSCREVER</button>
-                                        </span>
-                                    </div>
-                                </form>
-                            </div>
+                                <div class="form-result"></div>
+                                    <form method="POST" enctype="multipart/form-data" id="subscribeForm">
+                                        <div class="input-group input-group-lg">
+                                            <input type="text" name="email" id="email" class="form-control input-lg" placeholder="Seu email aqui!">
+                                            <span class="input-group-btn">
+                                                <button type="submit" class="btn c-theme-btn c-btn-uppercase btn-lg c-btn-bold c-btn-square">INSCREVER</button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -440,6 +437,33 @@
                 App.init(); // init core    
             });
         </script>
+
+        <script type="text/javascript">
+            
+            //Subscribe
+                
+                $("#subscribeForm").on("submit", function (event) {
+                    event.preventDefault();
+
+                    $.ajax({
+                        url: "/subscribe",
+                        type: "POST",
+                        data: $("#subscribeForm").serialize(),
+                        dataType: "json"
+                    }).done(function(data) {
+                        //$(".form-process").hide();
+                        //$("#quick-contact-form style").remove();
+                        
+                        $(".form-result").append( "<p>Cadastrado com sucesso!</p>" );
+                        $(".form-result").show();
+
+                        $("#subscribeFormt").prop('disabled', true);
+                        $("#email").prop('disabled', true);
+                    });
+                });
+             
+        </script>
+        
         <!-- END: THEME SCRIPTS -->
         <!-- BEGIN: PAGE SCRIPTS -->
         <script src="{{ url('assets/base/js/scripts/revo-slider/slider-4.js')}}" type="text/javascript"></script>
