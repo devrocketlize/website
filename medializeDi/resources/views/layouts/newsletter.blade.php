@@ -8,7 +8,7 @@
                     <div class="c-body c-font-16 c-font-uppercase c-font-sbold">Quer receber dicas incríveis de crescimento nas redes sociais? Como bombar seu blog? Quais mídias engajar ao seu site? Ofertas fantásticas? Inscreva-se!</div>
                 </div>
                 <div class="col-sm-6">
-                <div class="alert alert-success"></div>
+                <div class="alert alert-success alert-dismissible"></div>
                     <form method="POST" enctype="multipart/form-data" id="subscribeForm">
                         <div class="input-group input-group-lg">
                             <input type="text" name="email" id="email" class="form-control input-lg" placeholder="Seu email aqui!">

@@ -330,7 +330,7 @@
                                 <div class="c-body c-font-16 c-font-uppercase c-font-sbold">Quer receber dicas incríveis de crescimento nas redes sociais? Como bombar seu blog? Quais mídias engajar ao seu site? Ofertas fantásticas? Inscreva-se!</div>
                             </div>
                             <div class="col-sm-6">
-                                <div class="alert alert-successt"></div>
+                                <div class="alert alert-success alert-dismissible" role="alert"></div>
                                     <form method="POST" enctype="multipart/form-data" id="subscribeForm">
                                         {{ csrf_field() }}
                                         <div class="input-group input-group-lg">
