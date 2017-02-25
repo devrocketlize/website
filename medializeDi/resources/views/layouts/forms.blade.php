@@ -72,7 +72,7 @@
                         //$(".form-process").hide();
                         //$("#quick-contact-form style").remove();
                         
-                        $(".pAlter").append( "Removido com sucesso!" );
+                        $(".pAlter").append( "<p>Removido com sucesso!</p>" );
                         $(".pAlter").show();
 
                         $("#unsubscribeFormt").prop('disabled', true);
