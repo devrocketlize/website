@@ -474,6 +474,15 @@
                 $("#subscribeForm").on("submit", function (event) {
                     event.preventDefault();
 
+                    //Valida campo vazio
+                    
+                    if($.trim($('#email').val()) == '' ){
+                      
+                      alert('Informe um email');
+                      return false;
+
+                    }
+
                     $.ajax({
                         url: "/subscribe",
                         type: "POST",
