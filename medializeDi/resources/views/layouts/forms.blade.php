@@ -26,10 +26,17 @@
       
         <link href="{{ url('assets/base/css/custom.css')}}" rel="stylesheet" type="text/css" />
         <!-- END THEME STYLES -->
-        <link rel="shortcut icon" href="{{ asset('favicon.ico')}}" /> 
+        <link rel="shortcut icon" href="{{ asset('favicon.ico')}}" />
+
+        <style type="text/css">
+        	#logoCenter {
+			    width: 50%;
+			    margin: 0 auto; 
+			}
+        </style>
      </head>
      <body>
-     	
+
      	@yield('conteudo')
   
 	    <!--[if lt IE 9]>

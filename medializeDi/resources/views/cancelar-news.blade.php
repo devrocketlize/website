@@ -9,6 +9,11 @@
 	<section>
 		<div class="container">
 			<div class="row">
+
+				<div id="logoCenter">
+					<img src="https://rocketlize.com/assets/base/img/layout/logos/logo-3.png">
+				</div>
+
 				<div class="col-md-6 col-md-offset-3">
 		        <hgroup>
 		          <h2>
