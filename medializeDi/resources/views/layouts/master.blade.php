@@ -222,6 +222,13 @@
         </script>
 
         <script type="text/javascript">
+            $(document).ready(function () {
+                    $("#newsMessage").hide();
+                     
+            });
+        </script>
+
+        <script type="text/javascript">
             
             //Subscribe
                 
