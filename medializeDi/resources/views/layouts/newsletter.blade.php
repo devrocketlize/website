@@ -12,7 +12,7 @@
                     <form method="POST" enctype="multipart/form-data" id="subscribeForm">
                         {{ csrf_field() }}
                         <div class="input-group input-group-lg">
-                            <input type="text" name="email" id="email" class="form-control input-lg" placeholder="Seu email aqui!">
+                            <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Seu email aqui!">
                             <span class="input-group-btn">
                                 <button type="submit" id="btnSubmit" class="btn c-theme-btn c-btn-uppercase btn-lg c-btn-bold c-btn-square">INSCREVER</button>
                             </span>

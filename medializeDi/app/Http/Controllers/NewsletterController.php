@@ -10,6 +10,11 @@ class NewsletterController extends Controller
     public function subscribe(Request $request){
 
     	$email = new Newsletter;
+
+    	if($request->email == ' '){
+
+    		return false;
+    	}
     	
     	$email->FIELD1 = trim(strip_tags($request->input('email')));
 

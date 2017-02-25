@@ -349,7 +349,7 @@
                                     <form method="POST" enctype="multipart/form-data" id="subscribeForm">
                                         {{ csrf_field() }}
                                         <div class="input-group input-group-lg">
-                                            <input type="text" name="email" id="email" class="form-control input-lg" placeholder="Seu email aqui!">
+                                            <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Seu email aqui!">
                                             <span class="input-group-btn">
                                                 <button id="btnSubmit" type="submit" class="btn c-theme-btn c-btn-uppercase btn-lg c-btn-bold c-btn-square">INSCREVER</button>
                                             </span>
@@ -402,11 +402,18 @@
                         <div class="col-md-6 c-footer-4-p-left">
                             <div class="c-feedback">
                                 <h3 class="c-font-thin">Contato</h3>
-                                <form action="#">
-                                    <input type="text" placeholder="Nome" class="form-control">
-                                    <input type="text" placeholder="Email" class="form-control">
-                                    <textarea rows="8" name="message" placeholder="Mensagem..." class="form-control"></textarea>
-                                    <button type="submit" class="btn c-btn-white c-btn-border-2x c-btn-uppercase btn-lg c-btn-bold c-btn-square">ENVIAR</button>
+                                
+                                <div class="result"></div>
+
+                                <form id="contactForm" name="contactForm" method="POST" enctype="multipart/form-data">
+                                    
+                                    {{ csrf_field() }}
+                                    
+                                    <input type="text" placeholder="Nome" name="nome" id="nome" class="form-control">
+                                    <input type="email" name="email" id="email" placeholder="Email" class="form-control">
+                                    <textarea rows="8" name="menssagem" id="mensagem" placeholder="Mensagem..." class="form-control"></textarea>
+
+                                     <button id="btnSubmit2" type="submit" class="btn c-btn-white c-btn-border-2x c-btn-uppercase btn-lg c-btn-bold c-btn-square">ENVIAR</button>
                                 </form>
                             </div>
                         </div>
@@ -498,6 +505,37 @@
                         $("#subscribeFormt").prop('disabled', true);
                         $("#email").prop('disabled', true);
                         $("#btnSubmit").prop('disabled', true);
+                    });
+                });
+             
+        </script>
+
+
+        <script type="text/javascript">
+            
+            //Contact
+                
+                $("#contactForm").on("submit", function (event) {
+                    event.preventDefault();
+
+                    $.ajax({
+                        url: "/contato",
+                        type: "POST",
+                        data: $("#contactForm").serialize(),
+                        dataType: "json"
+                    }).done(function(data) {
+                        //$(".form-process").hide();
+                        //$("#quick-contact-form style").remove();
+                        
+                        $(".result").append( "Mensagem enviada com sucesso!" );
+                        $(".result").show();
+
+                        $("#contactForm").prop('disabled', true);
+                        $("#nome").prop('disabled', true);
+                        $("#email").prop('disabled', true);
+                        $("#mensagem").prop('disabled', true);
+                        $("#btnSubmit2").prop('disabled', true);
+
                     });
                 });
              
