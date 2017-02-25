@@ -9558,7 +9558,8 @@ h1 {
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 0;
-    border: 0; }
+    border: 0;
+    width: 100%; }
   .c-content-subscribe-form-1.c-subscribe-form-light .c-title {
     color: #3f444a; }
   .c-content-subscribe-form-1.c-subscribe-form-light .c-body {
