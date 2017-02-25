@@ -11,9 +11,9 @@ class ContatoController extends Controller
 
     public function enviarMensagem(Request $request){
 
-    	$nomeCliente        	= $request->gett(trim(strip_tags('nome')));
-        $emailCliente        	= $request->gett(trim(strip_tags('email')));
-        $mensagemCliente    	= $request->gett(trim(strip_tags('mensagem')));
+    	$nomeCliente        	= $request->get(trim(strip_tags('nome')));
+        $emailCliente        	= $request->get(trim(strip_tags('email')));
+        $mensagemCliente    	= $request->get(trim(strip_tags('mensagem')));
 
         $data = ['nome' => $nomeCliente. ' '.$emailCliente,
                  'msgCliente' => $mensagemCliente,
