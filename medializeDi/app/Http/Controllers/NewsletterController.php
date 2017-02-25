@@ -7,7 +7,7 @@ use Newsletter;
 
 class NewsletterController extends Controller
 {
-    public function subscribe(Rquest $request){
+    public function subscribe(Request $request){
 
     	$email = new Newsletter;
     	
