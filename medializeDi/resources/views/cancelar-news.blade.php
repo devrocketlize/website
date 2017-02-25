@@ -17,20 +17,21 @@
 				<div class="col-md-6 col-md-offset-3">
 		        <hgroup>
 		          <h2>
-		            Cancelar inscrição de nossa newsletter :-(
+		            Cancelar inscrição de nossa newsletter 
 		          </h2>
+		          <h2>:-(</h2>
 		         </hgroup>
 		    	 <div class="well">
-		             <form action="#">
+		             <form name="unsubscribeForm" id="unsubscribeForm" method="POST" enctype="multipart/form-data">
 		              <div class="input-group">
 		                 <input class="btn btn-lg" name="email" id="email" type="email" placeholder="Digite seu email" required>
-		                 <button class="btn btn-info btn-lg" type="submit">Cancelar</button>
+		                 <button id="btnSubmit" class="btn btn-info btn-lg" type="submit">Cancelar</button>
 		              </div>
 		             </form>
 		    	 </div>
 		         <small class="promise"><em>A equipe Rocketlize agradece sua interação e deseja boa sorte ao(a) senhor(a).</em></small>
 
-		         <div id="newsMessage"><p class="pAlter">Removido com sucesso!</p></div>
+		         <div id="newsMessage"><p class="pAlter"></p></div>
 				</div>
 			</div>
 		</div>

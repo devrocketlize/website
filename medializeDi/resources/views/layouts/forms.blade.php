@@ -55,6 +55,33 @@
                      
             });
      </script>
+
+             <script type="text/javascript">
+            
+            //Subscribe
+                
+                $("#unsubscribeForm").on("submit", function (event) {
+                    event.preventDefault();
+
+                    $.ajax({
+                        url: "/unsubscribe",
+                        type: "POST",
+                        data: $("#unsubscribeForm").serialize(),
+                        dataType: "json"
+                    }).done(function(data) {
+                        //$(".form-process").hide();
+                        //$("#quick-contact-form style").remove();
+                        
+                        $(".pAlter").append( "Removido com sucesso!" );
+                        $(".pAlter").show();
+
+                        $("#unsubscribeFormt").prop('disabled', true);
+                        $("#email").prop('disabled', true);
+                        $("#btnSubmit").prop('disabled', true);
+                    });
+                });
+             
+        </script>
         
 	</body>
 </html>
