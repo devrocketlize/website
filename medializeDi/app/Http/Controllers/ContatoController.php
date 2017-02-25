@@ -15,6 +15,8 @@ class ContatoController extends Controller
         $emailCliente        	= $request->get(trim(strip_tags('email')));
         $mensagemCliente    	= $request->get(trim(strip_tags('mensagem')));
 
+        dd($nomeCliente);
+
         $data = ['nome' => $nomeCliente. ' '.$emailCliente,
                  'msgCliente' => $mensagemCliente,
                 ];
