@@ -24,13 +24,13 @@ class NewsletterController extends Controller
     	return view('cancelar-news');
     }
 
-    public function unsubscribe(Request $request){
+    //public function unsubscribe(Request $request){
 
-    	$input = trim(strip_tags($request->input('email')));
+    	//$input = trim(strip_tags($request->input('email')));
 
-    	$email Newsletter::where('FIELD1', '=', $input)->delete();
+    	//$email Newsletter::where('FIELD1', '=', $input)->delete();
 
-    	return response()->json(['status' => 'ok']);
-    }
+    	//return response()->json(['status' => 'ok']);
+    //}
 
 }
