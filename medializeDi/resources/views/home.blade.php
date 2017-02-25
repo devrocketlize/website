@@ -411,29 +411,7 @@
         <!--[if lt IE 9]>
 	<script src="../assets/global/plugins/excanvas.min.js"></script> 
 	<![endif]-->
-    <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content c-square">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                </div>
-                <div class="modal-body">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn c-theme-btn c-btn-square c-btn-bold c-btn-uppercase">Submit</button>
-                    <button type="button" class="btn c-theme-btn c-btn-border-2x c-btn-square c-btn-bold c-btn-uppercase" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-            <!-- /.modal-content -->
-        </div>
-        <!-- /.modal-dialog -->
-    </div>
+ 
        <script src="{{ url('assets/plugins/jquery.min.js')}}" type="text/javascript"></script>
         <script src="{{ url('assets/plugins/jquery-migrate.min.js')}}" type="text/javascript"></script>
         <script src="{{ url('assets/plugins/bootstrap/js/bootstrap.min.js')}}" type="text/javascript"></script>
@@ -467,16 +445,7 @@
             });
         </script>
 
-        <script type="text/javascript">    
-            $(document).ready(function(){
-
-                setInterval(function () {
-                    $('#myModal').modal('show');
-                }, 10000);
-                
-            });
-        </script>
-
+    
         <script type="text/javascript">
             $(document).ready(function () {
                     $("#newsMessage").hide();
