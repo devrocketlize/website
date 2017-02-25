@@ -42,6 +42,9 @@ Route::get('/blog', function () {
  * utilizados na SM Curtidas. As rotas e métodos de assinaturas foram removidos.
  */
 Route::post('pagar/{id}', 'PaymentController@checkout');
+
+Route::post('subscribe', 'NewsletterController@subscribe');
+
 Route::get('obrigado/{pagamento}', 'PaymentController@obrigado');
 
 Route::group(['prefix' => 'paypal'], function () {

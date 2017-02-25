@@ -220,6 +220,33 @@
                 App.init(); // init core    
             });
         </script>
+
+        <script type="text/javascript">
+            
+            //Subscribe
+                
+                $("#subscribeForm").on("submit", function (event) {
+                    event.preventDefault();
+
+                    $.ajax({
+                        url: "/subscribe",
+                        type: "POST",
+                        data: $("#subscribeForm").serialize(),
+                        dataType: "json"
+                    }).done(function(data) {
+                        //$(".form-process").hide();
+                        //$("#quick-contact-form style").remove();
+                        
+                        $(".form-result").append( "<p>Cadastrado com sucesso!</p>" );
+                        $(".form-result").show();
+
+                        $("#subscribeFormt").prop('disabled', true);
+                        $("#email").prop('disabled', true);
+                    });
+                });
+             
+        </script>
+
         <!-- END: THEME SCRIPTS -->
         <!-- BEGIN: PAGE SCRIPTS -->
         <script src="{{ url('assets/base/js/scripts/revo-slider/slider-4.js')}}" type="text/javascript"></script>
