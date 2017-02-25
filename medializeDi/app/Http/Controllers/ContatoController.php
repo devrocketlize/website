@@ -15,7 +15,6 @@ class ContatoController extends Controller
         $emailCliente        	= $request->get(trim(strip_tags('email')));
         $mensagemCliente    	= $request->get(trim(strip_tags('mensagem')));
 
-        dd($nomeCliente);
 
         $data = ['nome' => $nomeCliente. ' '.$emailCliente,
                  'msgCliente' => $mensagemCliente,
@@ -24,7 +23,7 @@ class ContatoController extends Controller
 
         Mail::send(['text' => 'mail'], $data, function($message) use ($nomeCliente,$emailCliente){
 
-            $message->to('sac@rocketlize.com', 'Rocketlize')->subject('Mensagem de'. $nomeCliente);
+            $message->to('paulo.hnc@hotmail.com', 'Rocketlize')->subject('Mensagem de'. $nomeCliente);
             $message->from($emailCliente,$nomeCliente);
 
         } );
