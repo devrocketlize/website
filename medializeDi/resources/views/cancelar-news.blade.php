@@ -23,6 +23,7 @@
 		         </hgroup>
 		    	 <div class="well">
 		             <form name="unsubscribeForm" id="unsubscribeForm" method="POST" enctype="multipart/form-data">
+		             	{{ csrf_field() }}
 		              <div class="input-group">
 		                 <input class="btn btn-lg" name="email" id="email" type="email" placeholder="Digite seu email" required>
 		                 <button id="btnSubmit" class="btn btn-info btn-lg" type="submit">Cancelar</button>
