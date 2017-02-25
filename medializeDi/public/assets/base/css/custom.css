@@ -116,10 +116,7 @@ Price Table
 Unsubscribe and Auth forms
 ================================= */ 
 
-section {
-    padding: 100px 0;
-    text-align: center;
-}
+
 select.frecuency {
     border: none;
     font-style: italic;
