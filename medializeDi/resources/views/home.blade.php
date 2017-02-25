@@ -328,6 +328,7 @@
                             <div class="col-sm-6">
                                 <div class="form-result"></div>
                                     <form method="POST" enctype="multipart/form-data" id="subscribeForm">
+                                        {{ csrf_field() }}
                                         <div class="input-group input-group-lg">
                                             <input type="text" name="email" id="email" class="form-control input-lg" placeholder="Seu email aqui!">
                                             <span class="input-group-btn">
@@ -463,7 +464,7 @@
                 });
              
         </script>
-        
+
         <!-- END: THEME SCRIPTS -->
         <!-- BEGIN: PAGE SCRIPTS -->
         <script src="{{ url('assets/base/js/scripts/revo-slider/slider-4.js')}}" type="text/javascript"></script>
