@@ -32,7 +32,7 @@
 		    	 </div>
 		         <small class="promise"><em>A equipe Rocketlize agradece sua interação e deseja boa sorte ao(a) senhor(a).</em></small>
 
-		         <div id="newsMessage"><p class="pAlter"></p></div>
+		         <div id="newsMessage" class="pAlter"></div>
 				</div>
 			</div>
 		</div>

@@ -34,7 +34,7 @@
 			    margin: 0 auto; 
 			}
 
-			.pAlter{
+			.pAlter p{
 				color: red !important;
 			}
         </style>
