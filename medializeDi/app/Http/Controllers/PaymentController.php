@@ -8,6 +8,7 @@ use App\Pedido;
 use App\Pagamento;
 use Mail;
 use App\Media;
+use App\Newsletter;
 
 class PaymentController extends Controller
 {
@@ -17,6 +18,13 @@ class PaymentController extends Controller
     $servico = Servico::find($id);
     if($servico == null)
       abort(400);
+
+    //Cadastra comprador na Newsletter
+
+    $email = new Newsletter;
+    $email->FIELD1 = trim(strip_tags($request->input('email')));
+
+    $email->save();
 
     // Cria Pedido
     $pedido = new Pedido();

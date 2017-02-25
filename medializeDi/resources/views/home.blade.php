@@ -467,7 +467,7 @@
                         //$(".form-process").hide();
                         //$("#quick-contact-form style").remove();
                         
-                        $(".alert").append( "<strong>Parabés!</strong> Você foi cadastrado em nossa Newsletter!" );
+                        $(".alert").append( "<strong>Parabéns!</strong> Você foi cadastrado em nossa Newsletter!" );
                         $(".alert").show();
 
                         $("#subscribeFormt").prop('disabled', true);
