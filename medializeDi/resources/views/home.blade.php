@@ -440,7 +440,7 @@
         <script>
             $(document).ready(function()
             {
-                App.init(); // init core    
+                PageModals.init(); 
             });
         </script>
 
