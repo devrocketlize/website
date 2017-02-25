@@ -33,6 +33,10 @@
 			    width: 50%;
 			    margin: 0 auto; 
 			}
+
+			.pAlter{
+				color: red !important;
+			}
         </style>
      </head>
      <body>
@@ -44,6 +48,13 @@
 		<![endif]-->
     <script src="{{ url('assets/plugins/jquery.min.js')}}" type="text/javascript"></script>
     <script src="{{ url('assets/plugins/bootstrap/js/bootstrap.min.js')}}" type="text/javascript"></script>
+
+    <script type="text/javascript">
+            $(document).ready(function () {
+                    $("#newsMessage").hide();
+                     
+            });
+     </script>
         
 	</body>
 </html>

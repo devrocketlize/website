@@ -17,9 +17,8 @@
 				<div class="col-md-6 col-md-offset-3">
 		        <hgroup>
 		          <h2>
-		            Cancelar inscrição de nossa newsletter 
+		            Cancelar inscrição de nossa newsletter :-(
 		          </h2>
-		          <h1 class="free">:-(</h1>
 		         </hgroup>
 		    	 <div class="well">
 		             <form action="#">
@@ -29,7 +28,9 @@
 		              </div>
 		             </form>
 		    	 </div>
-		         <small class="promise"><em>A equipe Rocketlize agradece sua interação e deseja boa sorte ao senhor(a).</em></small>
+		         <small class="promise"><em>A equipe Rocketlize agradece sua interação e deseja boa sorte ao(a) senhor(a).</em></small>
+
+		         <div id="newsMessage"><p class="pAlter">Removido com sucesso!</p></div>
 				</div>
 			</div>
 		</div>
