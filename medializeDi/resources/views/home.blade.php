@@ -330,13 +330,13 @@
                                 <div class="c-body c-font-16 c-font-uppercase c-font-sbold">Quer receber dicas incríveis de crescimento nas redes sociais? Como bombar seu blog? Quais mídias engajar ao seu site? Ofertas fantásticas? Inscreva-se!</div>
                             </div>
                             <div class="col-sm-6">
-                                <div class="form-result"></div>
+                                <div class="alert alert-successt"></div>
                                     <form method="POST" enctype="multipart/form-data" id="subscribeForm">
                                         {{ csrf_field() }}
                                         <div class="input-group input-group-lg">
                                             <input type="text" name="email" id="email" class="form-control input-lg" placeholder="Seu email aqui!">
                                             <span class="input-group-btn">
-                                                <button type="submit" class="btn c-theme-btn c-btn-uppercase btn-lg c-btn-bold c-btn-square">INSCREVER</button>
+                                                <button id="btnSubmit" type="submit" class="btn c-theme-btn c-btn-uppercase btn-lg c-btn-bold c-btn-square">INSCREVER</button>
                                             </span>
                                         </div>
                                     </form>
@@ -459,11 +459,12 @@
                         //$(".form-process").hide();
                         //$("#quick-contact-form style").remove();
                         
-                        $(".form-result").append( "<p>Cadastrado com sucesso!</p>" );
-                        $(".form-result").show();
+                        $(".alert").append( "<strong>Parabés!</strong> Você foi cadastrado em nossa Newsletter!" );
+                        $(".alert").show();
 
                         $("#subscribeFormt").prop('disabled', true);
                         $("#email").prop('disabled', true);
+                        $("#btnSubmit").prop('disabled', true);
                     });
                 });
              

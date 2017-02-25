@@ -237,11 +237,12 @@
                         //$(".form-process").hide();
                         //$("#quick-contact-form style").remove();
                         
-                        $(".form-result").append( "<p>Cadastrado com sucesso!</p>" );
-                        $(".form-result").show();
+                        $(".alert").append( "<strong>Parabés!</strong> Você foi cadastrado em nossa Newsletter!" );
+                        $(".alert").show();
 
                         $("#subscribeFormt").prop('disabled', true);
                         $("#email").prop('disabled', true);
+                        $("#btnSubmit").prop('disabled', true);
                     });
                 });
              
