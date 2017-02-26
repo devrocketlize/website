@@ -99,7 +99,7 @@
                     <div class="panel-heading">Pedidos</div>
 
                     <div class="panel-body">
-                        <table class="table-responsive">
+                        <table class="table">
                           <thead>
                             <tr>
                               <th>#</th>
