@@ -132,25 +132,28 @@
                                     Charge
                               @endif</span></p>
 
-					</div> 
+					</div>
+					<div class="col-md-10">
 
 						<form enctype="multipart/form-data" method="POST" action="atualizar-pedido/{$peido->id}">
 							 <div class="form-group">
 							    <label for="exampleSelect1">Escolha o status</label>
 							    <select class="form-control" id="andamento" name="andamento">
 							      
-							      <option value="pending">pending</option>
-							      <option value="approved">approved</option>
-							      <option value="in_process">in_process</option>
-							      <option value="in_mediation">in_mediation</option>
-							      <option value="rejected">rejected</option>
-							      <option value="cancelled">cancelled</option>
-							      <option value="refunded">refunded</option>
+							      <option value="pending">Pendente</option>
+							      <option value="approved">Aprovado</option>
+							      <option value="in_process">Processando</option>
+							      <option value="in_mediation">Mediado</option>
+							      <option value="rejected">Rejeitado</option>
+							      <option value="cancelled">Cancelado</option>
+							      <option value="refunded">Devolvido</option>
+							      <option value="charged_back">Charge</option>
 
 							    </select>
 							</div>
 							<button type="submit" class="btn btn-primary">Editar</button>
 						</form>
+					</div>
 			</div>
 		</div>
 	</div>
