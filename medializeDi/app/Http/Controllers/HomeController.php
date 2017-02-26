@@ -57,7 +57,7 @@ class HomeController extends Controller
 
             $pedido = Pedido::find($id);
             $pedido->andamento = $request->andamento;
-            $pedido>update();
+            $pedido->update();
 
 
         return redirect()->back()->with('message', 'Atualizado!');
