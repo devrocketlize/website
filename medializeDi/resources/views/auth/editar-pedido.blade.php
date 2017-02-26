@@ -89,7 +89,7 @@
 
 						<p><strong>Nome do Cliente:</strong> {{$pedido->nomeCliente}} </p>
 						<p><strong>E-mail:</strong> {{$pedido->emailCliente}} </p>
-						<p<strong>>Whatsapp:</p<strong> {{$pedido->whatsapp}} </p>
+						<p><strong>Whatsapp:<strong><p> {{$pedido->whatsapp}} </p>
 						<p><strong>solicitação:</strong> {{$servico->quantidade}} {{$tipo->desc}} no {{$media->desc}} no valor de {{$pedido->valor}} </p>
 						<p><strong>Link / Comentário:</strong> {{$pedido->link}} </p>
 
@@ -114,7 +114,23 @@
                                     label label-danger
                               @endif
 
-                              ">Estado</span></p>
+                              ">@if($pedido->andamento == 'pending')
+                                   Pendente
+                                  @elseif($pedido->andamento == 'approved')
+                                    Aprovado
+                                  @elseif($pedido->andamento == 'in_process')
+                                    Processando
+                                  @elseif($pedido->andamento == 'in_mediation')
+                                   Mediado
+                                  @elseif($pedido->andamento == 'rejected')
+                                    Rejeitado
+                                  @elseif($pedido->andamento == 'cancelled')
+                                    Cancelado
+                                  @elseif($pedido->andamento == 'refunded')
+                                    Devolvido
+                                   @else
+                                    Charge
+                              @endif</span></p>
 
 					</div> 
 			</div>
