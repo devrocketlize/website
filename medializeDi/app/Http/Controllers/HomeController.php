@@ -27,12 +27,9 @@ class HomeController extends Controller
     public function index()
     {
         
-        $pedidos = Pedido::paginate(15);
+        $pedidos = Pedido::orderBy('id', 'DESC')->paginate(15);
         
-        //$servico = Servico::find($id);
-
-        dd($pedidos);
-
+       
        return view('home', compact('pedidos', 'servico'));
     }
 }
