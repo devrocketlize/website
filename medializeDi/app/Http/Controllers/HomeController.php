@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Servico;
 use App\Pedido;
 
 class HomeController extends Controller
@@ -22,12 +23,13 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function index()
     {
-       $pedidos = Pedido::all();
+        
+        $pedidos = Pedido::all()->orderBy('id', 'desc')->paginate(15);
+        $servico = Servico::find($id);
 
-       dd($pedidos);
-       
-       return view('home', compact('pedidos'));
+       return view('home', compact('pedidos', 'servico'));
     }
 }
