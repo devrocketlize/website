@@ -29,7 +29,7 @@ class HomeController extends Controller
         
         $pedidos = Pedido::paginate(15);
         
-        $servico = Servico::find($id);
+        //$servico = Servico::find($id);
 
         dd($pedidos);
 
