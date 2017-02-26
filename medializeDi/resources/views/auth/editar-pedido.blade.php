@@ -132,8 +132,7 @@
                                     Charge
                               @endif</span></p>
 
-					</div>
-					<div class="col-md-10">
+                        <div class="col-md-10">
 
 						<form enctype="multipart/form-data" method="POST" action="/atualizar-pedido/{{$pedido->id}}">
 							{{ csrf_field() }}
@@ -155,6 +154,9 @@
 							<button type="submit" class="btn btn-primary">Editar</button>
 						</form>
 					</div>
+
+					</div>
+
 			</div>
 		</div>
 	</div>
