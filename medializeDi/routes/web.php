@@ -65,5 +65,14 @@ Route::group(['prefix' => 'mercadopago'], function () {
 Route::post('subscribe', 'NewsletterController@subscribe');
 Route::get('unsubscribe', 'NewsletterController@show' );
 Route::post('unsubscribe', 'NewsletterController@unsubscribe' );
-Route::get('send', 'NewsletterController@sendmail' );
 
+Route::group(['middleware' => 'auth'], function () {
+    
+    Route::get('send', 'NewsletterController@sendmail' );
+
+});
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
