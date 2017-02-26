@@ -27,7 +27,7 @@ class HomeController extends Controller
     public function index()
     {
         
-        $pedidos = Pedido::all()->orderBy('id', 'desc')->paginate(15);
+        $pedidos = Pedido::all()->paginate(15);
         $servico = Servico::find($id);
 
        return view('home', compact('pedidos', 'servico'));
