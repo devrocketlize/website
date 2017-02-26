@@ -89,8 +89,8 @@
 
 						<p><strong>Nome do Cliente:</strong> {{$pedido->nomeCliente}} </p>
 						<p><strong>E-mail:</strong> {{$pedido->emailCliente}} </p>
-						<p><strong>Whatsapp:<strong><p> {{$pedido->whatsapp}} </p>
-						<p><strong>solicitação:</strong> {{$servico->quantidade}} {{$tipo->desc}} no {{$media->desc}} no valor de {{$pedido->valor}} </p>
+						<p><strong>Whatsapp:<strong> {{$pedido->whatsapp}} </p>
+						<p><strong>Solicitação:</strong> {{$servico->quantidade}} {{$tipo->desc}} no {{$media->desc}} no valor de {{$pedido->valor}} </p>
 						<p><strong>Link / Comentário:</strong> {{$pedido->link}} </p>
 
 						<p><strong>Feito em:</strong> {{$pedido->created_at}}</p>
