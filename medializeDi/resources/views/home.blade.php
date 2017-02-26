@@ -411,7 +411,7 @@
                                     
                                     <input type="text" placeholder="Nome" name="nome" id="nome" class="form-control">
                                     <input type="email" name="email" id="email" placeholder="Email" class="form-control">
-                                    <textarea rows="8" name="menssagem" id="mensagem" placeholder="Mensagem..." class="form-control"></textarea>
+                                    <textarea rows="8" name="mensagem" id="mensagem" placeholder="Mensagem..." class="form-control"></textarea>
 
                                      <button id="btnSubmit2" type="submit" class="btn c-btn-white c-btn-border-2x c-btn-uppercase btn-lg c-btn-bold c-btn-square">ENVIAR</button>
                                 </form>
