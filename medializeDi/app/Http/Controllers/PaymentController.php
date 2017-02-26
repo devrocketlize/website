@@ -35,6 +35,7 @@ class PaymentController extends Controller
     $pedido->emailCliente = $request->email;
     $pedido->link = $request->link;
     $pedido->whatsapp = $request->whatsapp;
+    $pedido->andamento = 'pending';
 
     $url = $pedido->servico_linkBtn = $servico->linkBtn;
 
@@ -71,6 +72,8 @@ class PaymentController extends Controller
        // break;
     //}
   }
+
+  
 
   //public function obrigado($pagamento)
   //{
