@@ -72,7 +72,15 @@
 
 <div class="container">
 	<div class="row">
+	<div class="col-md-4">
+	 <a href="/home">Voltar</a>	
+	</div>
 		<div class="col-md-12"></div>
+			@if(session()->has('message'))
+			    <div class="alert alert-success">
+			        {{ session()->get('message') }}
+			    </div>
+			@endif
 			<div class="panel panel-primary"> 
 
 					<div class="panel-heading"> 
