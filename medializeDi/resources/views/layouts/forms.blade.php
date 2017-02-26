@@ -38,6 +38,7 @@
 				color: red !important;
 			}
         </style>
+        @yield('token')
      </head>
      <body>
 
