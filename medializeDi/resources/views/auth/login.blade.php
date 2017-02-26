@@ -1,6 +1,10 @@
-@extends('layouts.app')
+@extends('layouts/forms')
 
-@section('content')
+@section('titulo')
+    Área Administrativa
+@stop
+
+@section('conteudo')
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
