@@ -72,5 +72,7 @@ Route::group(['middleware' => 'auth'], function () {
 
 });
 
+Route::get('/rgister', 'MasterController@index');
 Auth::routes();
 Route::get('/home', 'HomeController@index');
+
