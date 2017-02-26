@@ -71,77 +71,70 @@
     </div>
 </nav>
 <section class="sectionUn">
-    <div class="container">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="bs-example" data-example-id="table-within-panel"> 
+                <div class="panel panel-default"> 
+                    <div class="panel-heading">Pedidos</div> 
+                        <div class="panel-body"> 
+                        </div> 
+                            <table class="table">
+                                      <thead>
+                                        <tr>
+                                          <th>#</th>
+                                          <th>Andamento</th>
+                                          <th>Nome</th>
+                                          <th>E-mail</th>
+                                          <th>Whatsapp</th>
+                                          <th>Editar</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                       @foreach($pedidos as $pedido)
+                                        <tr>
 
-        <div class="row">
+                                          <td>{{$pedido->id}}</td>
+                                          <td> <span class="
 
-            <div class="col-md-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Legenda</div>
+                                          @if($pedido->andamento == 'pending')
+                                            label label-default
+                                              @elseif($pedido->andamento == 'approved')
+                                                label label-success
+                                              @elseif($pedido->andamento == 'in_process')
+                                                label label-primary
+                                              @elseif($pedido->andamento == 'in_mediation')
+                                                label label-info
+                                              @elseif($pedido->andamento == 'rejected')
+                                                label label-warning
+                                              @elseif($pedido->andamento == 'cancelled')
+                                                label label-danger
+                                              @elseif($pedido->andamento == 'refunded')
+                                                label label-danger
+                                               @else
+                                                label label-danger
+                                          @endif
 
-                    <div class="panel-body">
+                                          ">Estado</span></td>    
+                                          <td>{{$pedido->nomeCliente}}</td>
+                                          <td>{{$pedido->emailCliente}}</td>
+                                          <td>{{$pedido->whatsapp}}</td>
+                                          <td><a href="/editar-pedido/{{$pedido->id}}" ><i class="fa fa-2x fa-eye" aria-hidden="true"></i></a></td>
+                                        </tr>
 
-                        <span class="label label-default">Pendente</span>
-                        <span class="label label-primary">Processando</span>
-                        <span class="label label-success">Aprovado</span>
-                        <span class="label label-info">Mediado</span>
-                        <span class="label label-warning">Rejeitado</span>
-                        <span class="label label-danger">Cancelado</span>
-                        <span class="label label-danger">Charge/Devolvido</span>
+                                        @endforeach
+                                       
+                                      </tbody>
 
-
-                    </div>
-                </div>
+                                    </table>
+                                    {{$pedidos->links()}}
+                        </div> 
+                </div> 
             </div>
-
-            <div class="col-md-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Pedidos</div>
-
-                    <div class="panel-body">
-                         <table class="table"> 
-                                <thead> 
-                                    <tr> 
-                                        <th>#</th> 
-                                        <th>First Name</th> 
-                                        <th>Last Name</th> 
-                                        <th>Username</th> 
-                                    </tr> 
-                                </thead> 
-                                <tbody> 
-                                    <tr> 
-                                        <th scope="row">1</th> 
-                                        <td>Mark</td> 
-                                        <td>Otto</td> 
-                                        <td>@mdo</td> 
-                                    </tr> 
-                                    <tr> 
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td> 
-                                        <td>Thornton</td> 
-                                        <td>@fat</td> 
-                                    </tr>  
-                                </tbody> 
-                            </table>
-                        {{$pedidos->links()}}
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
-</section>
-
-<div class="bs-example" data-example-id="table-within-panel"> 
-    <div class="panel panel-default"> 
-        <div class="panel-heading">Panel heading</div> 
-            <div class="panel-body"> 
-                <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> 
-            </div> 
-               
-            </div> 
-    </div> 
 </div>
+</section>
 
 
 @endsection
