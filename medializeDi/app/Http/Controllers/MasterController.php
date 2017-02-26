@@ -12,7 +12,7 @@ class MasterController extends Controller
   public function index()
   {
     $medias = Media::all();
-    return view('home', compact('medias'));
+    return view('index', compact('medias'));
   }
 
   public function atendimento(Request $request)
