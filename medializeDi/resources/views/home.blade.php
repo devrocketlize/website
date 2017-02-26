@@ -51,7 +51,7 @@
 
                         <ul class="dropdown-menu" role="menu">
                             <li>
-                                <a href="{{ route('send') }}">Enviar campanha</a>
+                                <a href="/send">Enviar campanha</a>
                                 
                                 <a href="{{ route('logout') }}"
                                     onclick="event.preventDefault();
