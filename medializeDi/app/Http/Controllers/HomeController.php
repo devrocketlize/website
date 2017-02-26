@@ -29,10 +29,6 @@ class HomeController extends Controller
         
         $pedidos = Pedido::orderBy('id', 'DESC')->paginate(15);
         
-       $teste = $pedidos->servico_id;
-
-       dd($teste);
-
        return view('home', compact('pedidos'));
     }
 }
