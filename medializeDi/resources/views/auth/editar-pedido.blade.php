@@ -73,12 +73,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-12"></div>
-			<div class="panel-group">
-			  
-			  <div class="panel panel-primary">
-			    <div class="panel-body">Teste</div>
-			  </div>
-			</div> 
+			<div class="panel panel-primary"> <div class="panel-heading"> <h3 class="panel-title">Panel title</h3> </div> <div class="panel-body"> Panel content </div> </div>
 		</div>
 	</div>
 </div>
