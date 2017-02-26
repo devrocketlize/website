@@ -70,7 +70,7 @@ Route::group(['middleware' => 'auth'], function () {
     
     Route::get('send', 'NewsletterController@sendmail' );
     Route::get('editar-pedido/{id}', 'HomeController@edit' );
-    Route::get('atualizar-pedido/{id}', 'HomeController@update' );
+    Route::post('atualizar-pedido/{id}', 'HomeController@update' );
 
 });
 
