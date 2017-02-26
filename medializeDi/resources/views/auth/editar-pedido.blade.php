@@ -137,7 +137,7 @@
 						<form enctype="multipart/form-data" method="POST" action="/atualizar-pedido/{{$pedido->id}}">
 							{{ csrf_field() }}
 
-							<div class="col-md-6">
+							<div class="col-md-5">
 							 <div class="form-group">
 								    <label for="exampleSelect1">Escolha o status</label>
 								    <select class="form-control" id="andamento" name="andamento">
@@ -154,12 +154,11 @@
 								    </select>
 								</div>
 							</div>
-							<button type="submit" class="btn btn-primary">Editar</button>
+							<div class="col-md-12">
+								<button type="submit" class="btn btn-primary">Editar</button>
+							</div>
 						</form>
-					
-
 					</div>
-
 			</div>
 		</div>
 	</div>
