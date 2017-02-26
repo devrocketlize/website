@@ -136,6 +136,7 @@
 					<div class="col-md-10">
 
 						<form enctype="multipart/form-data" method="POST" action="/atualizar-pedido/{{$pedido->id}}">
+							{{ csrf_field() }}
 							 <div class="form-group">
 							    <label for="exampleSelect1">Escolha o status</label>
 							    <select class="form-control" id="andamento" name="andamento">
