@@ -40,8 +40,17 @@ class HomeController extends Controller
             
             $servico = Servico::find($refServico);
 
-            dd($servico);
+        return view ('auth.editar-pedido', compact('pedido', 'servico'));
+    }
 
-        return view ('editar-pedido', compact('pedido', 'servico'));
+    public function update($id, Rquest $request){
+
+            $pedido = Pedido::find($id);
+            $pedido->andamento = $request->andamento;
+            $pedido>update();
+
+
+        return redirect()->back()->with('message', 'Atualizado!');
+
     }
 }
