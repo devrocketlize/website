@@ -36,7 +36,7 @@ class HomeController extends Controller
 
             $pedido = Pedido::find($id);
 
-            $teste->$pedido->servico_id;
+            $teste = $pedido->servico_id;
             dd($teste);
 
         return view ('editar-pedido', compact('pedido'));
