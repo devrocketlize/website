@@ -27,7 +27,7 @@ class HomeController extends Controller
     public function index()
     {
         
-        $pedidos = Pedido::all()->paginate(15);
+        $pedidos = Pedido::paginate(15);
         
         $servico = Servico::find($id);
 
