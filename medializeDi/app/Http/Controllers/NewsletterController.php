@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Newsletter;
+use App\User;
+use Mail;
 
 class NewsletterController extends Controller
 {
@@ -36,6 +38,25 @@ class NewsletterController extends Controller
     	$email =  Newsletter::where('FIELD1', '=', $input)->delete();
 
     	return response()->json(['status' => 'ok']);
+    }
+
+    public function sendmail(){
+
+    	$users = User::all();
+
+		foreach ($users as $user) {
+
+		     Mail::send('emails', [], function($message) use ($user) {
+
+		          $message->from('paulo@smcurtidas.com', 'Paulo Candido');
+		          $message->to($user->email, $user->name)->subject('Teste envio de E-mail');
+
+		      });
+
+		}
+
+    	return "Deu certo porra!!!";
+    
     }
 
 }

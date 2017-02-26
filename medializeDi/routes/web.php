@@ -39,10 +39,6 @@ Route::get('/blog', function () {
 //ROTAS PAGAMENTO
 Route::post('pagar/{id}', 'PaymentController@checkout');
 
-Route::post('subscribe', 'NewsletterController@subscribe');
-Route::get('unsubscribe', 'NewsletterController@show' );
-Route::post('unsubscribe', 'NewsletterController@unsubscribe' );
-
 Route::post('contato', 'ContatoController@enviarMensagem' );
 
 Route::get('obrigado/{pagamento}', 'PaymentController@obrigado');
@@ -66,21 +62,8 @@ Route::group(['prefix' => 'mercadopago'], function () {
 
 //ROTA NEWSLETTER
 
-Route::get('enviar', function() {
+Route::post('subscribe', 'NewsletterController@subscribe');
+Route::get('unsubscribe', 'NewsletterController@show' );
+Route::post('unsubscribe', 'NewsletterController@unsubscribe' );
+Route::get('send', 'NewsletterController@sendmail' );
 
-  $users = App\User::all();
-
-  foreach ($users as $user) {
-
-     Mail::send('emails', [], function($message) use ($user) {
-
-          $message->from('paulo@smcurtidas.com', 'Paulo Candido');
-          $message->to($user->email, $user->name)->subject('Teste envio de E-mail');
-
-      });
-
-  }
-
-    return "Deu certo porra!!!";
-
-});
