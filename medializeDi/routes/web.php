@@ -60,7 +60,7 @@ Route::group(['prefix' => 'mercadopago'], function () {
 });
 
 
-//ROTA NEWSLETTER
+//ROTA NEWSLETTER E ADMINISTRATIVA
 
 Route::post('subscribe', 'NewsletterController@subscribe');
 Route::get('unsubscribe', 'NewsletterController@show' );
@@ -69,6 +69,7 @@ Route::post('unsubscribe', 'NewsletterController@unsubscribe' );
 Route::group(['middleware' => 'auth'], function () {
     
     Route::get('send', 'NewsletterController@sendmail' );
+    Route::get('editar-pedido/{id}', 'HomeController@edit' );
 
 });
 

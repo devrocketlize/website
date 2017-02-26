@@ -31,4 +31,13 @@ class HomeController extends Controller
         
        return view('home', compact('pedidos'));
     }
+
+    public function edit($id){
+
+            $pedido = Pedido::find($id);
+
+            dd($pedido);
+
+        return view ('editar-pedido', compact('peido'));
+    }
 }
