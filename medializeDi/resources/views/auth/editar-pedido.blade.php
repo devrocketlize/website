@@ -89,7 +89,7 @@
 
 						<p><strong>Nome do Cliente:</strong> {{$pedido->nomeCliente}} </p>
 						<p><strong>E-mail:</strong> {{$pedido->emailCliente}} </p>
-						<p><strong>Whatsapp:<strong> {{$pedido->whatsapp}} </p>
+						<p><strong>Whatsapp:</strong> {{$pedido->whatsapp}} </p>
 						<p><strong>Solicitação:</strong> {{$servico->quantidade}} {{$tipo->desc}} no {{$media->desc}} no valor de {{$pedido->valor}} </p>
 						<p><strong>Link / Comentário:</strong> {{$pedido->link}} </p>
 
@@ -133,6 +133,24 @@
                               @endif</span></p>
 
 					</div> 
+
+						<form enctype="multipart/form-data" method="POST" action="atualizar-pedido/{$peido->id}">
+							 <div class="form-group">
+							    <label for="exampleSelect1">Escolha o status</label>
+							    <select class="form-control" id="andamento" name="andamento">
+							      
+							      <option value="pending">pending</option>
+							      <option value="approved">approved</option>
+							      <option value="in_process">in_process</option>
+							      <option value="in_mediation">in_mediation</option>
+							      <option value="rejected">rejected</option>
+							      <option value="cancelled">cancelled</option>
+							      <option value="refunded">refunded</option>
+
+							    </select>
+							</div>
+							<button type="submit" class="btn btn-primary">Editar</button>
+						</form>
 			</div>
 		</div>
 	</div>
