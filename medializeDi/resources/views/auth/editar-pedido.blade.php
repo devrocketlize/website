@@ -132,28 +132,31 @@
                                     Charge
                               @endif</span></p>
 
-                        <div class="col-md-10">
+
 
 						<form enctype="multipart/form-data" method="POST" action="/atualizar-pedido/{{$pedido->id}}">
 							{{ csrf_field() }}
-							 <div class="form-group">
-							    <label for="exampleSelect1">Escolha o status</label>
-							    <select class="form-control" id="andamento" name="andamento">
-							      
-							      <option value="pending">Pendente</option>
-							      <option value="approved">Aprovado</option>
-							      <option value="in_process">Processando</option>
-							      <option value="in_mediation">Mediado</option>
-							      <option value="rejected">Rejeitado</option>
-							      <option value="cancelled">Cancelado</option>
-							      <option value="refunded">Devolvido</option>
-							      <option value="charged_back">Charge</option>
 
-							    </select>
+							<div class="col-md-6">
+							 <div class="form-group">
+								    <label for="exampleSelect1">Escolha o status</label>
+								    <select class="form-control" id="andamento" name="andamento">
+								      
+								      <option value="pending">Pendente</option>
+								      <option value="approved">Aprovado</option>
+								      <option value="in_process">Processando</option>
+								      <option value="in_mediation">Mediado</option>
+								      <option value="rejected">Rejeitado</option>
+								      <option value="cancelled">Cancelado</option>
+								      <option value="refunded">Devolvido</option>
+								      <option value="charged_back">Charge</option>
+
+								    </select>
+								</div>
 							</div>
 							<button type="submit" class="btn btn-primary">Editar</button>
 						</form>
-					</div>
+					
 
 					</div>
 
