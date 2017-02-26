@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Servico;
+use App\Media;
+use App\TipoServico;
 use App\Pedido;
 
 class HomeController extends Controller
@@ -40,7 +42,15 @@ class HomeController extends Controller
             
             $servico = Servico::find($refServico);
 
-        return view ('auth.editar-pedido', compact('pedido', 'servico'));
+            $refTipo = $servico->tipo_servico_id;
+
+            $tipo = TipoServico::find($refTipo);
+
+            $refMedia = $tipo->media_id;
+
+            $media = Media::find($refMedia);
+
+        return view ('auth.editar-pedido', compact('pedido', 'servico', 'tipo', 'media'));
     }
 
     public function update($id, Rquest $request){
