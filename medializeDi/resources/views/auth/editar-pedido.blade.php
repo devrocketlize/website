@@ -52,7 +52,6 @@
                         <ul class="dropdown-menu" role="menu">
                             <li>
                                
-                                
                                 <a href="{{ route('logout') }}"
                                     onclick="event.preventDefault();
                                              document.getElementById('logout-form').submit();">
@@ -71,7 +70,18 @@
     </div>
 </nav>
 
-Olá Mundo, aqui vai ter um pedido!!!
+<div class="container">
+	<div class="row">
+		<div class="col-md-12"></div>
+			<div class="panel-group">
+			  
+			  <div class="panel panel-primary">
+			    <div class="panel-body">Teste</div>
+			  </div>
+			</div> 
+		</div>
+	</div>
+</div>
 
 
 @endsection
