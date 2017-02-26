@@ -21,9 +21,9 @@ class ContatoController extends Controller
                 ];
 
 
-        Mail::send(['text' => 'mail'], $data, function($message) use ($nomeCliente,$emailCliente){
+        Mail::send(['text' => 'mail'], $data, function($message) use ($nomeCliente,$emailCliente,$mensagemCliente){
 
-            $message->to('paulo.hnc@hotmail.com', 'Rocketlize')->subject('Mensagem de '. $nomeCliente);
+            $message->to('paulo.hncandido@gmail.com', 'Rocketlize')->subject('Mensagem de '. $nomeCliente);
             $message->from($emailCliente,$nomeCliente);
 
         } );
