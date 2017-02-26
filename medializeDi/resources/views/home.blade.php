@@ -71,69 +71,92 @@
     </div>
 </nav>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="bs-example" data-example-id="table-within-panel"> 
-                <div class="panel panel-default"> 
-                    <div class="panel-heading">Pedidos</div> 
-                        <div class="panel-body"> 
-                        </div> 
-                            <table class="table">
-                                      <thead>
-                                        <tr>
-                                          <th>#</th>
-                                          <th>Andamento</th>
-                                          <th>Nome</th>
-                                          <th>E-mail</th>
-                                          <th>Whatsapp</th>
-                                          <th>Editar</th>
-                                        </tr>
-                                      </thead>
-                                      <tbody>
-                                       @foreach($pedidos as $pedido)
-                                        <tr>
+    <div class="container">
 
-                                          <td>{{$pedido->id}}</td>
-                                          <td> <span class="
+        <div class="row">
 
-                                          @if($pedido->andamento == 'pending')
-                                            label label-default
-                                              @elseif($pedido->andamento == 'approved')
-                                                label label-success
-                                              @elseif($pedido->andamento == 'in_process')
-                                                label label-primary
-                                              @elseif($pedido->andamento == 'in_mediation')
-                                                label label-info
-                                              @elseif($pedido->andamento == 'rejected')
-                                                label label-warning
-                                              @elseif($pedido->andamento == 'cancelled')
-                                                label label-danger
-                                              @elseif($pedido->andamento == 'refunded')
-                                                label label-danger
-                                               @else
-                                                label label-danger
-                                          @endif
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Legenda</div>
 
-                                          ">Estado</span></td>    
-                                          <td>{{$pedido->nomeCliente}}</td>
-                                          <td>{{$pedido->emailCliente}}</td>
-                                          <td>{{$pedido->whatsapp}}</td>
-                                          <td><a href="/editar-pedido/{{$pedido->id}}" ><i class="fa fa-2x fa-eye" aria-hidden="true"></i></a></td>
-                                        </tr>
+                    <div class="panel-body">
 
-                                        @endforeach
-                                       
-                                      </tbody>
+                        <span class="label label-default">Pendente</span>
+                        <span class="label label-primary">Processando</span>
+                        <span class="label label-success">Aprovado</span>
+                        <span class="label label-info">Mediado</span>
+                        <span class="label label-warning">Rejeitado</span>
+                        <span class="label label-danger">Cancelado</span>
+                        <span class="label label-danger">Charge/Devolvido</span>
 
-                                    </table>
-                                    {{$pedidos->links()}}
-                        </div> 
-                </div> 
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Pedidos</div>
+
+                    <div class="panel-body">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>#</th>
+                              <th>Andamento</th>
+                              <th>Nome</th>
+                              <th>E-mail</th>
+                              <th>Whatsapp</th>
+                              <th>Editar</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                           @foreach($pedidos as $pedido)
+                            <tr>
+
+                              <td>{{$pedido->id}}</td>
+                              <td> <span class="
+
+                              @if($pedido->andamento == 'pending')
+                                label label-default
+                                  @elseif($pedido->andamento == 'approved')
+                                    label label-success
+                                  @elseif($pedido->andamento == 'in_process')
+                                    label label-primary
+                                  @elseif($pedido->andamento == 'in_mediation')
+                                    label label-info
+                                  @elseif($pedido->andamento == 'rejected')
+                                    label label-warning
+                                  @elseif($pedido->andamento == 'cancelled')
+                                    label label-danger
+                                  @elseif($pedido->andamento == 'refunded')
+                                    label label-danger
+                                   @else
+                                    label label-danger
+                              @endif
+
+                              ">Estado</span></td>    
+                              <td>{{$pedido->nomeCliente}}</td>
+                              <td>{{$pedido->emailCliente}}</td>
+                              <td>{{$pedido->whatsapp}}</td>
+                              <td><a href="/editar-pedido/{{$pedido->id}}" ><i class="fa fa-2x fa-eye" aria-hidden="true"></i></a></td>
+                            </tr>
+
+                            @endforeach
+                           
+                          </tbody>
+
+                        </table>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                {{$pedidos->links()}}
             </div>
         </div>
     </div>
-</div>
+
 
 
 
