@@ -70,7 +70,7 @@
         </div>
     </div>
 </nav>
-<section class="sectionUn">
+
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -134,7 +134,7 @@
         </div>
     </div>
 </div>
-</section>
+
 
 
 @endsection
