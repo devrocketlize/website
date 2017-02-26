@@ -53,7 +53,7 @@ class HomeController extends Controller
         return view ('auth.editar-pedido', compact('pedido', 'servico', 'tipo', 'media'));
     }
 
-    public function update($id, Rquest $request){
+    public function update($id, Request $request){
 
             $pedido = Pedido::find($id);
             $pedido->andamento = $request->andamento;
