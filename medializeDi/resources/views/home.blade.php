@@ -103,8 +103,7 @@
                           <thead>
                             <tr>
                               <th>#</th>
-                              <th>Andamento</th>
-                              <th>Nome</th>
+                                                            <th>Nome</th>
                               <th>E-mail</th>
                               <th>Whatsapp</th>
                             </tr>
@@ -114,27 +113,7 @@
                             <tr>
 
                               <td>{{$pedido->id}}</td>
-                              <td> <span class="
-
-                              @if($pedido->andamento == 'pending')
-                                label label-default
-                                  @elseif($pedido->andamento == 'approved')
-                                    label label-success
-                                  @elseif($pedido->andamento == 'in_process')
-                                    label label-primary
-                                  @elseif($pedido->andamento == 'in_mediation')
-                                    label label-info
-                                  @elseif($pedido->andamento == 'rejected')
-                                    label label-warning
-                                  @elseif($pedido->andamento == 'cancelled')
-                                    label label-danger
-                                  @elseif($pedido->andamento == 'refunded')
-                                    label label-danger
-                                   @else
-                                    label label-danger
-                              @endif
-
-                              ">Estado</span></td>    
+                             
                               <td>{{$pedido->nomeCliente}}</td>
                               <td>{{$pedido->emailCliente}}</td>
                               <td>{{$pedido->whatsapp}}</td>
