@@ -99,54 +99,30 @@
                     <div class="panel-heading">Pedidos</div>
 
                     <div class="panel-body">
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th>#</th>
-                              <th>Andamento</th>
-                              <th>Nome</th>
-                              <th>E-mail</th>
-                              <th>Whatsapp</th>
-                              <th>Editar</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                           @foreach($pedidos as $pedido)
-                            <tr>
-
-                              <td>{{$pedido->id}}</td>
-                              <td> <span class="
-
-                              @if($pedido->andamento == 'pending')
-                                label label-default
-                                  @elseif($pedido->andamento == 'approved')
-                                    label label-success
-                                  @elseif($pedido->andamento == 'in_process')
-                                    label label-primary
-                                  @elseif($pedido->andamento == 'in_mediation')
-                                    label label-info
-                                  @elseif($pedido->andamento == 'rejected')
-                                    label label-warning
-                                  @elseif($pedido->andamento == 'cancelled')
-                                    label label-danger
-                                  @elseif($pedido->andamento == 'refunded')
-                                    label label-danger
-                                   @else
-                                    label label-danger
-                              @endif
-
-                              ">Estado</span></td>    
-                              <td>{{$pedido->nomeCliente}}</td>
-                              <td>{{$pedido->emailCliente}}</td>
-                              <td>{{$pedido->whatsapp}}</td>
-                              <td><a href="/editar-pedido/{{$pedido->id}}" ><i class="fa fa-2x fa-eye" aria-hidden="true"></i></a></td>
-                            </tr>
-
-                            @endforeach
-                           
-                          </tbody>
-
-                        </table>
+                         <table class="table"> 
+                                <thead> 
+                                    <tr> 
+                                        <th>#</th> 
+                                        <th>First Name</th> 
+                                        <th>Last Name</th> 
+                                        <th>Username</th> 
+                                    </tr> 
+                                </thead> 
+                                <tbody> 
+                                    <tr> 
+                                        <th scope="row">1</th> 
+                                        <td>Mark</td> 
+                                        <td>Otto</td> 
+                                        <td>@mdo</td> 
+                                    </tr> 
+                                    <tr> 
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td> 
+                                        <td>Thornton</td> 
+                                        <td>@fat</td> 
+                                    </tr>  
+                                </tbody> 
+                            </table>
                         {{$pedidos->links()}}
                     </div>
                 </div>
@@ -162,30 +138,7 @@
             <div class="panel-body"> 
                 <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> 
             </div> 
-                <table class="table"> 
-                    <thead> 
-                        <tr> 
-                            <th>#</th> 
-                            <th>First Name</th> 
-                            <th>Last Name</th> 
-                            <th>Username</th> 
-                        </tr> 
-                    </thead> 
-                    <tbody> 
-                        <tr> 
-                            <th scope="row">1</th> 
-                            <td>Mark</td> 
-                            <td>Otto</td> 
-                            <td>@mdo</td> 
-                        </tr> 
-                        <tr> 
-                            <th scope="row">2</th>
-                            <td>Jacob</td> 
-                            <td>Thornton</td> 
-                            <td>@fat</td> 
-                        </tr>  
-                    </tbody> 
-                </table>
+               
             </div> 
     </div> 
 </div>
