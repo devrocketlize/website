@@ -87,14 +87,34 @@
 
 					<div class="panel-body"> 
 
-						<p>Nome do Cliente: {{$pedido->nomeCliente}} </p>
-						<p>E-mail: {{$pedido->emailCliente}} </p>
-						<p>Whatsapp: {{$pedido->whatsapp}} </p>
-						<p>solicitação: {{$servico->quantidade}} {{$tipo->desc}} no {{$media->desc}} no valor de {{$pedido->valor}} </p>
-						<p>Link / Comentário: </p>
+						<p><strong>Nome do Cliente:</strong> {{$pedido->nomeCliente}} </p>
+						<p><strong>E-mail:</strong> {{$pedido->emailCliente}} </p>
+						<p<strong>>Whatsapp:</p<strong> {{$pedido->whatsapp}} </p>
+						<p><strong>solicitação:</strong> {{$servico->quantidade}} {{$tipo->desc}} no {{$media->desc}} no valor de {{$pedido->valor}} </p>
+						<p><strong>Link / Comentário:</strong> {{$pedido->link}} </p>
 
-						<p>Feito em: {{$pedido->created_at}}</p>
-						<p>Status: {{$pedido->andamento}}</p>
+						<p><strong>Feito em:</strong> {{$pedido->created_at}}</p>
+						<p><strong>Status:</strong> <span class="
+
+                              @if($pedido->andamento == 'pending')
+                                label label-default
+                                  @elseif($pedido->andamento == 'approved')
+                                    label label-success
+                                  @elseif($pedido->andamento == 'in_process')
+                                    label label-primary
+                                  @elseif($pedido->andamento == 'in_mediation')
+                                    label label-info
+                                  @elseif($pedido->andamento == 'rejected')
+                                    label label-warning
+                                  @elseif($pedido->andamento == 'cancelled')
+                                    label label-danger
+                                  @elseif($pedido->andamento == 'refunded')
+                                    label label-danger
+                                   @else
+                                    label label-danger
+                              @endif
+
+                              ">Estado</span></p>
 
 					</div> 
 			</div>
