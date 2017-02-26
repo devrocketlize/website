@@ -72,7 +72,7 @@
 
 <div class="container">
 	<div class="row">
-	Voltar
+	<a href="/home">Voltar</a>
 		<div class="col-md-12"></div>
 			@if(session()->has('message'))
 			    <div class="alert alert-success">
@@ -85,7 +85,16 @@
 						<h3 class="panel-title">Pedido: {{$servico->quantidade}} {{$tipo->desc}} no {{$media->desc}} </h3> 
 					</div> 
 
-					<div class="panel-body"> Panel content 
+					<div class="panel-body"> 
+
+						<p>Nome do Cliente: {{$pedido->nomeCliente}} </p>
+						<p>E-mail: {{$pedido->emailCliente}} </p>
+						<p>Whatsapp: {{$pedido->whatsapp}} </p>
+						<p>solicitação: {{$servico->quantidade}} {{$tipo->desc}} no {{$media->desc}} no valor de {{$pedido->valor}} </p>
+						<p>Link / Comentário: </p>
+
+						<p>Feito em: {{$pedido->created_at}}</p>
+						<p>Status: {{$pedido->andamento}}</p>
 
 					</div> 
 			</div>
