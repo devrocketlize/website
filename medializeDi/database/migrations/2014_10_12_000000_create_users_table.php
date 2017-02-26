@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddTimesToMytableTable extends Migration
+class CreateUsersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,13 @@ class AddTimesToMytableTable extends Migration
      */
     public function up()
     {
-        Schema::table('mytable', function (Blueprint $table) {
-            
+        Schema::create('users', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->string('password');
+            $table->rememberToken();
             $table->timestamps();
-
         });
     }
 
@@ -27,8 +30,6 @@ class AddTimesToMytableTable extends Migration
      */
     public function down()
     {
-        Schema::table('mytable', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('users');
     }
 }

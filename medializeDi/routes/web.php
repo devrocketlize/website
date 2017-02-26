@@ -1,5 +1,6 @@
 <?php
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,12 +36,7 @@ Route::get('/blog', function () {
     return view('home');
 });
 
-/*
- * Rotas para o flow de pagamento. Futuramente estas devem estar integradas na API.
- *
- * Todos os gateways de pagamento utilizados aqui são versões menores dos códigos
- * utilizados na SM Curtidas. As rotas e métodos de assinaturas foram removidos.
- */
+//ROTAS PAGAMENTO
 Route::post('pagar/{id}', 'PaymentController@checkout');
 
 Route::post('subscribe', 'NewsletterController@subscribe');
@@ -65,4 +61,26 @@ Route::group(['prefix' => 'mercadopago'], function () {
   Route::get('pagamento/{id}', ['as' => 'mercadopago.pagamento', 'uses' => 'Payment\MercadoPagoController@pagamento']);
   Route::get('retorno', ['as' => 'mercadopago.retorno', 'uses' => 'Payment\MercadoPagoController@retorno']);
   Route::get('notificacao', ['as' => 'mercadopago.notificacao', 'uses' => 'Payment\MercadoPagoController@notificacao'])->middleware('cors');
+});
+
+
+//ROTA NEWSLETTER
+
+Route::get('enviar', function() {
+
+  $users = App\User::all();
+
+  foreach ($users as $user) {
+
+     Mail::send('emails', [], function($message) use ($user) {
+
+          $message->from('paulo@smcurtidas.com', 'Paulo Candido');
+          $message->to($user->email, $user->name)->subject('Teste envio de E-mail');
+
+      });
+
+  }
+
+    return "Deu certo porra!!!";
+
 });
