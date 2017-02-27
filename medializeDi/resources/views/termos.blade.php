@@ -102,7 +102,7 @@
                 <div class="clear">
                 </div>
 
-                <p> <strong>2</strong> -  Os dados do <strong>comprador</strong> fornecidos para o pagamento são manipulados e tratados no gateway de pagamento <strong>PayPal</strong>, extremamente protegidos em ambiente seguro, a <strong>Rocketlize</strong> não captura ou grava em sua base de dados tais informações relacionadas ao cartão de seus clientes.
+                <p> <strong>2</strong> -  Os dados do <strong>comprador</strong> fornecidos para o pagamento são manipulados e tratados no gateway de pagamento <strong>Mercadopago</strong>, extremamente protegidos em ambiente seguro, a <strong>Rocketlize</strong> não captura ou grava em sua base de dados tais informações relacionadas ao cartão de seus clientes.
                 </p>
 
                 <div class="clear">
