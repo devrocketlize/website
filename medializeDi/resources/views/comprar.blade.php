@@ -106,6 +106,21 @@
                     </div>
                     @endif
 
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <div class="row">
+                                <div class="form-group col-md-12">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                          <input type="checkbox" class="form-check-input">
+                                          Check me out
+                                        </label>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- BILLING ADDRESS -->
                 </div>
                 <!-- END: ADDRESS FORM -->
