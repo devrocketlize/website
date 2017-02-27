@@ -76,6 +76,9 @@ Route::group(['middleware' => 'auth'], function () {
 
 });
 
+Route::get('layoutEmail', function () {
+    return view('emails');
+});
 
 Auth::routes();
 Route::get('/home', 'HomeController@index');
