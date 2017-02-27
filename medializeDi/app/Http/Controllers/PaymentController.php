@@ -34,6 +34,7 @@ class PaymentController extends Controller
     $pedido->nomeCliente = $request->nome.' '.$request->sobrenome;
     $pedido->emailCliente = $request->email;
     $pedido->link = $request->link;
+    $pedido->comentario = $request->comentario;
     $pedido->whatsapp = $request->whatsapp;
     $pedido->andamento = 'pending';
 

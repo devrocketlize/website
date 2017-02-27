@@ -446,8 +446,6 @@
         <script src="{{ url('assets/plugins/revo-slider/js/extensions/revolution.extension.slideanims.min.js')}}" type="text/javascript"></script>
         <script src="{{ url('assets/plugins/revo-slider/js/extensions/revolution.extension.layeranimation.min.js')}}" type="text/javascript"></script>
         <script src="{{ url('assets/plugins/revo-slider/js/extensions/revolution.extension.navigation.min.js')}}" type="text/javascript"></script>
-        <script src="{{ url('assets/plugins/revo-slider/js/extensions/revolution.extension.video.min.js')}}" type="text/javascript"></script>
-        <script src="{{ url('assets/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js')}}" type="text/javascript"></script>
         <script src="{{ url('assets/plugins/owl-carousel/owl.carousel.min.js')}}" type="text/javascript"></script>
         <script src="{{ url('assets/plugins/counterup/jquery.waypoints.min.js')}}" type="text/javascript"></script>
         <script src="{{ url('assets/plugins/counterup/jquery.counterup.min.js')}}" type="text/javascript"></script>
@@ -455,8 +453,10 @@
         <script src="{{ url('assets/plugins/smooth-scroll/jquery.smooth-scroll.js')}}" type="text/javascript"></script>
         <script src="{{ url('assets/plugins/slider-for-bootstrap/js/bootstrap-slider.js')}}" type="text/javascript"></script>
         <!-- END: LAYOUT PLUGINS -->
+        
         <!-- BEGIN: THEME SCRIPTS -->
         <script src="{{ url('assets/base/js/components.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/base/js/jquery.validate.js')}}" type="text/javascript"></script>
         <script src="{{ url('assets/base/js/components-shop.js')}}" type="text/javascript"></script>
         <script src="{{ url('assets/base/js/app.js')}}" type="text/javascript"></script>
         <script>

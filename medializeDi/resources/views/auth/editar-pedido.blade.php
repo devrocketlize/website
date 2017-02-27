@@ -91,7 +91,8 @@
 						<p><strong>E-mail:</strong> {{$pedido->emailCliente}} </p>
 						<p><strong>Whatsapp:</strong> {{$pedido->whatsapp}} </p>
 						<p><strong>Solicitação:</strong> {{$servico->quantidade}} {{$tipo->desc}} no {{$media->desc}} no valor de {{$pedido->valor}} </p>
-						<p><strong>Link / Comentário:</strong> {{$pedido->link}} </p>
+						<p><strong>Link:</strong> {{$pedido->link}} </p>
+						<p><strong>Comentário:</strong> {{$pedido->comentario}} </p>
 
 						<p><strong>Feito em:</strong> {{$pedido->created_at}}</p>
 						<p><strong>Status:</strong> <span class="
