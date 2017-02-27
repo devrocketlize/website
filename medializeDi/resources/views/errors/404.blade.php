@@ -1,1 +1,5 @@
-Página não encontrada!!!
+<?php
+
+header('Location: https://rocketlize.com');
+
+?>
