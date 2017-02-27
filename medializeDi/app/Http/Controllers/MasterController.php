@@ -75,7 +75,9 @@ class MasterController extends Controller
 
     public function termos(){
 
-      return view('termos');
+      $medias = Media::all();
+
+      return view('termos', compact('medias'));
     }
 
 }
