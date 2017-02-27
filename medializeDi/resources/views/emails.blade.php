@@ -543,7 +543,7 @@ Sizes: [
 																		<table border="0" cellpadding="0" cellspacing="0" width="210" style="max-width:100%;">
 																			<tr>
 																				<td align="left" class="textContent">
-																					<img width="30%" src="https://rocketlize.com/assets/base/iconsmail/youtube.svg" alt="YouTube" title="YouTube">
+																					<img width="25%" src="https://rocketlize.com/assets/base/iconsmail/youtube.svg" alt="YouTube" title="YouTube">
 																				</td>
 																			</tr>
 																		</table>
@@ -643,7 +643,7 @@ Sizes: [
 																		<table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="210" style="max-width:100%;">
 																			<tr>
 																				<td align="left" class="textContent">
-																					<img width="20%" src="https://rocketlize.com/assets/base/iconsmail/soundcloud.svg" alt="SoundCloud" title="SoundCloud">
+																					<img width="40%" src="https://rocketlize.com/assets/base/iconsmail/soundcloud.svg" alt="SoundCloud" title="SoundCloud">
 																				</td>
 																			</tr>
 																		</table>
@@ -723,7 +723,7 @@ Sizes: [
 																		<table border="0" cellpadding="0" cellspacing="0" width="90" style="max-width:100%;">
 																			<tr>
 																				<td align="left" class="textContent">
-																					<img width="20%" src="https://rocketlize.com/assets/base/iconsmail/twitter.svg" alt="Twitter" title="Twitter">
+																					<img width="40%" src="https://rocketlize.com/assets/base/iconsmail/twitter.svg" alt="Twitter" title="Twitter">
 																				</td>
 																			</tr>
 																		</table>
