@@ -48,8 +48,8 @@ class NewsletterController extends Controller
 
 		     Mail::send('emails', [], function($message) use ($user) {
 
-		          $message->from('newsletter@rocketlize.com', 'Novidades da rocketlize!');
-		          $message->to($user->email, $user->name)->subject('Teste envio de E-mail');
+		          $message->from('newsletter@rocketlize.com', 'Novidades da Rocketlize!');
+		          $message->to($user->email, $user->name)->subject('Novidades da Rocketlize! Estamos de volta!');
 
 		      });
 
