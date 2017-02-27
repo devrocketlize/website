@@ -41,7 +41,7 @@
 
 <div class="c-content-box c-size-lg">
     <div class="container">
-        <form action="/pagar/{{ $servico->id }}" method="POST" class="c-shop-form-1">
+        <form action="/pagar/{{ $servico->id }}" method="POST" id="buyerForm" class="c-shop-form-1">
             {{ csrf_field() }}
 
             <input type="hidden" name="pagamento" value="mercadopago">
@@ -59,10 +59,10 @@
                             <div class="row">
                                 <div class="form-group col-md-6">
                                     <label class="control-label">Nome</label>
-                                    <input type="text" name="nome" class="form-control c-square c-theme" placeholder="Nome"> </div>
+                                    <input type="text" name="nome" id="nome" class="form-control c-square c-theme" placeholder="Nome"> </div>
                                 <div class="col-md-6">
                                     <label class="control-label">Sobrenome</label>
-                                    <input type="text" name="sobrenome" class="form-control c-square c-theme" placeholder="Sobrenome"> </div>
+                                    <input type="text" name="sobrenome" id="sobrenome" class="form-control c-square c-theme" placeholder="Sobrenome"> </div>
                             </div>
                         </div>
                     </div>
