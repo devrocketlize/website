@@ -6,9 +6,7 @@
 
 @section('conteudo')
 <section class="sectionUn">
-    <div id="logoCenter">
-        <img src="https://rocketlize.com/assets/base/img/layout/logos/logo-3.png">
-    </div>
+
     <br />
     <div class="container">
         <div class="row">
@@ -24,14 +22,8 @@
                   </h2>
                   <h2>:-(</h2>
                  </hgroup>
-                 <div class="well">
-                    
-                      
-                         <a href="/" class="btn btn-info" type="submit">Voltar</a>
-                      
-                     
-                 </div>
                 
+                         <a href="/" class="btn btn-info" type="submit">Voltar para o site</a>
                 </div>
             </div>
     </div>
