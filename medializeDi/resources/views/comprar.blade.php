@@ -187,7 +187,8 @@
                                     </p>
                                 </div>
                             </li>
-                            <li class="row">
+                            
+                            <!--li class="row">
                                 <div class="col-md-12">
                                     <div class="c-radio-list">
                                         <div class="c-radio">
@@ -196,7 +197,7 @@
                                             <img class="img-responsive" width="250" src="https://www.paypalobjects.com/webstatic/mktg/Logo/AM_mc_vs_ms_ae_UK.png"> </div>
                                     </div>
                                 </div>
-                            </li>
+                            </li-->
                            
                             <li class="row">
                                 <div class="form-group col-md-12" role="group">

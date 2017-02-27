@@ -383,7 +383,8 @@
                                    
                                 </ul>
                             </div>
-                           <p class="c-about">Siga-nos!</p>
+                            <p class="c-about">Atendimento no Skype: rocketlize@outllok.com </p>
+                           <!--p class="c-about">Siga-nos!</p>
                             <ul class="c-socials">
                                 <li>
                                     <a href="#">
@@ -396,7 +397,7 @@
                                     </a>
                                 </li>
                                 
-                            </ul>
+                            </ul-->
                             <p class="c-about">© 2014 - 2017 Rocketlize - Todos os direitos reservados</p>
                         </div>
                         <div class="col-md-6 c-footer-4-p-left">
@@ -531,7 +532,7 @@
                         //$(".form-process").hide();
                         //$("#quick-contact-form style").remove();
                         
-                        $(".result").append( "Mensagem enviada com sucesso!" );
+                        $(".result").append( '<div class="alert alert-info alert-dismissible" role="alert"><strong>Mensagem enviada com sucesso!</strong></div>' );
                         $(".result").show();
 
                         $("#contactForm").prop('disabled', true);
