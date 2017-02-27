@@ -376,7 +376,7 @@
                             <div class="c-links">
                                 <ul class="c-nav">
                                     <li>
-                                        <a class="c-active c-theme-border c-theme-font" href="#">Termos de uso e Políticas de privacidade</a>
+                                        <a class="c-active c-theme-border c-theme-font" href="/termos-e-politicas">Termos de uso e Políticas de privacidade</a>
                                     </li>
                                    
                                 </ul>
