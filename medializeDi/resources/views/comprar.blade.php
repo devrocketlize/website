@@ -112,7 +112,7 @@
                                 <div class="form-group col-md-12">
                                     <div class="form-check">
                                         <label class="form-check-label">
-                                          <input type="checkbox" id="termos" name="termos" class="form-check-input">
+                                          <input type="checkbox" id="termos" name="termos" checked="true" class="form-check-input">
                                           Eu li e concordo com os <a href="#">Termos de uso e Políticas de pricacidade</a> 
                                         </label>
                                       </div>
