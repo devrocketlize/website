@@ -73,4 +73,9 @@ class MasterController extends Controller
       }
     }
 
+    public function termos(){
+
+      return view('termos');
+    }
+
 }

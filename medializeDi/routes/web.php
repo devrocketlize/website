@@ -59,6 +59,8 @@ Route::group(['prefix' => 'mercadopago'], function () {
   Route::get('notificacao', ['as' => 'mercadopago.notificacao', 'uses' => 'Payment\MercadoPagoController@notificacao'])->middleware('cors');
 });
 
+Route::get('termos-e-politicas', 'MasterController@termos');
+
 
 //ROTA NEWSLETTER E ADMINISTRATIVA
 

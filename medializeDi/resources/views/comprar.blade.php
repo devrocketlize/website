@@ -1,7 +1,7 @@
 @extends('layouts/master')
 
 @section('titulo')
-     Efetuar pedido - Teste
+     Efetuar pagamento -  {{ $servico->tiposervico->desc }} no {{ $servico->tiposervico->media->desc }}
 @stop
 
 @section('conteudo')

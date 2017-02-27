@@ -371,9 +371,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 c-footer-4-p-right">
-                            <div class="c-content-title-1">
-                               <img src="https://placeholdit.imgix.net/~text?txtsize=14&txt=180%C3%9755&w=180&h=55" alt="Rocketlize" title="Rocketlize">
-                            </div>
+                           
                             <p class="c-about"> <strong>Rocketlize</strong> é uma empresa especializada em marketing digital para agências e (ou) entusiastas que almejam engajamento e destaque em mídias sociais como <strong>Instagram</strong>, <strong>Facebook</strong>, <strong>YouTube</strong>, <strong>Twitter</strong> e <strong>SoundCloud</strong>. </p>
                             <div class="c-links">
                                 <ul class="c-nav">
@@ -383,7 +381,7 @@
                                    
                                 </ul>
                             </div>
-                            <p class="c-about">Atendimento no Skype: rocketlize@outllok.com </p>
+                            <strong><p class="c-about">Atendimento no Skype: rocketlize@outllok.com </p></strong>
                            <!--p class="c-about">Siga-nos!</p>
                             <ul class="c-socials">
                                 <li>
