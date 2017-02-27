@@ -256,20 +256,8 @@
                     sobrenome: {
                         required: true,
                         minlength: 4
-                    },
-                    
-                    email: {
-                        required: true,
-                        email: true
-                    },
-
-                    termos: {
-                       required: true  
                     }
                 }
-                
-             
-            }
                 
             });
         </script>
