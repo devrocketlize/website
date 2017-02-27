@@ -451,7 +451,7 @@ Sizes: [
 																			<tr>
 																				<td align="left" class="textContent">
 																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:10px;text-align:left;">Instagram</h3>
-																					<img src="https://rocketlize.com/assets/base/iconsmail/instagram.svg" alt="Instagram" title="Instagram">
+																					<img width="20%" src="https://rocketlize.com/assets/base/iconsmail/instagram.svg" alt="Instagram" title="Instagram">
 																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;margin-top:10px;color:#5F5F5F;line-height:135%;">Seguidores brasileiros reais, curtidas, visualizações e comentários. Bombe seu instagram com fama e status!</div>
 																				</td>
 																			</tr>
@@ -462,7 +462,7 @@ Sizes: [
 																			<tr>
 																				<td align="left" class="textContent">
 																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:10px;text-align:left;">Facebook</h3>
-																					<img src="https://rocketlize.com/assets/base/iconsmail/facebook.svg" alt="Facebook" title="Facebook">
+																					<img width="20%" src="https://rocketlize.com/assets/base/iconsmail/facebook.svg" alt="Facebook" title="Facebook">
 																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;margin-top:10px;color:#5F5F5F;line-height:135%;">Curtidas para sua fanpage, seus posts e visualizações para seus vídeos.</div>
 																				</td>
 																			</tr>
