@@ -113,7 +113,22 @@
                                     <div class="form-check">
                                         <label class="form-check-label">
                                           <input type="checkbox" id="termos" name="termos" checked="true" class="form-check-input">
-                                          Eu li e concordo com os <a href="#">Termos de uso e Políticas de pricacidade</a> 
+                                          Eu li e concordo com os <a href="#">Termos de uso e Políticas de pricacidade.</a> 
+                                        </label>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <div class="row">
+                                <div class="form-group col-md-12">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                          <input type="checkbox" id="news" name="news" checked="true" class="form-check-input">
+                                         Quero receber novidades e ofertas incríveis em meu endereço de e-mail.
                                         </label>
                                       </div>
                                 </div>
