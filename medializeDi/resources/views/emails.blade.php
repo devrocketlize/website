@@ -250,7 +250,7 @@ Sizes: [
 																			<tr>
 																				<td align="left" class="textContent">
 																					<div style="font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#828282;text-align:center;line-height:120%;">
-																						The introduction of your message preview goes here. Try to make it short.
+																						Newsletter com novidades e ofertas Rocket...
 																					</div>
 																				</td>
 																			</tr>
