@@ -112,8 +112,8 @@
                                 <div class="form-group col-md-12">
                                     <div class="form-check">
                                         <label class="form-check-label">
-                                          <input type="checkbox" class="form-check-input">
-                                          Check me out
+                                          <input type="checkbox" id="termos" name="termos" class="form-check-input">
+                                          Eu li e concordo com os <a href="#">Termos de uso e Políticas de pricacidade</a> 
                                         </label>
                                       </div>
                                 </div>
@@ -182,17 +182,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="row c-margin-b-15 c-margin-t-15">
-                                <div class="form-group col-md-12">
-                                    <div class="c-checkbox">
-                                        <input type="checkbox" name="termos" id="termos" class="c-check">
-                                        <label for="checkbox1-11">
-                                            <span class="inc"></span>
-                                            <span class="check"></span>
-                                            <input type="checkbox" name="termos" class="box"/> Eu li e concordo com os <a href="#">Termos de uso e Políticas de pricacidade</a> </label>
-                                    </div>
-                                </div>
-                            </li>
+                           
                             <li class="row">
                                 <div class="form-group col-md-12" role="group">
                                     <input type="submit" class="btn btn-lg c-theme-btn c-btn-square c-btn-uppercase c-btn-bold" value="Pagar" />
