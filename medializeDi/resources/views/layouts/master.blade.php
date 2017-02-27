@@ -167,7 +167,7 @@
                                    
                                 </ul>
                             </div>
-                            <strong><p class="c-about">Atendimento no Skype: rocketlize@outllok.com </p></strong>
+                            <strong><p class="c-about">Atendimento no Skype: rocketlize@outlook.com </p></strong>
                            <!--p class="c-about">Siga-nos!</p>
                             <ul class="c-socials">
                                 <li>
