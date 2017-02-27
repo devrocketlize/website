@@ -19,18 +19,17 @@ class PaymentController extends Controller
     if($servico == null)
       abort(400);
 
-    //Testa o que vem do request news
-    $teste = $request->news;
+   //Cadastra comprador na Newsletter
 
-    dd($teste);
+    if($request->news != null){
 
-    //Cadastra comprador na Newsletter
+      $email = new Newsletter;
+      $email->FIELD1 = trim(strip_tags($request->input('email')));
 
-    $email = new Newsletter;
-    $email->FIELD1 = trim(strip_tags($request->input('email')));
+      $email->save();
 
-    $email->save();
-
+    }
+    
     // Cria Pedido
     $pedido = new Pedido();
     $pedido->servico_id = $servico->id;
