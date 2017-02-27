@@ -39,6 +39,11 @@
 			.pAlter p{
 				color: red !important;
 			}
+
+            .error label {
+
+                color: red !important;
+            }
         </style>
         @yield('token')
      </head>
