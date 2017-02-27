@@ -256,6 +256,11 @@
                     sobrenome: {
                         required: true,
                         minlength: 4
+                    },
+
+                    email:{
+                        required: true,
+                        email: true
                     }
                 }
                 
