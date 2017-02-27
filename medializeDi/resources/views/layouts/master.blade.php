@@ -250,18 +250,21 @@
                     
                     nome: {
                         required: true,
-                        minlength: 4
+                        minlength: 4,
+                        maxlength: 15
                     },
 
                     sobrenome: {
                         required: true,
-                        minlength: 4
+                        minlength: 4,
+                        maxlength: 15
                     },
 
                     email:{
                         required: true,
                         email: true
-                    }
+                    },
+                    termos:{required: true}
                 }
                 
             });
