@@ -113,7 +113,7 @@
                                     <div class="form-check">
                                         <label class="form-check-label">
                                           <input type="checkbox" id="termos" name="termos" checked="true" class="form-check-input">
-                                          Eu li e concordo com os <a href="#">Termos de uso e Políticas de pricacidade.</a> 
+                                          Eu li e concordo com os <a href="/termos-e-politicas">Termos de uso e Políticas de pricacidade.</a> 
                                         </label>
                                       </div>
                                 </div>
