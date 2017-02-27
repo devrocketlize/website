@@ -62,6 +62,13 @@
             </script>
         <!--End of Tawk.to Script-->
 
+        <style type="text/css">
+            .error {
+
+                color: red !important;
+            }
+        </style>
+
     <body class="c-layout-header-fixed c-layout-header-mobile-fixed">
         <!-- BEGIN: LAYOUT/HEADERS/HEADER-1 -->
         <!-- BEGIN: HEADER -->

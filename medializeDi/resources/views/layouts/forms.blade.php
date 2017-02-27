@@ -40,10 +40,7 @@
 				color: red !important;
 			}
 
-            #nome-error {
-
-                color: red !important;
-            }
+            
         </style>
         @yield('token')
      </head>
