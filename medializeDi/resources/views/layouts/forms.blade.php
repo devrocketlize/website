@@ -40,7 +40,7 @@
 				color: red !important;
 			}
 
-            .error label {
+            #nome-error {
 
                 color: red !important;
             }
