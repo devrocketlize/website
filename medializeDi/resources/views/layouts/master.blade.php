@@ -256,8 +256,27 @@
                     sobrenome: {
                         required: true,
                         minlength: 4
+                    },
+                    
+                    email: {
+                        required: true,
+                        email: true
+                    },
+
+                    termos: {
+                       required: true  
                     }
                 }
+
+                messages: {
+                nome: "Por favor, forneça no mínimo 4 caracteres",
+                sobrenome: "Por favor, forneça no mínimo 4 caracteres",
+                email: "Por favor, forneça um email válido",
+                termos: "É necessário aceitar nossos termos"
+                }
+                
+             
+            }
                 
             });
         </script>

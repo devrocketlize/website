@@ -170,7 +170,7 @@
                             <li class="row c-margin-b-15 c-margin-t-15">
                                 <div class="form-group col-md-12">
                                     <div class="c-checkbox">
-                                        <input type="checkbox" id="checkbox1-11" class="c-check">
+                                        <input type="checkbox" name="termos" id="termos" class="c-check">
                                         <label for="checkbox1-11">
                                             <span class="inc"></span>
                                             <span class="check"></span>
