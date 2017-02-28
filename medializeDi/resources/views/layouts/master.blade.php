@@ -45,8 +45,7 @@
         <link href="{{ url('assets/base/css/themes/default.css')}}" rel="stylesheet" id="style_theme" type="text/css" />
         <link href="{{ url('assets/base/css/custom.css')}}" rel="stylesheet" type="text/css" />
         <!-- END THEME STYLES -->
-        <link rel="shortcut icon" href="{{ url('assets/favicon.ico')}}" /> 
-        </head>
+        <link rel="shortcut icon" href="{{ url('assets/favicon.ico')}}" />
 
         <!--Start of Tawk.to Script-->
             <script type="text/javascript">
@@ -67,7 +66,15 @@
 
                 color: red !important;
             }
+
+            .propColor{
+
+                color: #fff !important;
+
+            }
         </style>
+
+    </head>
 
     <body class="c-layout-header-fixed c-layout-header-mobile-fixed">
         <!-- BEGIN: LAYOUT/HEADERS/HEADER-1 -->
@@ -167,7 +174,13 @@
                                    
                                 </ul>
                             </div>
-                            <strong><p class="c-about">Atendimento no Skype: rocketlize@outlook.com </p></strong>
+                            
+                            <div itemscope itemtype="http://schema.org/Person">
+                               
+                               <p class="propColor" itemprop="email" href="mailto:rocketlize@outlook.com">Atendimento no Skype: rocketlize@outlook.com </p>
+
+                            </div>
+
                            <!--p class="c-about">Siga-nos!</p>
                             <ul class="c-socials">
                                 <li>

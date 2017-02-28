@@ -14,7 +14,7 @@
         <!-- BEGIN GLOBAL MANDATORY STYLES -->
         
         <link href="assets/base/css/googlefonts.css" rel='stylesheet' type='text/css'>
-        
+
         <link href="{{ url('assets/plugins/socicon/socicon.css')}}" rel="stylesheet" type="text/css" />
         <link href="{{ url('assets/plugins/bootstrap-social/bootstrap-social.css')}}" rel="stylesheet" type="text/css" />
         <link href="{{ url('assets/plugins/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css" />
@@ -44,9 +44,7 @@
         <!-- END THEME STYLES -->
         <link rel="shortcut icon" href="{{ url('assets/favicon.ico')}}" /> 
 
-        </head>
-
-        <!--Start of Tawk.to Script-->
+    <!--Start of Tawk.to Script-->
             <script type="text/javascript">
             var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
             (function(){
@@ -58,7 +56,19 @@
             s0.parentNode.insertBefore(s1,s0);
             })();
             </script>
-        <!--End of Tawk.to Script-->
+    <!--End of Tawk.to Script-->
+
+        <style type="text/css">
+
+            .propColor{
+
+                color: #fff !important;
+
+            }
+
+        </style>
+
+    </head>
 
     <body class="c-layout-header-fixed c-layout-header-mobile-fixed">
         <!-- BEGIN: LAYOUT/HEADERS/HEADER-1 -->
@@ -384,8 +394,7 @@
 
                             <div itemscope itemtype="http://schema.org/Person">
                                
-                               <p itemprop="company">Rocketlize</p>
-                               <p itemprop="email" href="mailto:rocketlize@outlook.com">Atendimento no Skype: rocketlize@outlook.com </p>
+                               <p class="propColor" itemprop="email" href="mailto:rocketlize@outlook.com">Atendimento no Skype: rocketlize@outlook.com </p>
 
                             </div>
 
