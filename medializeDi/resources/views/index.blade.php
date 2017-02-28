@@ -404,8 +404,7 @@
                             <div itemscope itemtype="http://schema.org/Person">
                                
                                <p itemprop="email" href="mailto:rocketlize@outlook.com"><img crossorigin="propColor" src="https://rocketlize.com/assets/base/img/img-contato.png" title="Atendimento" alt="Atendimento"> </p>
-                               <p class="propColor" itemprop="email" href="mailto:rocketlize@outlook.com"> </p>
-
+                               
                             </div>
 
                             <div>
