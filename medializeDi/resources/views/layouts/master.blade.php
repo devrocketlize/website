@@ -69,7 +69,7 @@
 
             .propColor{
 
-                margin-left: -8px !important;
+                color: #fff;
 
             }
             
@@ -186,12 +186,10 @@
                                 </ul>
                             </div>
                             
+                            
                             <div itemscope itemtype="http://schema.org/Person">
                                
-                               <p itemprop="email" href="mailto:rocketlize@outlook.com"><span>Atendimento no Skype: rocketlize@outlook.com</span></p>
-
-                               <p>foo@bar<span class="hide">null</span>.baz</p>
-
+                               <p class="propColor" itemprop="email" href="mailto:rocketlize@outlook.com">Atendimento no Skype: rocketlize@outlook<span class="hide">null</span>.com</p>
 
                             </div>
 
