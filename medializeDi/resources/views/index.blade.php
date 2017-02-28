@@ -142,7 +142,7 @@
                         <ul>
                             <!--BEGIN: SLIDE #1 -->
                             <li data-transition="fade" data-slotamount="1" data-masterspeed="1000">
-                                <img alt="" src="assets/base/img/content/backgrounds/bg_insta.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+                                <img alt="Instagram" title="Instagram" src="assets/base/img/content/backgrounds/bg_insta.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
                                 <div class="tp-caption customin customout" data-x="center" data-y="center" data-hoffset="" data-voffset="-50" data-speed="500" data-start="1000" data-transform_idle="o:1;" data-transform_in="rX:0.5;scaleX:0.75;scaleY:0.75;o:0;s:500;e:Back.easeInOut;"
                                 data-transform_out="rX:0.5;scaleX:0.75;scaleY:0.75;o:0;s:500;e:Back.easeInOut;" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600">
                                     <h1 class="c-main-title-circle c-font-48 c-font-bold c-font-center c-font-uppercase c-font-white c-block"> COMPRE CURTIDAS, SEGUIDORES BRASILEIROS REAIS, <br /> VISUALIZAÇÕES E COMENTÁRIOS NO INSTAGRAM </h1>
@@ -155,7 +155,7 @@
                             <!--END -->
                             <!--BEGIN: SLIDE #2 -->
                             <li data-transition="fade" data-slotamount="1" data-masterspeed="1000">
-                                <img alt="" src="assets/base/img/content/backgrounds/bg_face.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+                                <img alt="Facebook" title="Facebook" src="assets/base/img/content/backgrounds/bg_face.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
                                 <div class="tp-caption customin customout" data-x="center" data-y="center" data-hoffset="" data-voffset="-50" data-speed="500" data-start="1000" data-transform_idle="o:1;" data-transform_in="rX:0.5;scaleX:0.75;scaleY:0.75;o:0;s:500;e:Back.easeInOut;"
                                 data-transform_out="rX:0.5;scaleX:0.75;scaleY:0.75;o:0;s:600;e:Back.easeInOut;" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600">
                                     <h3 class="c-main-title-circle c-font-48 c-font-bold c-font-center c-font-uppercase c-font-white c-block"> SOMOS ESPECIALIZADOS
@@ -170,7 +170,7 @@
                             <!--BEGIN: SLIDE #3 -->
                             <li data-transition="fade" data-slotamount="1" data-masterspeed="700" data-delay="6000" data-thumb="">
                                 <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                                <img alt="" src="assets/base/img/content/backgrounds/bg-40.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="visible-xs" />
+                                <img alt="YouTube" title="YouTube" src="assets/base/img/content/backgrounds/bg-40.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="visible-xs" />
                                 <div class="rs-background-video-layer" data-forcerewind="on" data-volume="mute" data-videowidth="100%" data-videoheight="100%" data-videomp4="assets/base/media/video/video-2.mp4" data-videopreload="preload" data-videoloop="none"
                                 data-forceCover="1" data-aspectratio="16:9" data-autoplay="true" data-autoplayonlyfirsttime="false" data-nextslideatend="true"> </div>
                                 <div class="tp-caption customin customout" data-x="center" data-y="center" data-hoffset="" data-voffset="-30" data-speed="500" data-start="1000" data-transform_idle="o:1;" data-transform_in="rX:0.5;scaleX:0.75;scaleY:0.75;o:0;s:500;e:Back.easeInOut;"
@@ -231,7 +231,7 @@
                                         <div class="c-line-left c-bg-blue-3 c-theme-bg"></div>
                                     </div>
                                     <div class="c-text wow animate fadeInLeft">Primar pela segurança de seus dados fornecidos e entregar serviços de qualidade sem precisar de senha são alguns dos nossos diferenciais.</div>
-                                    <img class="c-photo img-responsive wow animate fadeInUp" width="420" alt="" src="../assets/base/img/layout/home/medias.jpg" /> </div>
+                                    <img class="c-photo img-responsive wow animate fadeInUp" width="420" alt="Medias" title="Medias" src="../assets/base/img/layout/home/medias.jpg" /> </div>
                             </div>
                             <div class="col-md-5">
                                 <div class="c-content-accordion-1 c-theme wow animate fadeInRight">
@@ -378,7 +378,15 @@
                                    
                                 </ul>
                             </div>
-                            <strong><p class="c-about">Atendimento no Skype: rocketlize@outlook.com </p></strong>
+
+                            <div itemscope itemtype="http://schema.org/Person">
+                               
+                               <p itemprop="company">Rocketlize</p>
+                               <p itemprop="email" href="mailto:rocketlize@outlook.com">Atendimento no Skype: rocketlize@outlook.com </p>
+
+                            </div>
+
+                            <strong><p class="c-about"></p></strong>
                            <!--p class="c-about">Siga-nos!</p>
                             <ul class="c-socials">
                                 <li>
