@@ -292,7 +292,7 @@
             @include('layouts/cards')
             
             <!-- BEGIN: CONTENT/TESTIMONIALS/TESTIMONIALS-3 -->
-            <div class="c-content-box c-size-lg c-bg-parallax" style="background-image: url(../assets/base/img/layout/home/clients.jpg)">
+            <div id="clientsgIm" class="c-content-box c-size-lg c-bg-parallax" >
                 <div class="container">
                     <!-- Begin: testimonials 1 component -->
                     <div class="c-content-testimonials-1" data-slider="owl">
