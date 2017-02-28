@@ -41,7 +41,7 @@
         <link href="{{ url('assets/base/css/themes/default.css')}}" rel="stylesheet" id="style_theme" type="text/css" />
         <link href="{{ url('assets/base/css/custom.css')}}" rel="stylesheet" type="text/css" />
         <!-- END THEME STYLES -->
-        <link rel="shortcut icon" href="{{ asset('favicon.ico')}}" /> </head>
+        <link rel="shortcut icon" href="{{ asset('/favicon.ico')}}" /> </head>
 
         <!--Start of Tawk.to Script-->
             <script type="text/javascript">
