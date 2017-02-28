@@ -69,7 +69,7 @@
 
             .propColor{
 
-                color: #fff !important;
+                margin-left: -8px !important;
 
             }
         </style>
@@ -185,7 +185,7 @@
                             
                             <div itemscope itemtype="http://schema.org/Person">
                                
-                               <p class="propColor" itemprop="email" href="mailto:rocketlize@outlook.com"><img src="https://rocketlize.com/assets/base/img/img-contato.png" title="Atendimento" alt="Atendimento"> </p>
+                               <p itemprop="email" href="mailto:rocketlize@outlook.com"><img class="propColor" src="https://rocketlize.com/assets/base/img/img-contato.png" title="Atendimento" alt="Atendimento"> </p>
 
                             </div>
                             <div>
