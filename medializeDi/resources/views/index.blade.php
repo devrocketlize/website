@@ -66,6 +66,8 @@
 
             }
 
+            p span.hide { display:none; }
+
         </style>
 
     </head>
@@ -404,6 +406,8 @@
                             <div itemscope itemtype="http://schema.org/Person">
                                
                                <p itemprop="email" href="mailto:rocketlize@outlook.com"><span>Atendimento no Skype: rocketlize@outlook.com</span></p>
+
+                               <p>foo@bar<span class="hide">null</span>.baz</p>
 
                             </div>
 
