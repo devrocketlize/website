@@ -46,28 +46,7 @@
                         <p class="c-message c-center c-font-white c-font-20 c-font-sbold">
                             <i class="fa fa-check"></i> Obrigado pela confiança, seu pedido foi recebido! </p>
                     </div>
-                    <!-- BEGIN: ORDER SUMMARY -->
-                    <div class="row c-order-summary c-center">
-                        <ul class="c-list-inline list-inline">
-                            <li>
-                                <h3>Código de referência</h3>
-                                <p>HZ142Wy12V65745A8G</p>
-                            </li>
-                            <li>
-                                <h3>Data da compra</h3>
-                                <p>07/02/2017</p>
-                            </li>
-                            <li>
-                                <h3>Valor pago</h3>
-                                <p>$00.00</p>
-                            </li>
-                            <li>
-                                <h3>Gateway de pagamento</h3>
-                                <p>Mercadopago</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- END: ORDER SUMMARY -->
+                    
                     <!-- BEGIN: BANK DETAILS -->
                     <div class="c-bank-details c-margin-t-30 c-margin-b-30">
                         <p class="c-margin-b-20">Nossa equipe do setor de processamento entrará em ação para entregar o serviço <strong> mais rápido possível</strong> ou até o previsto estipulado na tabela de preços.</p>
