@@ -81,19 +81,19 @@ class PaymentController extends Controller
 
   public function processo($slug){
 
-      $media = Media::all();
+      $medias = Media::all();
       $pedido = Pedido::where('servico_referencia', '=', $slug);
 
-      return view('compra-processo', compact('pedido', 'media'));
+      return view('compra-processo', compact('pedido', 'medias'));
 
   }
 
   public function completo($slug){
 
-      $media = Media::all();
+      $medias = Media::all();
       $pedido = Pedido::where('servico_referencia', '=', $slug);
 
-      return view('compra-sucesso', compact('pedido', 'media'));
+      return view('compra-sucesso', compact('pedido', 'medias'));
 
   }
 
