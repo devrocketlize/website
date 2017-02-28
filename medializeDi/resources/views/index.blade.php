@@ -6,13 +6,11 @@
     <!-- BEGIN HEAD -->
     <head>
         <meta charset="utf-8" />
-        <title>Rocketlize - Marketing para redes sociais</title>
+        <title>Rocketlize - Comprar curtidas para Instagram, Facebook, YouTube, SoundCloud e Twitter</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-        <meta content="" name="description" />
-        <meta content="" name="author" />
-        <meta name="robots" content="noindex, nofollow">
+        <meta content="Rocketlize, compre curtidas e seguidores para Instagram, curtidas para Facebook e muito mais." name="description" />
         <!-- BEGIN GLOBAL MANDATORY STYLES -->
         <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&amp;subset=all' rel='stylesheet' type='text/css'>
 

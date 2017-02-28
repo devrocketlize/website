@@ -34,7 +34,6 @@ class PaymentController extends Controller
     $pedido = new Pedido();
     $pedido->servico_id = $servico->id;
     $pedido->servico_linkBtn = $servico->linkBtn;
-    $pedido->servico_referencia = $servico->referencia;
     $pedido->valor = $servico->preco;
     $pedido->nomeCliente = strlen($request->nome) < 5 ? 'Cliente Pedido Serviço ' . $servico->id : $request->nome.' '.$request->sobrenome;
     $pedido->emailCliente = strlen($request->email) < 5 ? 'cliente@rocketlize.com' : $request->email;

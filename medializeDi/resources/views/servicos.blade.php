@@ -58,7 +58,7 @@
 
 		                    <li class="list-group-item">Garantimos reembolso</li>
 
-		                    <li class="list-group-item">Parcelamos até em 12x</li>
+		                    <li class="list-group-item">Entre 1x e 12x no cartão</li>
 
 		                </ul>
 		                <div class="price-table-footer"> <a href="{{ url('/comprar-' . $tipo->link . '-' . $media->link . '/'. $servico->seo) }}" class="btn btn-lg c-btn-green c-btn-square c-btn-border-2x">COMPRAR</a> </div>
