@@ -80,7 +80,18 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('editar-pedido/{id}', 'HomeController@edit' );
     Route::post('atualizar-pedido/{id}', 'HomeController@update' );
 
+    //Contar inscritos
+      Route::get('contarInscritos', function () {
+          
+          $count = App\Newsletter::count();
+
+          return $count;
+
+      });)
+
 });
+
+
 
 Route::get('layoutEmail', function () {
     return view('emails');
