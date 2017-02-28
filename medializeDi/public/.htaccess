@@ -12,7 +12,7 @@
 
     # Force DNS Domain
 
-    RewriteCond %{HTTP_HOST} ^191\.6\.202\.101
+    RewriteCond %{HTTP_HOST} ^191.6.202.101
     RewriteRule (.*) https://rocketlize.com/$1 [R=301,L]
 
     # Libwww-perl
