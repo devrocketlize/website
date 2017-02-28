@@ -29,7 +29,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="c-image c-overlay-object" data-height="height" style="background-image: url(../assets/base/img/layout/home/segbrreaisinsta.jpg)"></div>
+                                <div id="instaImageCard" class="c-image c-overlay-object" data-height="height" ></div>
                             </div>
                         </div>
                     </div>
@@ -58,7 +58,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="c-image c-overlay-object" data-height="height" style="background-image: url(../assets/base/img/layout/home/facecurfan.jpg)"></div>
+                                <div id="faceImageCard" class="c-image c-overlay-object" data-height="height"></div>
                             </div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="c-image c-overlay-object" data-height="height" style="background-image: url(../assets/base/img/layout/home/inscritosyt.jpg)"></div>
+                                <div id="youImageCard" class="c-image c-overlay-object" data-height="height" ></div>
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -105,7 +105,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="c-image c-overlay-object" data-height="height" style="background-image: url(../assets/base/img/layout/home/downsound.jpg)"></div>
+                                <div id="soundImageCard" class="c-image c-overlay-object" data-height="height"></div>
                             </div>
                         </div>
                         <div class="col-sm-6">

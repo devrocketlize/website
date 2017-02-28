@@ -163,3 +163,25 @@ button.btn {
 .promise {
     color: #999;
 }
+
+/* Old CSS in-line */
+
+#instaImageCard{
+
+  background-image: url(https://rocketlize.com/assets/base/img/layout/home/segbrreaisinsta.jpg) !important;
+}
+
+#faceImageCard{
+
+  background-image: url(https://rocketlize.com/assets/base/img/layout/home/facecurfan.jpg) !important;
+}
+
+#youImageCard{
+
+  background-image: url(https://rocketlize.com/assets/base/img/layout/home/inscritosyt.jpg) !important;
+}
+
+#soundImageCard{
+
+  background-image: url(https://rocketlize.com/assets/base/img/layout/home/downsound.jpg) !important;
+}
