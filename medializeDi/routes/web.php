@@ -87,7 +87,7 @@ Route::group(['middleware' => 'auth'], function () {
 
           return $count;
 
-      });)
+      });
 
 });
 
