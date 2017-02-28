@@ -21,6 +21,11 @@ Route::get('deposito', 'MasterController@deposito');
 Route::get('/comprar-{service}-{media}', 'ServicoController@index');
 Route::get('/comprar-{service}-{media}/{seo}', 'ServicoController@comprar');
 
+Route::get('/pagamento_em_processo/{slug}' 'PaymentController@processo');
+
+Route::get('/pagamento_aprovado/{slug}' 'PaymentController@completo');
+
+
 Route::get('/atendimento', function() {
   return view('atendimento', ['medias' => App\Media::all()]);
 });
@@ -60,6 +65,7 @@ Route::group(['prefix' => 'mercadopago'], function () {
 });
 
 Route::get('termos-e-politicas', 'MasterController@termos');
+
 
 
 //ROTA NEWSLETTER E ADMINISTRATIVA

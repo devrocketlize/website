@@ -1,7 +1,7 @@
 @extends('layouts/master')
 
 @section('titulo')
-	 Pagamento bem sucedido!
+	 Pagamento em processo!
 @stop
 
 @section('conteudo')
@@ -11,7 +11,7 @@
 <div class="c-layout-breadcrumbs-1 c-subtitle c-fonts-uppercase c-fonts-bold c-bordered c-bordered-both">
     <div class="container">
         <div class="c-page-title c-pull-left">
-            <h1 class="c-font-uppercase c-font-sbold">Pagamento bem sucedido!</h1>
+            <h1 class="c-font-uppercase c-font-sbold">Pagamento em processo!</h1>
             
         </div>
         <ul class="c-page-breadcrumbs c-theme-nav c-pull-right c-fonts-regular">
@@ -20,7 +20,7 @@
             </li>
             <li>/</li>
             <li>
-                <a>Pagamento bem sucedido!</a>
+                <a>Pagamento em processo!</a>
             </li>
             
         </ul>
@@ -39,12 +39,12 @@
             <div class="container">
                 <div class="c-shop-order-complete-1 c-content-bar-1 c-align-left c-bordered c-theme-border c-shadow">
                     <div class="c-content-title-1">
-                        <h3 class="c-center c-font-uppercase c-font-bold">PAGAMENTO BEM SUCEDIDO :D</h3>
+                        <h3 class="c-center c-font-uppercase c-font-bold">PAGAMENTO EM PROCESSO :D</h3>
                         <div class="c-line-center c-theme-bg"></div>
                     </div>
                     <div class="c-theme-bg">
                         <p class="c-message c-center c-font-white c-font-20 c-font-sbold">
-                            <i class="fa fa-check"></i> Obrigado pela confiança, seu pedido foi recebido! </p>
+                            <i class="fa fa-check"></i> Obrigado pela confiança, seu pedido foi recebido! Assim que o pagamento for compensado será processado! </p>
                     </div>
                     <!-- BEGIN: ORDER SUMMARY -->
                     <div class="row c-order-summary c-center">

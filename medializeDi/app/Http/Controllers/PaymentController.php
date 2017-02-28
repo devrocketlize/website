@@ -34,6 +34,7 @@ class PaymentController extends Controller
     $pedido = new Pedido();
     $pedido->servico_id = $servico->id;
     $pedido->servico_linkBtn = $servico->linkBtn;
+    $pedido->servico_referencia = $servico->referencia;
     $pedido->valor = $servico->preco;
     $pedido->nomeCliente = strlen($request->nome) < 5 ? 'Cliente Pedido Serviço ' . $servico->id : $request->nome.' '.$request->sobrenome;
     $pedido->emailCliente = strlen($request->email) < 5 ? 'cliente@rocketlize.com' : $request->email;
@@ -78,7 +79,23 @@ class PaymentController extends Controller
     //}
   }
 
-  
+  public function processo($slug){
+
+      $media = Media::all();
+      $pedido = Pedido::where('servico_referencia' '=' $slug);
+
+      return view('compra-processo', compact('pedido', 'media'));
+
+  }
+
+  public function completo($slug){
+
+      $media = Media::all();
+      $pedido = Pedido::where('servico_referencia' '=' $slug);
+
+      return view('compra-sucesso', compact('pedido', 'media'));
+
+  }
 
   //public function obrigado($pagamento)
   //{
