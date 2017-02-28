@@ -185,9 +185,10 @@
                             
                             <div itemscope itemtype="http://schema.org/Person">
                                
-                               <p itemprop="email" href="mailto:rocketlize@outlook.com"><img class="propColor" src="https://rocketlize.com/assets/base/img/img-contato.png" title="Atendimento" alt="Atendimento"> </p>
+                               <p itemprop="email" href="mailto:rocketlize@outlook.com"><span>Atendimento no Skype: rocketlize@outlook.com</span></p>
 
                             </div>
+                            
                             <div>
                                 <div class="fb-share-button" data-href="https://rocketlize.com/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Frocketlize.com%2F&amp;src=sdkpreparse">Compartilhar</a></div>
                             </div>

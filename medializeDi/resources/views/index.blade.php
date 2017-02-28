@@ -403,8 +403,8 @@
 
                             <div itemscope itemtype="http://schema.org/Person">
                                
-                               <p itemprop="email" href="mailto:rocketlize@outlook.com"><img crossorigin="propColor" src="https://rocketlize.com/assets/base/img/img-contato.png" title="Atendimento" alt="Atendimento"> </p>
-                               
+                               <p itemprop="email" href="mailto:rocketlize@outlook.com"><span>Atendimento no Skype: rocketlize@outlook.com</span></p>
+
                             </div>
 
                             <div>
