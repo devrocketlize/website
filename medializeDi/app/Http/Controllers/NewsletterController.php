@@ -49,7 +49,7 @@ class NewsletterController extends Controller
 		     Mail::send('emails', [], function($message) use ($user) {
 
 		          $message->from('newsletter@rocketlize.com', 'Novidades da Rocketlize!');
-		          $message->to($user->FIELD1, 'Interessado')->subject('Novidades da Rocketlize! Estamos de volta!');
+		          $message->to($user->email, 'Interessado')->subject('Rocketlize! Você pode ganhar um teste grátis agora!');
 
 		      });
 
@@ -57,6 +57,26 @@ class NewsletterController extends Controller
 
     	return "Enviado com sucesso!";
     
+    }
+
+    public function testegratis(){
+
+        return view('testegratis');
+    }
+
+    public function enviarDados( Request $request){
+
+        $dados = new Newsletter;
+
+        $dados->emailCliente = trim(strip_tags($request->email));
+        $dados->whatsCliente = trim(strip_tags($request->whats));
+        $dados->midiaSolicitada = trim(strip_tags($request->midia));
+        $dados->linkSocial = trim(strip_tags($request->link));
+
+        $dados->save();
+
+
+        return view('testegratis')return redirect()->back()->with('message', 'Parabéns! Brevemente você estará testando um de nossos serviços');;
     }
 
 }

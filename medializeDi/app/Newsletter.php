@@ -6,6 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Newsletter extends Model
 {
-    protected $table = 'mytable';
-    protected $primaryKey = 'ID';
+    protected $table = 'vendas';
+    protected $primaryKey = 'id';
 }

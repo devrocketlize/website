@@ -73,6 +73,9 @@ Route::get('termos-e-politicas', 'MasterController@termos');
 Route::post('subscribe', 'NewsletterController@subscribe');
 Route::get('unsubscribe', 'NewsletterController@show' );
 Route::post('unsubscribe', 'NewsletterController@unsubscribe' );
+Route::get('testegratis', 'NewsletterController@testegratis' );
+Route::post('enviarDados', 'NewsletterController@enviarDados' );
+
 
 Route::group(['middleware' => 'auth'], function () {
     
