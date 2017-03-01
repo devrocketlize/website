@@ -1,888 +1,330 @@
-<!--
-==================== Respmail ====================
-Respmail is a response HTML email designed to work
-on all major devices and responsive for smartphones
-that support media queries.
-
-** NOTE **
-This template comes with a lot of standard features
-that has been thoroughly tested on major platforms
-and devices, it is extremely flexible to use and
-can be easily customized by removing any row that
-you do not need.
-
-it is gauranteed to work 95% without any major flaws,
-any changes or adjustments should thoroughly be
-tested and reviewed to match with the general
-structure.
-
-** Profile **
-Licensed under MIT (https://github.com/charlesmudy/responsive-html-email-template/blob/master/LICENSE)
-Designed by Shina Charles Memud
-Respmail v1.2 (http://charlesmudy.com/respmail/)
-
-** Quick modification **
-We are using width of 500 for the whole content,
-you can change it any size you want (e.g. 600).
-The fastest and safest way is to use find & replace
-Sizes: [
-		wrapper   : '500',
-		columns   : '210',
-		x-columns : [
-						left : '90',
-						right: '350'
-				]
-		}
-	-->
-
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-	<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="format-detection" content="telephone=no" /> <!-- disable auto telephone linking in iOS -->
-		<title>Newsletter Rocketlize</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<style type="text/css">
-			/* RESET STYLES */
-			html { background-color:#E1E1E1; margin:0; padding:0; }
-			body, #bodyTable, #bodyCell, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;font-family:Helvetica, Arial, "Lucida Grande", sans-serif;}
-			table{border-collapse:collapse;}
-			table[id=bodyTable] {width:100%!important;margin:auto;max-width:500px!important;color:#7A7A7A;font-weight:normal;}
-			img, a img{border:0; outline:none; text-decoration:none;height:auto; line-height:100%;}
-			a {text-decoration:none !important;border-bottom: 1px solid;}
-			h1, h2, h3, h4, h5, h6{color:#5F5F5F; font-weight:normal; font-family:Helvetica; font-size:20px; line-height:125%; text-align:Left; letter-spacing:normal;margin-top:0;margin-right:0;margin-bottom:10px;margin-left:0;padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;}
-
-			/* CLIENT-SPECIFIC STYLES */
-			.ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail/Outlook.com to display emails at full width. */
-			.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div{line-height:100%;} /* Force Hotmail/Outlook.com to display line heights normally. */
-			table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up. */
-			#outlook a{padding:0;} /* Force Outlook 2007 and up to provide a "view in browser" message. */
-			img{-ms-interpolation-mode: bicubic;display:block;outline:none; text-decoration:none;} /* Force IE to smoothly render resized images. */
-			body, table, td, p, a, li, blockquote{-ms-text-size-adjust:100%; -webkit-text-size-adjust:100%; font-weight:normal!important;} /* Prevent Windows- and Webkit-based mobile platforms from changing declared text sizes. */
-			.ExternalClass td[class="ecxflexibleContainerBox"] h3 {padding-top: 10px !important;} /* Force hotmail to push 2-grid sub headers down */
-
-			/* /\/\/\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/\/\/ */
-
-			/* ========== Page Styles ========== */
-			h1{display:block;font-size:26px;font-style:normal;font-weight:normal;line-height:100%;}
-			h2{display:block;font-size:20px;font-style:normal;font-weight:normal;line-height:120%;}
-			h3{display:block;font-size:17px;font-style:normal;font-weight:normal;line-height:110%;}
-			h4{display:block;font-size:18px;font-style:italic;font-weight:normal;line-height:100%;}
-			.flexibleImage{height:auto;}
-			.linkRemoveBorder{border-bottom:0 !important;}
-			table[class=flexibleContainerCellDivider] {padding-bottom:0 !important;padding-top:0 !important;}
-
-			body, #bodyTable{background-color:#E1E1E1;}
-			#emailHeader{background-color:#E1E1E1;}
-			#emailBody{background-color:#FFFFFF;}
-			#emailFooter{background-color:#E1E1E1;}
-			.nestedContainer{background-color:#F8F8F8; border:1px solid #CCCCCC;}
-			.emailButton{background-color:#205478; border-collapse:separate;}
-			.buttonContent{color:#FFFFFF; font-family:Helvetica; font-size:18px; font-weight:bold; line-height:100%; padding:15px; text-align:center;}
-			.buttonContent a{color:#FFFFFF; display:block; text-decoration:none!important; border:0!important;}
-			.emailCalendar{background-color:#FFFFFF; border:1px solid #CCCCCC;}
-			.emailCalendarMonth{background-color:#205478; color:#FFFFFF; font-family:Helvetica, Arial, sans-serif; font-size:16px; font-weight:bold; padding-top:10px; padding-bottom:10px; text-align:center;}
-			.emailCalendarDay{color:#205478; font-family:Helvetica, Arial, sans-serif; font-size:60px; font-weight:bold; line-height:100%; padding-top:20px; padding-bottom:20px; text-align:center;}
-			.imageContentText {margin-top: 10px;line-height:0;}
-			.imageContentText a {line-height:0;}
-			#invisibleIntroduction {display:none !important;} /* Removing the introduction text from the view */
-
-			/*FRAMEWORK HACKS & OVERRIDES */
-			span[class=ios-color-hack] a {color:#275100!important;text-decoration:none!important;} /* Remove all link colors in IOS (below are duplicates based on the color preference) */
-			span[class=ios-color-hack2] a {color:#205478!important;text-decoration:none!important;}
-			span[class=ios-color-hack3] a {color:#8B8B8B!important;text-decoration:none!important;}
-			/* A nice and clean way to target phone numbers you want clickable and avoid a mobile phone from linking other numbers that look like, but are not phone numbers.  Use these two blocks of code to "unstyle" any numbers that may be linked.  The second block gives you a class to apply with a span tag to the numbers you would like linked and styled.
-			Inspired by Campaign Monitor's article on using phone numbers in email: http://www.campaignmonitor.com/blog/post/3571/using-phone-numbers-in-html-email/.
-			*/
-			.a[href^="tel"], a[href^="sms"] {text-decoration:none!important;color:#606060!important;pointer-events:none!important;cursor:default!important;}
-			.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {text-decoration:none!important;color:#606060!important;pointer-events:auto!important;cursor:default!important;}
-
-
-			/* MOBILE STYLES */
-			@media only screen and (max-width: 480px){
-				/*////// CLIENT-SPECIFIC STYLES //////*/
-				body{width:100% !important; min-width:100% !important;} /* Force iOS Mail to render the email at full width. */
-
-				/* FRAMEWORK STYLES */
-				/*
-				CSS selectors are written in attribute
-				selector format to prevent Yahoo Mail
-				from rendering media query styles on
-				desktop.
-				*/
-				/*td[class="textContent"], td[class="flexibleContainerCell"] { width: 100%; padding-left: 10px !important; padding-right: 10px !important; }*/
-				table[id="emailHeader"],
-				table[id="emailBody"],
-				table[id="emailFooter"],
-				table[class="flexibleContainer"],
-				td[class="flexibleContainerCell"] {width:100% !important;}
-				td[class="flexibleContainerBox"], td[class="flexibleContainerBox"] table {display: block;width: 100%;text-align: left;}
-				/*
-				The following style rule makes any
-				image classed with 'flexibleImage'
-				fluid when the query activates.
-				Make sure you add an inline max-width
-				to those images to prevent them
-				from blowing out.
-				*/
-				td[class="imageContent"] img {height:auto !important; width:100% !important; max-width:100% !important; }
-				img[class="flexibleImage"]{height:auto !important; width:100% !important;max-width:100% !important;}
-				img[class="flexibleImageSmall"]{height:auto !important; width:auto !important;}
-
-
-				/*
-				Create top space for every second element in a block
-				*/
-				table[class="flexibleContainerBoxNext"]{padding-top: 10px !important;}
-
-				/*
-				Make buttons in the email span the
-				full width of their container, allowing
-				for left- or right-handed ease of use.
-				*/
-				table[class="emailButton"]{width:100% !important;}
-				td[class="buttonContent"]{padding:0 !important;}
-				td[class="buttonContent"] a{padding:15px !important;}
-
-			}
-
-			/*  CONDITIONS FOR ANDROID DEVICES ONLY
-			*   http://developer.android.com/guide/webapps/targeting.html
-			*   http://pugetworks.com/2011/04/css-media-queries-for-targeting-different-mobile-devices/ ;
-			=====================================================*/
-
-			@media only screen and (-webkit-device-pixel-ratio:.75){
-				/* Put CSS for low density (ldpi) Android layouts in here */
-			}
-
-			@media only screen and (-webkit-device-pixel-ratio:1){
-				/* Put CSS for medium density (mdpi) Android layouts in here */
-			}
-
-			@media only screen and (-webkit-device-pixel-ratio:1.5){
-				/* Put CSS for high density (hdpi) Android layouts in here */
-			}
-			/* end Android targeting */
-
-			/* CONDITIONS FOR IOS DEVICES ONLY
-			=====================================================*/
-			@media only screen and (min-device-width : 320px) and (max-device-width:568px) {
-
-			}
-			/* end IOS targeting */
-		</style>
-		<!--
-			Outlook Conditional CSS
-
-			These two style blocks target Outlook 2007 & 2010 specifically, forcing
-			columns into a single vertical stack as on mobile clients. This is
-			primarily done to avoid the 'page break bug' and is optional.
-
-			More information here:
-			http://templates.mailchimp.com/development/css/outlook-conditional-css
-		-->
-		<!--[if mso 12]>
-			<style type="text/css">
-				.flexibleContainer{display:block !important; width:100% !important;}
-			</style>
-		<![endif]-->
-		<!--[if mso 14]>
-			<style type="text/css">
-				.flexibleContainer{display:block !important; width:100% !important;}
-			</style>
-		<![endif]-->
-	</head>
-	<body bgcolor="#E1E1E1" leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
-
-		<!-- CENTER THE EMAIL // -->
-		<!--
-		1.  The center tag should normally put all the
-			content in the middle of the email page.
-			I added "table-layout: fixed;" style to force
-			yahoomail which by default put the content left.
-
-		2.  For hotmail and yahoomail, the contents of
-			the email starts from this center, so we try to
-			apply necessary styling e.g. background-color.
-		-->
-		<center style="background-color:#E1E1E1;">
-			<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable" style="table-layout: fixed;max-width:100% !important;width: 100% !important;min-width: 100% !important;">
-				<tr>
-					<td align="center" valign="top" id="bodyCell">
-
-						<!-- EMAIL HEADER // -->
-						<!--
-							The table "emailBody" is the email's container.
-							Its width can be set to 100% for a color band
-							that spans the width of the page.
-						-->
-						<table bgcolor="#E1E1E1" border="0" cellpadding="0" cellspacing="0" width="500" id="emailHeader">
-
-							<!-- HEADER ROW // -->
-							<tr>
-								<td align="center" valign="top">
-									<!-- CENTERING TABLE // -->
-									<table border="0" cellpadding="0" cellspacing="0" width="100%">
-										<tr>
-											<td align="center" valign="top">
-												<!-- FLEXIBLE CONTAINER // -->
-												<table border="0" cellpadding="10" cellspacing="0" width="500" class="flexibleContainer">
-													<tr>
-														<td valign="top" width="500" class="flexibleContainerCell">
-
-															<!-- CONTENT TABLE // -->
-															<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
-																<tr>
-																	<!--
-																		The "invisibleIntroduction" is the text used for short preview
-																		of the email before the user opens it (50 characters max). Sometimes,
-																		you do not want to show this message depending on your design but this
-																		text is highly recommended.
-
-																		You do not have to worry if it is hidden, the next <td> will automatically
-																		center and apply to the width 100% and also shrink to 50% if the first <td>
-																		is visible.
-																	-->
-																	<td align="left" valign="middle" id="invisibleIntroduction" class="flexibleContainerBox" style="display:none !important; mso-hide:all;">
-																		<table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:100%;">
-																			<tr>
-																				<td align="left" class="textContent">
-																					<div style="font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#828282;text-align:center;line-height:120%;">
-																						Newsletter com novidades e ofertas Rocket...
-																					</div>
-																				</td>
-																			</tr>
-																		</table>
-																	</td>
-																	<td align="right" valign="middle" class="flexibleContainerBox">
-																		<table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:100%;">
-																			<tr>
-																				<td align="left" class="textContent">
-																					<!-- CONTENT // -->
-																					
-																				</td>
-																			</tr>
-																		</table>
-																	</td>
-																</tr>
-															</table>
-														</td>
-													</tr>
-												</table>
-												<!-- // FLEXIBLE CONTAINER -->
-											</td>
-										</tr>
-									</table>
-									<!-- // CENTERING TABLE -->
-								</td>
-							</tr>
-							<!-- // END -->
-
-						</table>
-						<!-- // END -->
-
-						<!-- EMAIL BODY // -->
-						<!--
-							The table "emailBody" is the email's container.
-							Its width can be set to 100% for a color band
-							that spans the width of the page.
-						-->
-						<table bgcolor="#FFFFFF"  border="0" cellpadding="0" cellspacing="0" width="500" id="emailBody">
-
-							<!-- MODULE ROW // -->
-							<!--
-								To move or duplicate any of the design patterns
-								in this email, simply move or copy the entire
-								MODULE ROW section for each content block.
-							-->
-							<tr>
-								<td align="center" valign="top">
-									<!-- CENTERING TABLE // -->
-									<!--
-										The centering table keeps the content
-										tables centered in the emailBody table,
-										in case its width is set to 100%.
-									-->
-									<table border="0" cellpadding="0" cellspacing="0" width="100%" style="color:#FFFFFF;" bgcolor="#32c5d2">
-										<tr>
-											<td align="center" valign="top">
-												<!-- FLEXIBLE CONTAINER // -->
-												<!--
-													The flexible container has a set width
-													that gets overridden by the media query.
-													Most content tables within can then be
-													given 100% widths.
-												-->
-												<table border="0" cellpadding="0" cellspacing="0" width="500" class="flexibleContainer">
-													<tr>
-														<td align="center" valign="top" width="500" class="flexibleContainerCell">
-
-															<!-- CONTENT TABLE // -->
-															<!--
-															The content table is the first element
-																that's entirely separate from the structural
-																framework of the email.
-															-->
-															<table border="0" cellpadding="30" cellspacing="0" width="100%">
-																<tr>
-																	<td align="center" valign="top" class="textContent">
-																		<h1 style="color:#FFFFFF;line-height:100%;font-family:Helvetica,Arial,sans-serif;font-size:35px;font-weight:normal;margin-bottom:5px;text-align:center;">A Rocketlize voltou!!!</h1>
-																		<h2 style="text-align:center;font-weight:normal;font-family:Helvetica,Arial,sans-serif;font-size:23px;margin-bottom:10px;color:#205478;line-height:135%;">E não estamos de brincadeira!</h2>
-																		<div style="text-align:center;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#FFFFFF;line-height:135%;">Confira os melhores preços e ofertas para sua campanha de marketing em mídias sociais como Instagram, Facebook, YouTube, SoundCloud e Twitter.
-																		</div>
-																	</td>
-																</tr>
-															</table>
-															<!-- // CONTENT TABLE -->
-
-														</td>
-													</tr>
-												</table>
-												<!-- // FLEXIBLE CONTAINER -->
-											</td>
-										</tr>
-									</table>
-									<!-- // CENTERING TABLE -->
-								</td>
-							</tr>
-							<!-- // MODULE ROW -->
-
-
-							<!-- MODULE ROW // -->
-							<!--  The "mc:hideable" is a feature for MailChimp which allows
-								you to disable certain row. It works perfectly for our row structure.
-								http://kb.mailchimp.com/article/template-language-creating-editable-content-areas/
-							-->
-		
-
-							<!-- MODULE ROW // -->
-							<tr>
-								<td align="center" valign="top">
-									<!-- CENTERING TABLE // -->
-									<table border="0" cellpadding="0" cellspacing="0" width="100%">
-										<tr style="padding-top:0;">
-											<td align="center" valign="top">
-												<!-- FLEXIBLE CONTAINER // -->
-												<table border="0" cellpadding="30" cellspacing="0" width="500" class="flexibleContainer">
-													<tr>
-														<td style="padding-top:0;" align="center" valign="top" width="500" class="flexibleContainerCell">
-
-															
-
-														</td>
-													</tr>
-												</table>
-												<!-- // FLEXIBLE CONTAINER -->
-											</td>
-										</tr>
-									</table>
-									<!-- // CENTERING TABLE -->
-								</td>
-							</tr>
-							<!-- // MODULE ROW -->
-
-
-							<!-- MODULE ROW // -->
-							<tr>
-								<td align="center" valign="top">
-									<!-- CENTERING TABLE // -->
-									<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#F8F8F8">
-										<tr>
-											<td align="center" valign="top">
-												<!-- FLEXIBLE CONTAINER // -->
-												<table border="0" cellpadding="0" cellspacing="0" width="500" class="flexibleContainer">
-													<tr>
-														<td align="center" valign="top" width="500" class="flexibleContainerCell">
-															<table border="0" cellpadding="30" cellspacing="0" width="100%">
-																<tr>
-																	<td align="center" valign="top">
-
-																		<!-- CONTENT TABLE // -->
-																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
-																			<tr>
-																				<td valign="top" class="textContent">
-																					<!--
-																						The "mc:edit" is a feature for MailChimp which allows
-																						you to edit certain row. It makes it easy for you to quickly edit row sections.
-																						http://kb.mailchimp.com/templates/code/create-editable-content-areas-with-mailchimps-template-language
-																					-->
-																					<h3 mc:edit="header" style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">Os melhores preços</h3>
-																					<div mc:edit="body" style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;">A questão custo x benefício faz parte do DNA da Rocketlize! Aqui você encontra o valor fidedigno atrelado a agilidade na enterga! Basta acessar <a href="https://rocketlize.com"> https://rocketlize.com</a> para conferir :-)</div>
-																				</td>
-																			</tr>
-																		</table>
-																		<!-- // CONTENT TABLE -->
-
-																	</td>
-																</tr>
-															</table>
-														</td>
-													</tr>
-												</table>
-												<!-- // FLEXIBLE CONTAINER -->
-											</td>
-										</tr>
-									</table>
-									<!-- // CENTERING TABLE -->
-								</td>
-							</tr>
-							<!-- // MODULE ROW -->
-
-
-							<!-- MODULE ROW // -->
-							<tr>
-								<td align="center" valign="top">
-									<!-- CENTERING TABLE // -->
-									<table border="0" cellpadding="0" cellspacing="0" width="100%">
-										<tr>
-											<td align="center" valign="top">
-												<!-- FLEXIBLE CONTAINER // -->
-												<table border="0" cellpadding="30" cellspacing="0" width="500" class="flexibleContainer">
-													<tr>
-														<td valign="top" width="500" class="flexibleContainerCell">
-
-															<!-- CONTENT TABLE // -->
-															<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
-																<tr>
-																	<td align="left" valign="top" class="flexibleContainerBox">
-																		<table border="0" cellpadding="0" cellspacing="0" width="210" style="max-width:100%;">
-																			<tr>
-																				<td align="left" class="textContent">
-																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:10px;text-align:left;">Instagram</h3>
-																					<img width="20%" src="https://rocketlize.com/assets/base/iconsmail/instagram.svg" alt="Instagram" title="Instagram">
-																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;margin-top:10px;color:#5F5F5F;line-height:135%;">Seguidores brasileiros reais, curtidas, visualizações e comentários. Bombe seu instagram com fama e status!</div>
-																				</td>
-																			</tr>
-																		</table>
-																	</td>
-																	<td align="right" valign="middle" class="flexibleContainerBox">
-																		<table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="210" style="max-width:100%;">
-																			<tr>
-																				<td align="left" class="textContent">
-																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:10px;text-align:left;">Facebook</h3>
-																					<img width="20%" src="https://rocketlize.com/assets/base/iconsmail/facebook.svg" alt="Facebook" title="Facebook">
-																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;margin-top:10px;color:#5F5F5F;line-height:135%;">Curtidas para sua fanpage, seus posts e visualizações para seus vídeos.</div>
-																				</td>
-																			</tr>
-																		</table>
-																	</td>
-																</tr>
-															</table>
-															<!-- // CONTENT TABLE -->
-
-														</td>
-													</tr>
-												</table>
-												<!-- // FLEXIBLE CONTAINER -->
-											</td>
-										</tr>
-									</table>
-									<!-- // CENTERING TABLE -->
-								</td>
-							</tr>
-							<!-- // MODULE ROW -->
-
-
-							<!-- MODULE DIVIDER // -->
-							<tr>
-								<td align="center" valign="top">
-									<!-- CENTERING TABLE // -->
-									<table border="0" cellpadding="0" cellspacing="0" width="100%">
-										<tr>
-											<td align="center" valign="top">
-												<!-- FLEXIBLE CONTAINER // -->
-												<table border="0" cellpadding="0" cellspacing="0" width="500" class="flexibleContainer">
-													<tr>
-														<td align="center" valign="top" width="500" class="flexibleContainerCell">
-															<table class="flexibleContainerCellDivider" border="0" cellpadding="30" cellspacing="0" width="100%">
-																<tr>
-																	<td align="center" valign="top" style="padding-top:0px;padding-bottom:0px;">
-
-																		<!-- CONTENT TABLE // -->
-																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
-																			<tr>
-																				<td align="center" valign="top" style="border-top:1px solid #C8C8C8;"></td>
-																			</tr>
-																		</table>
-																		<!-- // CONTENT TABLE -->
-
-																	</td>
-																</tr>
-															</table>
-														</td>
-													</tr>
-												</table>
-												<!-- // FLEXIBLE CONTAINER -->
-											</td>
-										</tr>
-									</table>
-									<!-- // CENTERING TABLE -->
-								</td>
-							</tr>
-							<!-- // END -->
-
-
-							<!-- MODULE ROW // -->
-							<tr>
-								<td align="center" valign="top">
-									<!-- CENTERING TABLE // -->
-									<table border="0" cellpadding="0" cellspacing="0" width="100%">
-										<tr>
-											<td align="center" valign="top">
-												<!-- FLEXIBLE CONTAINER // -->
-												<table border="0" cellpadding="30" cellspacing="0" width="500" class="flexibleContainer">
-													<tr>
-														<td valign="top" width="500" class="flexibleContainerCell">
-
-															<!-- CONTENT TABLE // -->
-															<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
-																<tr>
-																	<td align="left" valign="top" class="flexibleContainerBox">
-																		<table border="0" cellpadding="0" cellspacing="0" width="210" style="max-width:100%;">
-																			<tr>
-																				<td align="left" class="textContent">
-																					<img width="25%" src="https://rocketlize.com/assets/base/iconsmail/youtube.svg" alt="YouTube" title="YouTube">
-																				</td>
-																			</tr>
-																		</table>
-																	</td>
-																	<td align="right" valign="top" class="flexibleContainerBox">
-																		<table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="210" style="max-width:100%;">
-																			<tr>
-																				<td align="left" class="textContent">
-																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">YouTube</h3>
-																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;">Quer viralizar? Rocketlize! Oferecemos inscritos, views e curtidas, seu canal será fantástico.</div>
-																				</td>
-																			</tr>
-																		</table>
-																	</td>
-																</tr>
-															</table>
-															<!-- // CONTENT TABLE -->
-
-														</td>
-													</tr>
-												</table>
-												<!-- // FLEXIBLE CONTAINER -->
-											</td>
-										</tr>
-									</table>
-									<!-- // CENTERING TABLE -->
-								</td>
-							</tr>
-							<!-- // MODULE ROW -->
-
-
-							<!-- MODULE DIVIDER // -->
-							<tr>
-								<td align="center" valign="top">
-									<!-- CENTERING TABLE // -->
-									<table border="0" cellpadding="0" cellspacing="0" width="100%">
-										<tr>
-											<td align="center" valign="top">
-												<!-- FLEXIBLE CONTAINER // -->
-												<table border="0" cellpadding="0" cellspacing="0" width="500" class="flexibleContainer">
-													<tr>
-														<td align="center" valign="top" width="500" class="flexibleContainerCell">
-															<table class="flexibleContainerCellDivider" border="0" cellpadding="30" cellspacing="0" width="100%">
-																<tr>
-																	<td align="center" valign="top" style="padding-top:0px;padding-bottom:0px;">
-
-																		<!-- CONTENT TABLE // -->
-																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
-																			<tr>
-																				<td align="center" valign="top" style="border-top:1px solid #C8C8C8;"></td>
-																			</tr>
-																		</table>
-																		<!-- // CONTENT TABLE -->
-
-																	</td>
-																</tr>
-															</table>
-														</td>
-													</tr>
-												</table>
-												<!-- // FLEXIBLE CONTAINER -->
-											</td>
-										</tr>
-									</table>
-									<!-- // CENTERING TABLE -->
-								</td>
-							</tr>
-							<!-- // END -->
-
-
-							<!-- MODULE ROW // -->
-							<tr>
-								<td align="center" valign="top">
-									<!-- CENTERING TABLE // -->
-									<table border="0" cellpadding="0" cellspacing="0" width="100%">
-										<tr>
-											<td align="center" valign="top">
-												<!-- FLEXIBLE CONTAINER // -->
-												<table border="0" cellpadding="30" cellspacing="0" width="500" class="flexibleContainer">
-													<tr>
-														<td valign="top" width="500" class="flexibleContainerCell">
-
-															<!-- CONTENT TABLE // -->
-															<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
-																<tr>
-																	<td align="left" valign="top" class="flexibleContainerBox">
-																		<table border="0" cellpadding="0" cellspacing="0" width="210" style="max-width:100%;">
-																			<tr>
-																				<td align="left" class="textContent">
-																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">SoundCloud</h3>
-																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;">Tracklist famosa, repleta de plays e downloads. Seu perfil também será enriquecido com muitos seguidores.</div>
-																				</td>
-																			</tr>
-																		</table>
-																	</td>
-																	<td align="right" valign="top" class="flexibleContainerBox">
-																		<table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="210" style="max-width:100%;">
-																			<tr>
-																				<td align="left" class="textContent">
-																					<img width="40%" src="https://rocketlize.com/assets/base/iconsmail/soundcloud.svg" alt="SoundCloud" title="SoundCloud">
-																				</td>
-																			</tr>
-																		</table>
-																	</td>
-																</tr>
-															</table>
-															<!-- // CONTENT TABLE -->
-
-														</td>
-													</tr>
-												</table>
-												<!-- // FLEXIBLE CONTAINER -->
-											</td>
-										</tr>
-									</table>
-									<!-- // CENTERING TABLE -->
-								</td>
-							</tr>
-							<!-- // MODULE ROW -->
-
-
-							<!-- MODULE DIVIDER // -->
-							<tr>
-								<td align="center" valign="top">
-									<!-- CENTERING TABLE // -->
-									<table border="0" cellpadding="0" cellspacing="0" width="100%">
-										<tr>
-											<td align="center" valign="top">
-												<!-- FLEXIBLE CONTAINER // -->
-												<table border="0" cellpadding="0" cellspacing="0" width="500" class="flexibleContainer">
-													<tr>
-														<td align="center" valign="top" width="500" class="flexibleContainerCell">
-															<table class="flexibleContainerCellDivider" border="0" cellpadding="30" cellspacing="0" width="100%">
-																<tr>
-																	<td align="center" valign="top" style="padding-top:0px;padding-bottom:0px;">
-
-																		<!-- CONTENT TABLE // -->
-																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
-																			<tr>
-																				<td align="center" valign="top" style="border-top:1px solid #C8C8C8;"></td>
-																			</tr>
-																		</table>
-																		<!-- // CONTENT TABLE -->
-
-																	</td>
-																</tr>
-															</table>
-														</td>
-													</tr>
-												</table>
-												<!-- // FLEXIBLE CONTAINER -->
-											</td>
-										</tr>
-									</table>
-									<!-- // CENTERING TABLE -->
-								</td>
-							</tr>
-							<!-- // END -->
-
-
-							<!-- MODULE ROW // -->
-							<tr>
-								<td align="center" valign="top">
-									<!-- CENTERING TABLE // -->
-									<table border="0" cellpadding="0" cellspacing="0" width="100%">
-										<tr>
-											<td align="center" valign="top">
-												<!-- FLEXIBLE CONTAINER // -->
-												<table border="0" cellpadding="30" cellspacing="0" width="500" class="flexibleContainer">
-													<tr>
-														<td valign="top" width="500" class="flexibleContainerCell">
-
-															<!-- CONTENT TABLE // -->
-															<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
-																<tr>
-																	<td align="left" valign="top" class="flexibleContainerBox">
-																		<table border="0" cellpadding="0" cellspacing="0" width="90" style="max-width:100%;">
-																			<tr>
-																				<td align="left" class="textContent">
-																					<img width="40%" src="https://rocketlize.com/assets/base/iconsmail/twitter.svg" alt="Twitter" title="Twitter">
-																				</td>
-																			</tr>
-																		</table>
-																	</td>
-																	<td align="right" valign="middle" class="flexibleContainerBox">
-																		<table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="350" style="max-width:100%;">
-																			<tr>
-																				<td align="left" class="textContent">
-																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">Twitter</h3>
-																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;">Milhares de seguidores para dar credibilidade ao microblog mais famoso da atualidade! </div>
-																				</td>
-																			</tr>
-																		</table>
-																	</td>
-																</tr>
-															</table>
-															<!-- // CONTENT TABLE -->
-
-														</td>
-													</tr>
-												</table>
-												<!-- // FLEXIBLE CONTAINER -->
-											</td>
-										</tr>
-									</table>
-									<!-- // CENTERING TABLE -->
-								</td>
-							</tr>
-							<!-- // MODULE ROW -->
-
-
-							<!-- MODULE DIVIDER // -->
-							<tr>
-								<td align="center" valign="top">
-									<!-- CENTERING TABLE // -->
-									<table border="0" cellpadding="0" cellspacing="0" width="100%">
-										<tr>
-											<td align="center" valign="top">
-												<!-- FLEXIBLE CONTAINER // -->
-												<table border="0" cellpadding="0" cellspacing="0" width="500" class="flexibleContainer">
-													<tr>
-														<td align="center" valign="top" width="500" class="flexibleContainerCell">
-															<table class="flexibleContainerCellDivider" border="0" cellpadding="30" cellspacing="0" width="100%">
-																<tr>
-																	<td align="center" valign="top" style="padding-top:0px;padding-bottom:0px;">
-
-																		<!-- CONTENT TABLE // -->
-																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
-																			<tr>
-																				<td align="center" valign="top" style="border-top:1px solid #C8C8C8;"></td>
-																			</tr>
-																		</table>
-																		<!-- // CONTENT TABLE -->
-
-																	</td>
-																</tr>
-															</table>
-														</td>
-													</tr>
-												</table>
-												<!-- // FLEXIBLE CONTAINER -->
-											</td>
-										</tr>
-									</table>
-									<!-- // CENTERING TABLE -->
-								</td>
-							</tr>
-							<!-- // END -->
-
-
-
-							<!-- MODULE ROW // -->
-							<tr>
-								<td align="center" valign="top">
-									<!-- CENTERING TABLE // -->
-									<table border="0" cellpadding="0" cellspacing="0" width="100%">
-										<tr>
-											<td align="center" valign="top">
-												<!-- FLEXIBLE CONTAINER // -->
-												<table border="0" cellpadding="0" cellspacing="0" width="500" class="flexibleContainer">
-													<tr>
-														<td align="center" valign="top" width="500" class="flexibleContainerCell">
-															<table border="0" cellpadding="30" cellspacing="0" width="100%">
-																<tr>
-																	<td align="center" valign="top">
-
-																		
-
-																	</td>
-																</tr>
-															</table>
-														</td>
-													</tr>
-												</table>
-												<!-- // FLEXIBLE CONTAINER -->
-											</td>
-										</tr>
-									</table>
-									<!-- // CENTERING TABLE -->
-								</td>
-							</tr>
-							<!-- // MODULE ROW -->
-
-						</table>
-						<!-- // END -->
-
-						<!-- EMAIL FOOTER // -->
-						<!--
-							The table "emailBody" is the email's container.
-							Its width can be set to 100% for a color band
-							that spans the width of the page.
-						-->
-						<table bgcolor="#E1E1E1" border="0" cellpadding="0" cellspacing="0" width="500" id="emailFooter">
-
-							<!-- FOOTER ROW // -->
-							<!--
-								To move or duplicate any of the design patterns
-								in this email, simply move or copy the entire
-								MODULE ROW section for each content block.
-							-->
-							<tr>
-								<td align="center" valign="top">
-									<!-- CENTERING TABLE // -->
-									<table border="0" cellpadding="0" cellspacing="0" width="100%">
-										<tr>
-											<td align="center" valign="top">
-												<!-- FLEXIBLE CONTAINER // -->
-												<table border="0" cellpadding="0" cellspacing="0" width="500" class="flexibleContainer">
-													<tr>
-														<td align="center" valign="top" width="500" class="flexibleContainerCell">
-															<table border="0" cellpadding="30" cellspacing="0" width="100%">
-																<tr>
-																	<td valign="top" bgcolor="#E1E1E1">
-
-																		<div style="font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#828282;text-align:center;line-height:120%;">
-																			<div>© 2014 - 2017 Rocketlize - Todos os direitos reservados.</div>
-																			<div>Cuidado, clicando <a href="https://rocketlize.com/unsubscribe">aqui</a> você poderá cancelar sua inscrição.</div>
-																		</div>
-
-																	</td>
-																</tr>
-															</table>
-														</td>
-													</tr>
-												</table>
-												<!-- // FLEXIBLE CONTAINER -->
-											</td>
-										</tr>
-									</table>
-									<!-- // CENTERING TABLE -->
-								</td>
-							</tr>
-
-						</table>
-						<!-- // END -->
-
-					</td>
-				</tr>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
+ 	<meta name="format-detection" content="telephone=no"/>
+
+	<!-- Responsive Mobile-First Email Template by Konstantin Savchenko, 2015.
+	https://github.com/konsav/email-templates/  -->
+
+	<style>
+/* Reset styles */ 
+body { margin: 0; padding: 0; min-width: 100%; width: 100% !important; height: 100% !important;}
+body, table, td, div, p, a { -webkit-font-smoothing: antialiased; text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; line-height: 100%; }
+table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; border-spacing: 0; }
+img { border: 0; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; }
+#outlook a { padding: 0; }
+.ReadMsgBody { width: 100%; } .ExternalClass { width: 100%; }
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; }
+
+/* Rounded corners for advanced mail clients only */ 
+@media all and (min-width: 560px) {
+	.container { border-radius: 8px; -webkit-border-radius: 8px; -moz-border-radius: 8px; -khtml-border-radius: 8px;}
+}
+
+/* Set color for auto links (addresses, dates, etc.) */ 
+a, a:hover {
+	color: #127DB3;
+}
+.footer a, .footer a:hover {
+	color: #999999;
+}
+
+ 	</style>
+
+	<!-- MESSAGE SUBJECT -->
+	<title>Get this responsive email template</title>
+
+</head>
+
+<!-- BODY -->
+<!-- Set message background color (twice) and text color (twice) -->
+<body topmargin="0" rightmargin="0" bottommargin="0" leftmargin="0" marginwidth="0" marginheight="0" width="100%" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; width: 100%; height: 100%; -webkit-font-smoothing: antialiased; text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; line-height: 100%;
+	background-color: #F0F0F0;
+	color: #000000;"
+	bgcolor="#F0F0F0"
+	text="#000000">
+
+<!-- SECTION / BACKGROUND -->
+<!-- Set message background color one again -->
+<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; width: 100%;" class="background"><tr><td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;"
+	bgcolor="#F0F0F0">
+
+<!-- WRAPPER -->
+<!-- Set wrapper width (twice) -->
+<table border="0" cellpadding="0" cellspacing="0" align="center"
+	width="560" style="border-collapse: collapse; border-spacing: 0; padding: 0; width: inherit;
+	max-width: 560px;" class="wrapper">
+
+	<tr>
+		<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%;
+			padding-top: 20px;
+			padding-bottom: 20px;">
+
+			<!-- PREHEADER -->
+			<!-- Set text color to background color -->
+			<div style="display: none; visibility: hidden; overflow: hidden; opacity: 0; font-size: 1px; line-height: 1px; height: 0; max-height: 0; max-width: 0;
+			color: #F0F0F0;" class="preheader">
+				Available on&nbsp;GitHub and&nbsp;CodePen. Highly compatible. Designer friendly. More than 50%&nbsp;of&nbsp;total email opens occurred on&nbsp;a&nbsp;mobile device&nbsp;— a&nbsp;mobile-friendly design is&nbsp;a&nbsp;must for&nbsp;email campaigns.</div>
+
+			<!-- LOGO -->
+			<!-- Image text color should be opposite to background color. Set your url, image src, alt and title. Alt text should fit the image size. Real image size should be x2. URL format: http://domain.com/?utm_source={{Campaign-Source}}&utm_medium=email&utm_content=logo&utm_campaign={{Campaign-Name}} -->
+			<a target="_blank" style="text-decoration: none;"
+				href="https://github.com/konsav/email-templates/"><img border="0" vspace="0" hspace="0"
+				src="https://raw.githubusercontent.com/konsav/email-templates/master/images/logo-black.png"
+				width="100" height="30"
+				alt="Logo" title="Logo" style="
+				color: #000000;
+				font-size: 10px; margin: 0; padding: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;" /></a>
+
+		</td>
+	</tr>
+
+<!-- End of WRAPPER -->
+</table>
+
+<!-- WRAPPER / CONTEINER -->
+<!-- Set conteiner background color -->
+<table border="0" cellpadding="0" cellspacing="0" align="center"
+	bgcolor="#FFFFFF"
+	width="560" style="border-collapse: collapse; border-spacing: 0; padding: 0; width: inherit;
+	max-width: 560px;" class="container">
+
+	<!-- HEADER -->
+	<!-- Set text color and font family ("sans-serif" or "Georgia, serif") -->
+	<tr>
+		<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 24px; font-weight: bold; line-height: 130%;
+			padding-top: 25px;
+			color: #000000;
+			font-family: sans-serif;" class="header">
+				Get this responsive email template
+		</td>
+	</tr>
+	
+	<!-- SUBHEADER -->
+	<!-- Set text color and font family ("sans-serif" or "Georgia, serif") -->
+	<tr>
+		<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-bottom: 3px; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 18px; font-weight: 300; line-height: 150%;
+			padding-top: 5px;
+			color: #000000;
+			font-family: sans-serif;" class="subheader">
+				Available on&nbsp;GitHub and&nbsp;CodePen
+		</td>
+	</tr>
+
+	<!-- HERO IMAGE -->
+	<!-- Image text color should be opposite to background color. Set your url, image src, alt and title. Alt text should fit the image size. Real image size should be x2 (wrapper x2). Do not set height for flexible images (including "auto"). URL format: http://domain.com/?utm_source={{Campaign-Source}}&utm_medium=email&utm_content={{Ìmage-Name}}&utm_campaign={{Campaign-Name}} -->
+	<tr>
+		<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;
+			padding-top: 20px;" class="hero"><a target="_blank" style="text-decoration: none;"
+			href="https://github.com/konsav/email-templates/"><img border="0" vspace="0" hspace="0"
+			src="https://raw.githubusercontent.com/konsav/email-templates/master/images/hero-wide.png"
+			alt="Please enable images to view this content" title="Hero Image"
+			width="560" style="
+			width: 100%;
+			max-width: 560px;
+			color: #000000; font-size: 13px; margin: 0; padding: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;"/></a></td>
+	</tr>
+
+	<!-- PARAGRAPH -->
+	<!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
+	<tr>
+		<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 17px; font-weight: 400; line-height: 160%;
+			padding-top: 25px; 
+			color: #000000;
+			font-family: sans-serif;" class="paragraph">
+				More than 50%&nbsp;of&nbsp;total email opens occurred on&nbsp;a&nbsp;mobile device&nbsp;— a&nbsp;mobile-friendly design is&nbsp;a&nbsp;must for&nbsp;email campaigns.
+		</td>
+	</tr>
+
+	<!-- BUTTON -->
+	<!-- Set button background color at TD, link/text color at A and TD, font family ("sans-serif" or "Georgia, serif") at TD. For verification codes add "letter-spacing: 5px;". Link format: http://domain.com/?utm_source={{Campaign-Source}}&utm_medium=email&utm_content={{Button-Name}}&utm_campaign={{Campaign-Name}} -->
+	<tr>
+		<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%;
+			padding-top: 25px;
+			padding-bottom: 5px;" class="button"><a
+			href="https://github.com/konsav/email-templates/" target="_blank" style="text-decoration: underline;">
+				<table border="0" cellpadding="0" cellspacing="0" align="center" style="max-width: 240px; min-width: 120px; border-collapse: collapse; border-spacing: 0; padding: 0;"><tr><td align="center" valign="middle" style="padding: 12px 24px; margin: 0; text-decoration: underline; border-collapse: collapse; border-spacing: 0; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px;"
+					bgcolor="#E9703E"><a target="_blank" style="text-decoration: underline;
+					color: #FFFFFF; font-family: sans-serif; font-size: 17px; font-weight: 400; line-height: 120%;"
+					href="https://github.com/konsav/email-templates/">
+						Get the template
+					</a>
+			</td></tr></table></a>
+		</td>
+	</tr>
+
+	<!-- LINE -->
+	<!-- Set line color -->
+	<tr>	
+		<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%;
+			padding-top: 25px;" class="line"><hr
+			color="#E0E0E0" align="center" width="100%" size="1" noshade style="margin: 0; padding: 0;" />
+		</td>
+	</tr>
+
+	<!-- LIST -->
+	<tr>
+		<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%;" class="list-item"><table align="center" border="0" cellspacing="0" cellpadding="0" style="width: inherit; margin: 0; padding: 0; border-collapse: collapse; border-spacing: 0;">
+			
+			<!-- LIST ITEM -->
+			<tr>
+
+				<!-- LIST ITEM IMAGE -->
+				<!-- Image text color should be opposite to background color. Set your url, image src, alt and title. Alt text should fit the image size. Real image size should be x2 -->
+				<td align="left" valign="top" style="border-collapse: collapse; border-spacing: 0;
+					padding-top: 30px;
+					padding-right: 20px;"><img
+				border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;
+					color: #000000;"
+					src="https://raw.githubusercontent.com/konsav/email-templates/master/images/list-item.png"
+					alt="H" title="Highly compatible"
+					width="50" height="50"></td>
+
+				<!-- LIST ITEM TEXT -->
+				<!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
+				<td align="left" valign="top" style="font-size: 17px; font-weight: 400; line-height: 160%; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;
+					padding-top: 25px;
+					color: #000000;
+					font-family: sans-serif;" class="paragraph">
+						<b style="color: #333333;">Highly compatible</b><br/>
+						Tested on the most popular email clients for web, desktop and mobile. Checklist included.
+				</td>
+
+			</tr>
+
+			<!-- LIST ITEM -->
+			<tr>
+
+				<!-- LIST ITEM IMAGE -->
+				<!-- Image text color should be opposite to background color. Set your url, image src, alt and title. Alt text should fit the image size. Real image size should be x2 -->
+				<td align="left" valign="top" style="border-collapse: collapse; border-spacing: 0;
+					padding-top: 30px;
+					padding-right: 20px;"><img
+				border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;
+					color: #000000;"
+					src="https://raw.githubusercontent.com/konsav/email-templates/master/images/list-item.png"
+					alt="D" title="Designer friendly"
+					width="50" height="50"></td>
+
+				<!-- LIST ITEM TEXT -->
+				<!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
+				<td align="left" valign="top" style="font-size: 17px; font-weight: 400; line-height: 160%; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;
+					padding-top: 25px;
+					color: #000000;
+					font-family: sans-serif;" class="paragraph">
+						<b style="color: #333333;">Designer friendly</b><br/>
+						Sketch app resource file and a&nbsp;bunch of&nbsp;social media icons are&nbsp;also included in&nbsp;GitHub repository.
+				</td>
+
+			</tr>
+
+		</table></td>
+	</tr>
+
+	<!-- LINE -->
+	<!-- Set line color -->
+	<tr>
+		<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%;
+			padding-top: 25px;" class="line"><hr
+			color="#E0E0E0" align="center" width="100%" size="1" noshade style="margin: 0; padding: 0;" />
+		</td>
+	</tr>
+
+	<!-- PARAGRAPH -->
+	<!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
+	<tr>
+		<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 17px; font-weight: 400; line-height: 160%;
+			padding-top: 20px;
+			padding-bottom: 25px;
+			color: #000000;
+			font-family: sans-serif;" class="paragraph">
+				Have a&nbsp;question? <a href="mailto:support@ourteam.com" target="_blank" style="color: #127DB3; font-family: sans-serif; font-size: 17px; font-weight: 400; line-height: 160%;">support@ourteam.com</a>
+		</td>
+	</tr>
+
+<!-- End of WRAPPER -->
+</table>
+
+<!-- WRAPPER -->
+<!-- Set wrapper width (twice) -->
+<table border="0" cellpadding="0" cellspacing="0" align="center"
+	width="560" style="border-collapse: collapse; border-spacing: 0; padding: 0; width: inherit;
+	max-width: 560px;" class="wrapper">
+
+	<!-- SOCIAL NETWORKS -->
+	<!-- Image text color should be opposite to background color. Set your url, image src, alt and title. Alt text should fit the image size. Real image size should be x2 -->
+	<tr>
+		<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%;
+			padding-top: 25px;" class="social-icons"><table
+			width="256" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; border-spacing: 0; padding: 0;">
+			<tr>
+
+				<!-- ICON 1 -->
+				<td align="center" valign="middle" style="margin: 0; padding: 0; padding-left: 10px; padding-right: 10px; border-collapse: collapse; border-spacing: 0;"><a target="_blank"
+					href="https://raw.githubusercontent.com/konsav/email-templates/"
+				style="text-decoration: none;"><img border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: inline-block;
+					color: #000000;"
+					alt="F" title="Facebook"
+					width="44" height="44"
+					src="https://raw.githubusercontent.com/konsav/email-templates/master/images/social-icons/facebook.png"></a></td>
+
+				<!-- ICON 2 -->
+				<td align="center" valign="middle" style="margin: 0; padding: 0; padding-left: 10px; padding-right: 10px; border-collapse: collapse; border-spacing: 0;"><a target="_blank"
+					href="https://raw.githubusercontent.com/konsav/email-templates/"
+				style="text-decoration: none;"><img border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: inline-block;
+					color: #000000;"
+					alt="T" title="Twitter"
+					width="44" height="44"
+					src="https://raw.githubusercontent.com/konsav/email-templates/master/images/social-icons/twitter.png"></a></td>				
+
+				<!-- ICON 3 -->
+				<td align="center" valign="middle" style="margin: 0; padding: 0; padding-left: 10px; padding-right: 10px; border-collapse: collapse; border-spacing: 0;"><a target="_blank"
+					href="https://raw.githubusercontent.com/konsav/email-templates/"
+				style="text-decoration: none;"><img border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: inline-block;
+					color: #000000;"
+					alt="G" title="Google Plus"
+					width="44" height="44"
+					src="https://raw.githubusercontent.com/konsav/email-templates/master/images/social-icons/googleplus.png"></a></td>		
+
+				<!-- ICON 4 -->
+				<td align="center" valign="middle" style="margin: 0; padding: 0; padding-left: 10px; padding-right: 10px; border-collapse: collapse; border-spacing: 0;"><a target="_blank"
+					href="https://raw.githubusercontent.com/konsav/email-templates/"
+				style="text-decoration: none;"><img border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: inline-block;
+					color: #000000;"
+					alt="I" title="Instagram"
+					width="44" height="44"
+					src="https://raw.githubusercontent.com/konsav/email-templates/master/images/social-icons/instagram.png"></a></td>
+
+			</tr>
 			</table>
-		</center>
-	</body>
+		</td>
+	</tr>
+
+	<!-- FOOTER -->
+	<!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
+	<tr>
+		<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 13px; font-weight: 400; line-height: 150%;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			color: #999999;
+			font-family: sans-serif;" class="footer">
+
+				This email template was sent to&nbsp;you becouse we&nbsp;want to&nbsp;make the&nbsp;world a&nbsp;better place. You&nbsp;could change your <a href="https://github.com/konsav/email-templates/" target="_blank" style="text-decoration: underline; color: #999999; font-family: sans-serif; font-size: 13px; font-weight: 400; line-height: 150%;">subscription settings</a> anytime.
+
+				<!-- ANALYTICS -->
+				<!-- http://www.google-analytics.com/collect?v=1&tid={{UA-Tracking-ID}}&cid={{Client-ID}}&t=event&ec=email&ea=open&cs={{Campaign-Source}}&cm=email&cn={{Campaign-Name}} -->
+				<img width="1" height="1" border="0" vspace="0" hspace="0" style="margin: 0; padding: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;"
+				src="https://raw.githubusercontent.com/konsav/email-templates/master/images/tracker.png" />
+
+		</td>
+	</tr>
+
+<!-- End of WRAPPER -->
+</table>
+
+<!-- End of SECTION / BACKGROUND -->
+</td></tr></table>
+
+</body>
 </html>
