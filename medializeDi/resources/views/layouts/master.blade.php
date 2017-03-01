@@ -10,7 +10,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-        <meta content="Rocketlize, compre curtidas e seguidores para Instagram, curtidas para Facebook, inscritos para YouTube, seguidores para Twitter e SoundCloud." name="description" />
+        <meta content="Comprar curtidas e seguidores brasileiros reais no instagram. Comprar curtidas no facebook e inscritos no youtube, seguidores no twitter e soundcloud." name="description" />
         <!-- BEGIN GLOBAL MANDATORY STYLES -->
         
         <link href="assets/base/css/googlefonts.css" rel='stylesheet' type='text/css'>
