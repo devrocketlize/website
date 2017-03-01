@@ -1,7 +1,7 @@
 @extends('layouts/master')
 
 @section('titulo')
-	{{ $tipo->desc }} no {{ $media->desc }}
+	Comprar {{ $tipo->desc }} no {{ $media->desc }}
 @stop
 
 @section('conteudo')
