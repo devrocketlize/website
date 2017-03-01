@@ -76,7 +76,7 @@ class NewsletterController extends Controller
         $dados->save();
 
 
-        return view('testegratis')return redirect()->back()->with('message', 'Parabéns! Brevemente você estará testando um de nossos serviços');;
+        return view('testegratis')return redirect()->back()->with('message', 'Parabéns! Brevemente você estará testando um de nossos serviços');
     }
 
 }
