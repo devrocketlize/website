@@ -47,7 +47,7 @@
 			    		
     		<br /><br />
     			<form action="/enviarDados" method="POST" enctype="multipart/form-data">
-
+    				{{ csrf_field() }}
     			<div class="col-md-6">
     				<div class="form-group">
 					    <label for="exampleInputEmail1">Seu e-mail*</label>
