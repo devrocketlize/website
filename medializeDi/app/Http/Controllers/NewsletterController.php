@@ -49,7 +49,7 @@ class NewsletterController extends Controller
 		     Mail::send('emails', [], function($message) {
 
 		          $message->from('newsletter@rocketlize.com', 'Novidades da Rocketlize!');
-		          $message->to('designsuymarabarreto@hotmail.com', 'Interessado')->subject('Rocketlize! Como foi seu crescimento?');
+		          $message->to('blogdafofuxa@gmail.com', 'Interessado')->subject('Rocketlize! Como foi seu crescimento?');
 
 		      });
 
