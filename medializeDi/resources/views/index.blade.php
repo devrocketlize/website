@@ -14,6 +14,7 @@
         <!-- BEGIN GLOBAL MANDATORY STYLES -->
         
         <link href="assets/base/css/googlefonts.css" rel='stylesheet' type='text/css'>
+        <meta name="google-site-verification" content="RUagtzYkOYIJTQafihTYb7tAIXki2Ak8QAwgyWHtz90" />
 
         <link href="{{ url('assets/plugins/socicon/socicon.css')}}" rel="stylesheet" type="text/css" />
         <link href="{{ url('assets/plugins/bootstrap-social/bootstrap-social.css')}}" rel="stylesheet" type="text/css" />

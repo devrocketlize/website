@@ -14,6 +14,7 @@
         <!-- BEGIN GLOBAL MANDATORY STYLES -->
         
         <link href="assets/base/css/googlefonts.css" rel='stylesheet' type='text/css'>
+        <meta name="google-site-verification" content="RUagtzYkOYIJTQafihTYb7tAIXki2Ak8QAwgyWHtz90" />
 
         <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 
