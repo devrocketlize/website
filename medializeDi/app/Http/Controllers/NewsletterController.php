@@ -42,18 +42,18 @@ class NewsletterController extends Controller
 
     public function sendmail(){
 
-    	$users = Newsletter::all();
+    	//$users = Newsletter::all();
 
-		foreach ($users as $user) {
+		//foreach ($users as $user) {
 
 		     Mail::send('emails', [], function($message) use ($user) {
 
 		          $message->from('newsletter@rocketlize.com', 'Novidades da Rocketlize!');
-		          $message->to($user->email, 'Interessado')->subject('Rocketlize! Você pode ganhar um teste grátis agora!');
+		          $message->to('designsuymarabarreto@hotmail.com', 'Interessado')->subject('Rocketlize! Como foi seu crescimento?');
 
 		      });
 
-		}
+		//}
 
     	return "Enviado com sucesso!";
     
