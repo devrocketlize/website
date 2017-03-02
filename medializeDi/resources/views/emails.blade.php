@@ -109,7 +109,7 @@ a, a:hover {
 			color: #000000;
 			font-family: sans-serif;" class="subheader">
 				
-				Olá Suymara Barreto, gostaríamos de saber se você está contente e aprova o gannho de  <strong>1.000 Seguidores brasileiros</strong> em seu Instagram!
+				Olá Raquel, gostaríamos de saber se você está contente e aprova o gannho de  <strong>100 Curtidas</strong> em seu Instagram!
 
 		</td>
 	</tr>
@@ -135,12 +135,12 @@ a, a:hover {
 			padding-top: 25px; 
 			color: #000000;
 			font-family: sans-serif;" class="paragraph">
-				Nosso departamento técnico de processamento efetuou a entrega de 1.000 Seguidores brasileiros em seu perfil <strong>suymarabarreto</strong>, deixando nesta tarde de Quinta-feira seu Instagram com <strong>263k</strong>! Fantástico, não é mesmo? xD 
+				Nosso departamento técnico de processamento efetuou a entrega de 100 curtidas (25 no primeiro link, 25 no segundo e 50 no terceiro) nesta noite de Quinta-feira em seus perfis fornecidos! Fantástico, não é mesmo? xD 
 
 
-				<br /><br />O pós-carnaval da Rocketlize preparou exclusivamente para você, uma campanha de marketing que parte do aumento de seguidores em seu perfil para torná-lo ainda maior com segurança e eficiência!
+				<br /><br />O pós-carnaval da Rocketlize preparou exclusivamente para você, uma campanha de marketing que parte do aumento de curtidas para tornar suas postagens ainda mais chamativas!
 
-				<br /><br />Somente aqui, você receberá Seguidores brasileiros reais, com um oferta incrível de <strong>12.000 seguidores</strong> com o preço de <strong>R$ 699,90</strong> por apenas <strong style="color: red;">R$ 589,90</strong>.
+				<br /><br />Somente aqui, você receberá <strong>2.000 curtidas </strong> em um post, com a oferta incrível de <strong style="color: red;">R$ 159,90</strong>.
 				<br /><br />
 				Quer outros serviços com descontos de até 20%? Contate-nos em nosso sac@rocketlize.com. Abraços!
 
@@ -154,11 +154,11 @@ a, a:hover {
 		<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%;
 			padding-top: 25px;
 			padding-bottom: 5px;" class="button"><a
-			href="http://mpago.la/OFhs" target="_blank" style="text-decoration: underline;">
+			href="http://mpago.la/uoC8" target="_blank" style="text-decoration: underline;">
 				<table border="0" cellpadding="0" cellspacing="0" align="center" style="max-width: 240px; min-width: 120px; border-collapse: collapse; border-spacing: 0; padding: 0;"><tr><td align="center" valign="middle" style="padding: 12px 24px; margin: 0; text-decoration: underline; border-collapse: collapse; border-spacing: 0; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px;"
 					bgcolor="#E9703E"><a target="_blank" style="text-decoration: underline;
 					color: #FFFFFF; font-family: sans-serif; font-size: 17px; font-weight: 400; line-height: 120%;"
-					href="http://mpago.la/OFhs">
+					href="http://mpago.la/uoC8">
 						COMPRAR AGORA!
 					</a>
 			</td></tr></table></a>
