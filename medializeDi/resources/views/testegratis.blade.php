@@ -38,7 +38,7 @@
     	<div class="row">
     		<div class="col-md-12">
     		<br />
-    		<h3>Parabéns, você poderá solicitar um teste de nossos serviços para a mídia que desejar!</h3>
+    		<h3>Parabéns, você poderá solicitar um teste de nossos serviços para seu Instagram!</h3>
     		@if(session()->has('message'))
 			    <div class="alert alert-success">
 			        {{ session()->get('message') }}
@@ -66,9 +66,9 @@
 
     			<div class="col-md-6">
     				<div class="form-group">
-					    <label for="exampleSelect1">Mídia Social</label>
+					    <label for="exampleSelect1">Gostaria de teste em outra mídia?</label>
 					    <select name="midia" id="midia" class="form-control" >
-					      <option value="Instagram">Instagram</option>
+					      <option value="Não">Não</option>
 					      <option value="Facebook">Facebook</option>
 					      <option value="YouTube">YouTube</option>
 					      <option value="SoundCloud">SoundCloud</option>
@@ -79,11 +79,12 @@
 
     			<div class="col-md-6">
     				  <div class="form-group">
-					    <label for="exampleInputPassword1">Link para mídia*</label>
+					    <label for="exampleInputPassword1">Link para perfil*</label>
 					    <input type="text" name="link" id="link" class="form-control" placeholder="https://instagram.com/seuperfil">
 					  </div>
     			</div>
-    			<div class="col-md-6">
+    			
+                <div class="col-md-6">
     				 <button type="submit" class="btn btn-primary">TESTAR</button>
     			</div>
 					 

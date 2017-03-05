@@ -76,10 +76,11 @@ Route::post('unsubscribe', 'NewsletterController@unsubscribe' );
 Route::get('testegratis', 'NewsletterController@testegratis' );
 Route::post('enviarDados', 'NewsletterController@enviarDados' );
 
+  Route::get('send', 'NewsletterController@sendmail' );
 
 Route::group(['middleware' => 'auth'], function () {
     
-    Route::get('send', 'NewsletterController@sendmail' );
+  
     Route::get('editar-pedido/{id}', 'HomeController@edit' );
     Route::post('atualizar-pedido/{id}', 'HomeController@update' );
 

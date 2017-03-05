@@ -97,7 +97,7 @@ a, a:hover {
 			padding-top: 25px;
 			color: #000000;
 			font-family: sans-serif;" class="header">
-				Como foi sua experiência com nosso teste?
+				Você acaba de ganhar curtidas grátis! 
 		</td>
 	</tr>
 	
@@ -109,7 +109,7 @@ a, a:hover {
 			color: #000000;
 			font-family: sans-serif;" class="subheader">
 				
-				Olá Raquel, gostaríamos de saber se você está contente e aprova o gannho de  <strong>100 Curtidas</strong> em seu Instagram!
+				Reservamos para o seu perfil 250 curtidas (50 nas próximas 5 postagens).
 
 		</td>
 	</tr>
@@ -120,7 +120,7 @@ a, a:hover {
 		<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;
 			padding-top: 20px;" class="hero"><a target="_blank" style="text-decoration: none;"
 			href="https://rocketlize.com"><img border="0" vspace="0" hspace="0"
-			src="https://rocketlize.com/assets/base/img/layout/home/segbrreaisinsta.jpg"
+			src="https://rocketlize.com/assets/base/img/layout/home/facecurfan.jpg"
 			alt="Please enable images to view this content" title="Marketing"
 			width="560" style="
 			width: 100%;
@@ -135,14 +135,8 @@ a, a:hover {
 			padding-top: 25px; 
 			color: #000000;
 			font-family: sans-serif;" class="paragraph">
-				Nosso departamento técnico de processamento efetuou a entrega de 100 curtidas (25 no primeiro link, 25 no segundo e 50 no terceiro) nesta noite de Quinta-feira em seus perfis fornecidos! Fantástico, não é mesmo? xD 
-
-
-				<br /><br />O pós-carnaval da Rocketlize preparou exclusivamente para você, uma campanha de marketing que parte do aumento de curtidas para tornar suas postagens ainda mais chamativas!
-
-				<br /><br />Somente aqui, você receberá <strong>2.000 curtidas </strong> em um post, com a oferta incrível de <strong style="color: red;">R$ 159,90</strong>.
-				<br /><br />
-				Quer outros serviços com descontos de até 20%? Contate-nos em nosso sac@rocketlize.com. Abraços!
+				
+				A Rocketlize disponibiliza <strong>gratuitamente</strong> para o seu perfil um total de 250 curtidas em nosso teste grátis para avaliação da qualidade de nossos serviços. Corra agora mesmo para receber!	
 
 		</td>
 	</tr>
@@ -154,12 +148,12 @@ a, a:hover {
 		<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%;
 			padding-top: 25px;
 			padding-bottom: 5px;" class="button"><a
-			href="http://mpago.la/uoC8" target="_blank" style="text-decoration: underline;">
+			href="https://rocketlize.com/testegratis" target="_blank" style="text-decoration: underline;">
 				<table border="0" cellpadding="0" cellspacing="0" align="center" style="max-width: 240px; min-width: 120px; border-collapse: collapse; border-spacing: 0; padding: 0;"><tr><td align="center" valign="middle" style="padding: 12px 24px; margin: 0; text-decoration: underline; border-collapse: collapse; border-spacing: 0; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px;"
 					bgcolor="#E9703E"><a target="_blank" style="text-decoration: underline;
 					color: #FFFFFF; font-family: sans-serif; font-size: 17px; font-weight: 400; line-height: 120%;"
-					href="http://mpago.la/uoC8">
-						COMPRAR AGORA!
+					href="https://rocketlize.com/testegratis">
+						GANHAR CURTIDAS
 					</a>
 			</td></tr></table></a>
 		</td>
@@ -174,7 +168,262 @@ a, a:hover {
 		</td>
 	</tr>
 
-	
+	<tr>
+		<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 17px; font-weight: 400; line-height: 160%;
+			padding-top: 25px; 
+			color: #000000;
+			font-family: sans-serif;" class="paragraph">
+				
+				As novidades não param aqui! Estamos com o desconto de 20% em <strong>todos</strong> os planos de curtidas brasileiras em uma postagem para Instagram! Confira abaixo a nossa tabela de <strong>preços reduzidos</strong>:
+
+
+		</td>
+	</tr>
+	<!-- LIST -->
+	<tr>
+		<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%;" class="list-item"><table align="center" border="0" cellspacing="0" cellpadding="0" style="width: inherit; margin: 0; padding: 0; border-collapse: collapse; border-spacing: 0;">
+			
+			<!-- LIST ITEM -->
+			<tr>
+
+				<!-- LIST ITEM IMAGE -->
+				<!-- Image text color should be opposite to background color. Set your url, image src, alt and title. Alt text should fit the image size. Real image size should be x2 -->
+				<td align="left" valign="top" style="border-collapse: collapse; border-spacing: 0;
+					padding-top: 30px;
+					padding-right: 20px;"><img
+				border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;
+					color: #000000;"
+					src="http://www.africome.com/wp-content/themes/africome/images/instagram.svg"
+					alt="Curtidas Instagram" title="Curtidas Instagram"
+					width="50" height="50"></td>
+
+				<!-- LIST ITEM TEXT -->
+				<!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
+				<td align="left" valign="top" style="font-size: 17px; font-weight: 400; line-height: 160%; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;
+					padding-top: 25px;
+					color: #000000;
+					font-family: sans-serif;" class="paragraph">
+						<b style="color: #333333;"><a href="http://mpago.la/O7RB">50 Curtidas Brasileiras no Instagram</a></b><br/>
+						<p style="color: red;">Apenas R$ 6,29</p>
+				</td>
+
+			</tr>
+
+			<!-- LIST ITEM -->
+			<tr>
+
+				<!-- LIST ITEM IMAGE -->
+				<!-- Image text color should be opposite to background color. Set your url, image src, alt and title. Alt text should fit the image size. Real image size should be x2 -->
+				<td align="left" valign="top" style="border-collapse: collapse; border-spacing: 0;
+					padding-top: 30px;
+					padding-right: 20px;"><img
+				border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;
+					color: #000000;"
+					src="http://www.africome.com/wp-content/themes/africome/images/instagram.svg"
+					alt="Curtidas Instagram" title="Curtidas Instagram"
+					width="50" height="50"></td>
+
+				<!-- LIST ITEM TEXT -->
+				<!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
+				<td align="left" valign="top" style="font-size: 17px; font-weight: 400; line-height: 160%; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;
+					padding-top: 25px;
+					color: #000000;
+					font-family: sans-serif;" class="paragraph">
+						<b style="color: #333333;"><a href="http://mpago.la/SZK6">100 Curtidas Brasileiras no Instagram</a></b><br/>
+						<p style="color: red;">Apenas R$ 9,50</p>
+				</td>
+
+			</tr>
+
+		</table></td>
+	</tr>
+
+	<!-- LIST -->
+	<tr>
+		<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%;" class="list-item"><table align="center" border="0" cellspacing="0" cellpadding="0" style="width: inherit; margin: 0; padding: 0; border-collapse: collapse; border-spacing: 0;">
+			
+			<!-- LIST ITEM -->
+			<tr>
+
+				<!-- LIST ITEM IMAGE -->
+				<!-- Image text color should be opposite to background color. Set your url, image src, alt and title. Alt text should fit the image size. Real image size should be x2 -->
+				<td align="left" valign="top" style="border-collapse: collapse; border-spacing: 0;
+					padding-top: 30px;
+					padding-right: 20px;"><img
+				border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;
+					color: #000000;"
+					src="http://www.africome.com/wp-content/themes/africome/images/instagram.svg"
+					alt="Curtidas Instagram" title="Curtidas Instagram"
+					width="50" height="50"></td>
+
+				<!-- LIST ITEM TEXT -->
+				<!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
+				<td align="left" valign="top" style="font-size: 17px; font-weight: 400; line-height: 160%; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;
+					padding-top: 25px;
+					color: #000000;
+					font-family: sans-serif;" class="paragraph">
+						<b style="color: #333333;"><a href="http://mpago.la/v4vr">150 Curtidas Brasileiras no Instagram</a></b><br/>
+						<p style="color: red;">Apenas R$ 14,40</p>
+				</td>
+
+			</tr>
+
+			<!-- LIST ITEM -->
+			<tr>
+
+				<!-- LIST ITEM IMAGE -->
+				<!-- Image text color should be opposite to background color. Set your url, image src, alt and title. Alt text should fit the image size. Real image size should be x2 -->
+				<td align="left" valign="top" style="border-collapse: collapse; border-spacing: 0;
+					padding-top: 30px;
+					padding-right: 20px;"><img
+				border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;
+					color: #000000;"
+					src="http://www.africome.com/wp-content/themes/africome/images/instagram.svg"
+					alt="Curtidas Instagram" title="Curtidas Instagram"
+					width="50" height="50"></td>
+
+				<!-- LIST ITEM TEXT -->
+				<!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
+				<td align="left" valign="top" style="font-size: 17px; font-weight: 400; line-height: 160%; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;
+					padding-top: 25px;
+					color: #000000;
+					font-family: sans-serif;" class="paragraph">
+						<b style="color: #333333;"><a href="http://mpago.la/mEnJ">200 Curtidas Brasileiras no Instagram</a></b><br/>
+						<p style="color: red;">Apenas R$ 19,90</p>
+				</td>
+
+			</tr>
+
+		</table></td>
+	</tr>
+	<!-- LINE -->
+	<!-- Set line color -->
+	<tr>	
+		<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%;
+			padding-top: 25px;" class="line"><hr
+			color="#E0E0E0" align="center" width="100%" size="1" noshade style="margin: 0; padding: 0;" />
+		</td>
+	</tr>
+
+	<!-- LIST -->
+	<tr>
+		<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%;" class="list-item"><table align="center" border="0" cellspacing="0" cellpadding="0" style="width: inherit; margin: 0; padding: 0; border-collapse: collapse; border-spacing: 0;">
+			
+			<!-- LIST ITEM -->
+			<tr>
+
+				<!-- LIST ITEM IMAGE -->
+				<!-- Image text color should be opposite to background color. Set your url, image src, alt and title. Alt text should fit the image size. Real image size should be x2 -->
+				<td align="left" valign="top" style="border-collapse: collapse; border-spacing: 0;
+					padding-top: 30px;
+					padding-right: 20px;"><img
+				border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;
+					color: #000000;"
+					src="http://www.africome.com/wp-content/themes/africome/images/instagram.svg"
+					alt="Curtidas Instagram" title="Curtidas Instagram"
+					width="50" height="50"></td>
+
+				<!-- LIST ITEM TEXT -->
+				<!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
+				<td align="left" valign="top" style="font-size: 17px; font-weight: 400; line-height: 160%; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;
+					padding-top: 25px;
+					color: #000000;
+					font-family: sans-serif;" class="paragraph">
+						<b style="color: #333333;"><a href="http://mpago.la/GFxu">500 Curtidas Brasileiras no Instagram</a></b><br/>
+						<p style="color: red;">Apenas R$ 44,70</p>
+				</td>
+
+			</tr>
+
+			<!-- LIST ITEM -->
+			<tr>
+
+				<!-- LIST ITEM IMAGE -->
+				<!-- Image text color should be opposite to background color. Set your url, image src, alt and title. Alt text should fit the image size. Real image size should be x2 -->
+				<td align="left" valign="top" style="border-collapse: collapse; border-spacing: 0;
+					padding-top: 30px;
+					padding-right: 20px;"><img
+				border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;
+					color: #000000;"
+					src="http://www.africome.com/wp-content/themes/africome/images/instagram.svg"
+					alt="Curtidas Instagram" title="Curtidas Instagram"
+					width="50" height="50"></td>
+
+				<!-- LIST ITEM TEXT -->
+				<!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
+				<td align="left" valign="top" style="font-size: 17px; font-weight: 400; line-height: 160%; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;
+					padding-top: 25px;
+					color: #000000;
+					font-family: sans-serif;" class="paragraph">
+						<b style="color: #333333;"><a href="http://mpago.la/r43J">1.000 Curtidas Brasileiras no Instagram</a></b><br/>
+						<p style="color: red;">Apenas R$ 88,70</p>
+				</td>
+
+			</tr>
+
+		</table></td>
+	</tr>
+
+	<!-- LIST -->
+	<tr>
+		<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%;" class="list-item"><table align="center" border="0" cellspacing="0" cellpadding="0" style="width: inherit; margin: 0; padding: 0; border-collapse: collapse; border-spacing: 0;">
+			
+			<!-- LIST ITEM -->
+			<tr>
+
+				<!-- LIST ITEM IMAGE -->
+				<!-- Image text color should be opposite to background color. Set your url, image src, alt and title. Alt text should fit the image size. Real image size should be x2 -->
+				<td align="left" valign="top" style="border-collapse: collapse; border-spacing: 0;
+					padding-top: 30px;
+					padding-right: 20px;"><img
+				border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;
+					color: #000000;"
+					src="http://www.africome.com/wp-content/themes/africome/images/instagram.svg"
+					alt="Curtidas Instagram" title="Curtidas Instagram"
+					width="50" height="50"></td>
+
+				<!-- LIST ITEM TEXT -->
+				<!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
+				<td align="left" valign="top" style="font-size: 17px; font-weight: 400; line-height: 160%; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;
+					padding-top: 25px;
+					color: #000000;
+					font-family: sans-serif;" class="paragraph">
+						<b style="color: #333333;"><a href="http://mpago.la/ikvT">2.000 Curtidas Brasileiras no Instagram</a></b><br/>
+						<p style="color: red;">Apenas R$ 143,90</p>
+				</td>
+
+			</tr>
+
+			<!-- LIST ITEM -->
+			<tr>
+
+				<!-- LIST ITEM IMAGE -->
+				<!-- Image text color should be opposite to background color. Set your url, image src, alt and title. Alt text should fit the image size. Real image size should be x2 -->
+				<td align="left" valign="top" style="border-collapse: collapse; border-spacing: 0;
+					padding-top: 30px;
+					padding-right: 20px;"><img
+				border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;
+					color: #000000;"
+					src="http://www.africome.com/wp-content/themes/africome/images/instagram.svg"
+					alt="Curtidas Instagram" title="Curtidas Instagram"
+					width="50" height="50"></td>
+
+				<!-- LIST ITEM TEXT -->
+				<!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
+				<td align="left" valign="top" style="font-size: 17px; font-weight: 400; line-height: 160%; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;
+					padding-top: 25px;
+					color: #000000;
+					font-family: sans-serif;" class="paragraph">
+						<b style="color: #333333;"><a href="http://mpago.la/d2JT">2.500 Curtidas Brasileiras no Instagram</a></b><br/>
+						<p style="color: red;">Apenas R$ 177,50</p>
+				</td>
+
+			</tr>
+
+		</table></td>
+	</tr>
+
+
 	
 
 	<!-- PARAGRAPH -->
