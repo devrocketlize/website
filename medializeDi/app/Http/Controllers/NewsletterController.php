@@ -47,7 +47,7 @@ class NewsletterController extends Controller
           
 		foreach ($users as $user) {
 
-             if($user->ID >= 501 && $user->ID <= 1000){
+             if($user->ID >= 1001 && $user->ID <= 1500){
 
         		  Mail::send('emails', [], function($message) use ($user) {
 
