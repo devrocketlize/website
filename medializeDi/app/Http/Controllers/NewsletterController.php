@@ -47,12 +47,12 @@ class NewsletterController extends Controller
           
 		foreach ($users as $user) {
 
-             if($user->ID >= 1001 && $user->ID <= 1500){
+             if($user->ID >= 1 && $user->ID <= 500){
 
         		  Mail::send('emails', [], function($message) use ($user) {
 
-        		          $message->from('newsletter@rocketlize.com', 'Novidades da Rocketlize!');
-        		          $message->to($user->FIELD1, 'Interessado')->subject('Rocketlize! Você gamhou um teste grátis!');
+        		          $message->from('newsletters@rocketlize.com', 'Novidades da Rocketlize!');
+        		          $message->to($user->FIELD1, 'Interessado')->subject('Rocketlize! Ainda não usuou seu teste grátis?');
 
         		  });
             }
