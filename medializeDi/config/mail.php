@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'newsletter@rocketlize.com'),
+        'address' => env('MAIL_FROM_ADDRESS', 'newsletters@rocketlize.com'),
         'name' => env('MAIL_FROM_NAME', 'Newsletter da Rocketlize'),
     ],
 
@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => env('MAIL_USERNAME', 'newsletterocket'),
+    'username' => env('MAIL_USERNAME', 'newsletterocket2'),
 
-    'password' => env('MAIL_PASSWORD', '753sdaJMB'),
+    'password' => env('MAIL_PASSWORD', '753SDAjmb'),
 
     /*
     |--------------------------------------------------------------------------
