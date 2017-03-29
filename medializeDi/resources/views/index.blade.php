@@ -466,7 +466,6 @@
         <!-- BEGIN: THEME SCRIPTS -->
         <script src="{{ url('assets/base/js/components.js')}}" type="text/javascript"></script>
         <script src="{{ url('assets/base/js/jquery.validate.js')}}" type="text/javascript"></script>
-        <script src="{{ url('assets/base/js/components-shop.js')}}" type="text/javascript"></script>
         <script src="{{ url('assets/base/js/app.js')}}" type="text/javascript"></script>
 
         
