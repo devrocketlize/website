@@ -459,7 +459,7 @@
         <script src="{{ url('assets/plugins/owl-carousel/owl.carousel.min.js')}}" type="text/javascript"></script>
        
         <script src="{{ url('assets/plugins/fancybox/jquery.fancybox.pack.js')}}" type="text/javascript"></script>
-        <script src="{{ url('assets/plugins/smooth-scroll/jquery.smooth-scroll.js')}}" type="text/javascript"></script>
+       
       
         <!-- END: LAYOUT PLUGINS -->
         <!-- BEGIN: THEME SCRIPTS -->
