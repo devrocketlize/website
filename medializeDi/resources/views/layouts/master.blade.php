@@ -357,13 +357,7 @@
         <!-- END: THEME SCRIPTS -->
         <!-- BEGIN: PAGE SCRIPTS -->
         <script src="{{ url('assets/base/js/scripts/revo-slider/slider-4.js')}}" type="text/javascript"></script>
-        <script src="{{ url('assets/plugins/isotope/isotope.pkgd.min.js')}}" type="text/javascript"></script>
-        <script src="{{ url('assets/plugins/isotope/imagesloaded.pkgd.min.js')}}" type="text/javascript"></script>
-        <script src="{{ url('assets/plugins/isotope/packery-mode.pkgd.min.js')}}" type="text/javascript"></script>
-        <script src="{{ url('assets/plugins/ilightbox/js/jquery.requestAnimationFrame.js')}}" type="text/javascript"></script>
-        <script src="{{ url('assets/plugins/ilightbox/js/jquery.mousewheel.js')}}" type="text/javascript"></script>
-        <script src="{{ url('assets/plugins/ilightbox/js/ilightbox.packed.js')}}" type="text/javascript"></script>
-        <script src="{{ url('assets/base/js/scripts/pages/isotope-gallery.js')}}" type="text/javascript"></script>
+        
         <!-- END: PAGE SCRIPTS -->
         <!-- END: LAYOUT/BASE/BOTTOM -->
     <script>
