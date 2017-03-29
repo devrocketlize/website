@@ -461,7 +461,7 @@
         <script src="{{ url('assets/plugins/counterup/jquery.counterup.min.js')}}" type="text/javascript"></script>
         <script src="{{ url('assets/plugins/fancybox/jquery.fancybox.pack.js')}}" type="text/javascript"></script>
         <script src="{{ url('assets/plugins/smooth-scroll/jquery.smooth-scroll.js')}}" type="text/javascript"></script>
-        <script src="{{ url('assets/plugins/slider-for-bootstrap/js/bootstrap-slider.js')}}" type="text/javascript"></script>
+      
         <!-- END: LAYOUT PLUGINS -->
         <!-- BEGIN: THEME SCRIPTS -->
         <script src="{{ url('assets/base/js/components.js')}}" type="text/javascript"></script>
