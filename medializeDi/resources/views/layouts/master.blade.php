@@ -226,7 +226,7 @@
         <script src="{{ url('assets/plugins/bootstrap/js/bootstrap.min.js')}}" type="text/javascript"></script>
         <script src="{{ url('assets/plugins/jquery.easing.min.js')}}" type="text/javascript"></script>
         <script src="{{ url('assets/plugins/reveal-animate/wow.js')}}" type="text/javascript"></script>
-        <script src="{{ url('assets/base/js/scripts/reveal-animate/reveal-animate.js')}}" type="text/javascript"></script>
+        
         <!-- END: CORE PLUGINS -->
         <!-- BEGIN: LAYOUT PLUGINS -->
         <script src="{{ url('assets/plugins/revo-slider/js/jquery.themepunch.tools.min.js')}}" type="text/javascript"></script>
