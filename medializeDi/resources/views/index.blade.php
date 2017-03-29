@@ -450,14 +450,26 @@
         <!-- END: CORE PLUGINS -->
         <!-- BEGIN: LAYOUT PLUGINS -->
         <script src="{{ url('assets/plugins/revo-slider/js/jquery.themepunch.tools.min.js')}}" type="text/javascript"></script>
-       
+        <script src="{{ url('assets/plugins/revo-slider/js/jquery.themepunch.revolution.min.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/revo-slider/js/extensions/revolution.extension.slideanims.min.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/revo-slider/js/extensions/revolution.extension.layeranimation.min.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/revo-slider/js/extensions/revolution.extension.navigation.min.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/revo-slider/js/extensions/revolution.extension.video.min.js')}}" type="text/javascript"></script>
         <script src="{{ url('assets/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/owl-carousel/owl.carousel.min.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/counterup/jquery.waypoints.min.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/counterup/jquery.counterup.min.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/fancybox/jquery.fancybox.pack.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/smooth-scroll/jquery.smooth-scroll.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/slider-for-bootstrap/js/bootstrap-slider.js')}}" type="text/javascript"></script>
         <!-- END: LAYOUT PLUGINS -->
         <!-- BEGIN: THEME SCRIPTS -->
         <script src="{{ url('assets/base/js/components.js')}}" type="text/javascript"></script>
         <script src="{{ url('assets/base/js/jquery.validate.js')}}" type="text/javascript"></script>
         <script src="{{ url('assets/base/js/components-shop.js')}}" type="text/javascript"></script>
         <script src="{{ url('assets/base/js/app.js')}}" type="text/javascript"></script>
+
+        
 
         <script>
             $(document).ready(function()
@@ -544,7 +556,13 @@
         <!-- END: THEME SCRIPTS -->
         <!-- BEGIN: PAGE SCRIPTS -->
         <script src="{{ url('assets/base/js/scripts/revo-slider/slider-4.js')}}" type="text/javascript"></script>
-        
+        <script src="{{ url('assets/plugins/isotope/isotope.pkgd.min.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/isotope/imagesloaded.pkgd.min.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/isotope/packery-mode.pkgd.min.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/ilightbox/js/jquery.requestAnimationFrame.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/ilightbox/js/jquery.mousewheel.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/plugins/ilightbox/js/ilightbox.packed.js')}}" type="text/javascript"></script>
+        <script src="{{ url('assets/base/js/scripts/pages/isotope-gallery.js')}}" type="text/javascript"></script>
         <!-- END: PAGE SCRIPTS -->
         <!-- END: LAYOUT/BASE/BOTTOM -->
     <script>
