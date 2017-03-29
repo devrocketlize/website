@@ -190,7 +190,8 @@
                             
                             <div itemscope itemtype="http://schema.org/Person">
                                
-                               <p class="propColor" itemprop="email" href="mailto:rocketlize@outlook.com">Atendimento no Skype: rocketlize@outlook<span class="hide">null</span>.com</p>
+                              
+                               <p class="propColor">Whatsapp: (11) 97064 - 1485</p>
 
                             </div>
 
