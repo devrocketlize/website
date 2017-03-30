@@ -79,7 +79,24 @@
                             </div>
                         </div>
                     </div>
+                     @if($servico->plano == 5)
+                     <div class="row">
+                        <div class="form-group col-md-12">
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label class="control-label">Seu perfil</label>
+                                    <input type="text" name="link" class="form-control c-square c-theme" placeholder="https://instagram.com/seu.perfil"> 
+                                </div>
 
+                                <div class="form-group col-md-6">
+                                    <label class="control-label">Sua senha</label>
+                                    <input type="password" name="senha" class="form-control c-square c-theme"> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     @else
                     <div class="row">
                         <div class="form-group col-md-12">
                             <div class="row">
@@ -90,6 +107,25 @@
                             </div>
                         </div>
                     </div>
+                    @endif
+
+                    @if($servico->plano == 5)
+                     <div class="row">
+                        <div class="form-group col-md-12">
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label class="control-label">Perfis do seguimento</label>
+                                    <input type="text" name="perfis" class="form-control c-square c-theme" placeholder="@fulano, @artista, @empresa"> 
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label class="control-label">Hashtags do seguimento</label>
+                                    <input type="text" name="hash" class="form-control c-square c-theme" placeholder="#instaGood, #instaLife, #instaMais"> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @endif
 
                     @if($servico->plano == 3)
                     <div class="row">
