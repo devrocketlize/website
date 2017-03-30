@@ -48,19 +48,38 @@
 		                    {{ number_format($servico->quantidade, 0, '', '.') }} {{ $tipo->desc }}</h4>
 		                </div>
 		                <div class="price-table-body">
-		                    <p class="value">R$ {{ str_replace('.', ',', $servico->preco) }} <!--<small>/month</small>--></p>
+		                    <p class="value">R$ {{ str_replace('.', ',', $servico->preco) }} @if($servico->plano == 5)<small>/mês</small>@endif</p>
 		                </div>
 		                <ul class="list-group">
 		                    
-		                    <li class="list-group-item"><strong>NÃO</strong> precisamos da sua senha</li>
+		                    <li class="list-group-item">
+		                    	 	@if($servico->plano == 5) 
+		                    	 		<strong>Necessário</strong> senha
+		                    	 	@else
+		                    			<strong>NÃO</strong> precisamos da sua senha
+		                    		@endif
 
-		                    <li class="list-group-item">Entregamos {{ $servico->entrega }} </li>
+		                    </li>
+
+		                    <li class="list-group-item">
+		                    		@if($servico->plano == 5) 
+		                    	 		Entrega automática
+		                    	 	@else
+		                    		Entregamos {{ $servico->entrega }} 
+		                    		@endif
+		                    </li>
 
 		                    <li class="list-group-item">Seu perfil apenas precisa ser público</li>
 
 		                    <li class="list-group-item">Garantimos reembolso</li>
 
-		                    <li class="list-group-item">Entre 1x e 12x no cartão</li>
+		                    <li class="list-group-item">
+		                    		@if($servico->plano == 5) 
+		                    	 		Cobrança recorrente
+		                    	 	@else
+		                    		Entre 1x e 12x no cartão
+		                    		@endif
+		                    </li>
 
 		                </ul>
 		                <div class="price-table-footer"> <a href="{{ url('/comprar-' . $tipo->link . '-' . $media->link . '/'. $servico->seo) }}" class="btn btn-lg c-btn-green c-btn-square c-btn-border-2x">COMPRAR</a> </div>
