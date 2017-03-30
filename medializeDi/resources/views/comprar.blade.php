@@ -85,7 +85,7 @@
                             <div class="row">
                                 <div class="form-group col-md-6">
                                     <label class="control-label">Seu perfil</label>
-                                    <input type="text" name="link" class="form-control c-square c-theme" placeholder="https://instagram.com/seu.perfil"> 
+                                    <input type="text" name="links" maxlength="100" class="form-control c-square c-theme" placeholder="https://instagram.com/seu.perfil"> 
                                 </div>
 
                                 <div class="form-group col-md-6">
@@ -115,12 +115,12 @@
                             <div class="row">
                                 <div class="form-group col-md-6">
                                     <label class="control-label">Perfis do seguimento</label>
-                                    <input type="text" name="perfis" class="form-control c-square c-theme" placeholder="@fulano, @artista, @empresa"> 
+                                    <input type="text" name="perfis" maxlength="100" class="form-control c-square c-theme" placeholder="@fulano, @artista, @empresa"> 
                                 </div>
 
                                 <div class="form-group col-md-6">
                                     <label class="control-label">Hashtags do seguimento</label>
-                                    <input type="text" name="hash" class="form-control c-square c-theme" placeholder="#instaGood, #instaLife, #instaMais"> 
+                                    <input type="text" name="hash" maxlength="100" class="form-control c-square c-theme" placeholder="#instaGood, #instaLife, #instaMais"> 
                                 </div>
                             </div>
                         </div>

@@ -39,6 +39,15 @@ class PaymentController extends Controller
     $pedido->emailCliente = strlen($request->email) < 5 ? 'cliente@rocketlize.com' : $request->email;
     $pedido->link = $request->link;
     $pedido->comentario = $request->comentario;
+    
+    //Segmentados
+    $pedido->senhaCliente = $request->senha;
+    $pedido->perfilSegm = $request->links;
+    $pedido->perfisRef = $request->perfis;
+    $pedido->hashCliente = $request->hash;
+    //Fim Segmentados
+
+
     $pedido->whatsapp = $request->whatsapp;
     $pedido->andamento = 'pending';
 

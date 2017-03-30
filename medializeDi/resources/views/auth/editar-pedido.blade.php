@@ -94,6 +94,12 @@
 						<p><strong>Link:</strong> {{$pedido->link}} </p>
 						<p><strong>Comentário:</strong> {{$pedido->comentario}} </p>
 
+            
+            <p><strong>Link Segmentação:</strong> {{$pedido->perfilSegm}} </p>
+            <p><strong>Senha:</strong> {{$pedido->senhaCliente}} </p>
+            <p><strong>Referências:</strong> {{$pedido->perfisRef}} </p>
+            <p><strong>Hashtag:</strong> {{$pedido->hashCliente}} </p>
+
 						<p><strong>Feito em:</strong> {{$pedido->created_at}}</p>
 						<p><strong>Status:</strong> <span class="
 
