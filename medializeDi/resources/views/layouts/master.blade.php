@@ -13,7 +13,7 @@
         <meta content="Comprar curtidas e seguidores brasileiros reais no instagram. Comprar curtidas no facebook e inscritos no youtube, seguidores no twitter e soundcloud." name="description" />
         <meta name="google-site-verification" content="RUagtzYkOYIJTQafihTYb7tAIXki2Ak8QAwgyWHtz90" />
 
-        <link href="assets/base/css/googlefonts.css" rel='stylesheet' type='text/css'>
+        <link href="https://rocketlize.com/assets/base/css/googlefonts.css" rel='stylesheet' type='text/css'>
         <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
         <link href="{{ url('assets/plugins/ilightbox/css/ilightbox.css')}}" rel="stylesheet" type="text/css" />
         <link href="{{ url('assets/base/css/themes/default.css')}}" rel="stylesheet" id="style_theme" type="text/css" />
@@ -22,19 +22,18 @@
         <link rel="shortcut icon" href="{{ url('assets/favicon.ico')}}" />
 
         <!--Start of Tawk.to Script-->
-            <script type="text/javascript">
-            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-            (function(){
-            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-            s1.async=true;
-            s1.src='https://embed.tawk.to/58b1bbf293cfd35572fd9591/default';
-            s1.charset='UTF-8';
-            s1.setAttribute('crossorigin','*');
-            s0.parentNode.insertBefore(s1,s0);
-            })();
-            </script>
+        <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/58a0e76aa8edb309fa9f2f4f/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+        </script>
         <!--End of Tawk.to Script-->
-
         <style type="text/css">
             .error {
 
