@@ -66,8 +66,16 @@ class PaymentController extends Controller
 
     }else{
 
-      dd($request->nome);
-      return "Estamos melhorando sua experiência de compra, caso queira algum serviço, contate (11) 97064 - 1485";
+      $teste = $request->metodoPagamento;
+
+      if($teste == 'payPal'){
+           
+           return "Estamos melhorando sua experiência de compra, caso queira algum serviço, contate (11) 97064 - 1485";
+      
+      }else{
+           return "Estamos melhorando sua experiência de compra via MP, caso queira algum serviço, contate (11) 97064 - 1485";
+      }
+     
     }
 
     // Cria Pagamento para o Pedido
