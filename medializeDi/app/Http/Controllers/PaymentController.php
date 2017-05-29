@@ -14,6 +14,9 @@ class PaymentController extends Controller
 {
   public function checkout($id, Request $request){
 
+    $teste = $request->metodoPagamento;
+     dd($teste);
+
     // Objeto do Serviço Vendido
     $servico = Servico::find($id);
     if($servico == null)
@@ -51,9 +54,6 @@ class PaymentController extends Controller
     $pedido->whatsapp = $request->whatsapp;
     $pedido->andamento = 'pending';
 
-    
-     $teste = $request->metodoPagamento;
-     dd($teste);
 
     $url = $pedido->servico_linkBtn = $servico->linkBtn;
 
