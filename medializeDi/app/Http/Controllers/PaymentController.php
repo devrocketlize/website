@@ -69,17 +69,46 @@ class PaymentController extends Controller
             $metodo = $request->metodoPagamento;
 
             if($metodo == 'payPal'){
+
+                
+                  if($servico->linkBtn == ' '){
+                    return redirect()->to('https://rocketlize.com');
+                  }else{
+                    return redirect()->to($servico->linkBtn);
+                  }
+                   
                  
-                 return redirect()->to($servico->linkBtn);
             
             }elseif ($metodo == 'mercadoPago') {
 
-                  return redirect()->to($servico->linkMP);
+
+                  if($servico->linkMP == ' '){
+                    return redirect()->to('https://rocketlize.com');
+                  }else{
+                    return redirect()->to($servico->linkMP);
+                  }
+
             
             }elseif ($metodo == 'pagSeguro') {
+
+
+                  if($servico->linkPS == ' '){
+                    return redirect()->to('https://rocketlize.com');
+                  }else{
+                    return redirect()->to($servico->linkPS);
+                  }
+
              
             }elseif ($metodo == 'pagCoin') {
-              # code...
+
+
+                  if($servico->linkPC == ' '){
+                    return redirect()->to('https://rocketlize.com');
+                  }else{
+                    return redirect()->to($servico->linkPC);
+                  }
+                  
+
             }else{
 
               return redirect()->to('https://rocketlize.com');
