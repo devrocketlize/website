@@ -51,64 +51,21 @@ class PaymentController extends Controller
     $pedido->whatsapp = $request->whatsapp;
     $pedido->andamento = 'pending';
 
-    $testeLink = $request->metodoPagamento;
-    dd($testeLink);
+   
 
-    if ($request->metodoPagamento == 'payPal') {
+    $url = $pedido->servico_linkBtn = $servico->linkBtn;
 
-      $paypal = $pedido->servico_linkBtn = $servico->linkBtn;
-
-        if($paypal == ' '){
-
-          return redirect()->to('https://rocketlize.com');
-
-        }else{
-
-          $pedido->save();
-          return redirect()->to($paypal);
-        }
-
-    }elseif ($request->metodoPagamento == 'mercadoPago') {
-
-      $mercadopago = $pedido->servico_linkBtn = $servico->linkMP;
-
-        if($mercadopago == ' '){
-
-            return redirect()->to('https://rocketlize.com');
-
-        }else{
-
-          $pedido->save();
-          return redirect()->to($mercadopago);
-        }
-
-    }elseif ($request->metodoPagamento == 'pagSeguro') {
-
-      
-
-    }elseif ($request->metodoPagamento == 'pagCoin') {
-
-      
-
-    }else{
-
-       return redirect()->to('https://rocketlize.com');
-
-    }
-
-    //$url = $pedido->servico_linkBtn = $servico->linkBtn;
-
-    //$pedido->save();
+    $pedido->save();
 
     //Envi o cliente para a tela de pagamento
 
-   // if($url == ' '){
+    if($url == ' '){
 
-      ///return redirect()->to('https://rocketlize.com');
+      return redirect()->to('https://rocketlize.com');
 
-    //}else{
-      //return redirect()->to($url);
-   // }
+    }else{
+      return redirect()->to($url);
+    }
 
     // Cria Pagamento para o Pedido
    // $pagamento = new Pagamento();
