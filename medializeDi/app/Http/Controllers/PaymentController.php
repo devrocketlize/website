@@ -66,6 +66,7 @@ class PaymentController extends Controller
 
     }else{
 
+      dd($request->nome);
       return "Estamos melhorando sua experiência de compra, caso queira algum serviço, contate (11) 97064 - 1485";
     }
 
