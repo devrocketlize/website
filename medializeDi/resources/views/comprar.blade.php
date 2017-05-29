@@ -161,6 +161,14 @@
                                         </label>
                                         
                                       </div>
+
+                                      <div class="form-radio">
+                                        <label class="form-radio-label">
+                                          <input type="radio" id="metodoPagamento" name="metodoPagamento" value="pagSeguro"  class="form-radio-input">
+                                         Pagar com PagSeguro
+                                        </label>
+                                        
+                                      </div>
                                 </div>
                             </div>
                         </div>

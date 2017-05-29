@@ -123,6 +123,12 @@
                                     </li>
 
                                 @endforeach
+                                <li class="">
+                                    <a href="#footer" class="c-link dropdown-toggle">Contato
+                                        <span class="c-arrow c-toggler"></span>
+                                    </a>
+                                    
+                                </li>
 
                             </ul>
                         </nav>
@@ -141,7 +147,7 @@
         
         <!-- BEGIN: LAYOUT/FOOTERS/FOOTER-8 -->
         <a name="footer"></a>
-        <footer class="c-layout-footer c-layout-footer-4 c-bg-footer-8">
+        <footer id="footer" class="c-layout-footer c-layout-footer-4 c-bg-footer-8">
             <div class="c-footer">
                 <div class="container">
                     <div class="row">
@@ -221,6 +227,7 @@
     <script src="../assets/global/plugins/excanvas.min.js"></script> 
     <![endif]-->
         <script src="{{ url('assets/plugins/jquery.min.js')}}" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js" type="text/javascript"></script>
         <script src="{{ url('assets/plugins/jquery-migrate.min.js')}}" type="text/javascript"></script>
         <script src="{{ url('assets/plugins/bootstrap/js/bootstrap.min.js')}}" type="text/javascript"></script>
         <script src="{{ url('assets/plugins/jquery.easing.min.js')}}" type="text/javascript"></script>
