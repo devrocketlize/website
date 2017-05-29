@@ -44,11 +44,23 @@
 		            <div class="price-table text-center">
 		                <div class="price-table-heading">
 		                    <h4 class="title">
-		                    @if($servico->plano == 5) Até @endif
-		                    {{ number_format($servico->quantidade, 0, '', '.') }} {{ $tipo->desc }}</h4>
+		                    
+		                    @if($servico->id == 107)
+		                    	Pacote 01
+		                    @elseif($servico->id == 112)
+		                    	Pacote 02
+		                    @elseif($servico->id == 116)
+		                    	Pacote 03
+		                    @elseif($servico->id == 117)
+		                    	Pacote 04
+		                    @else
+		                    	{{ number_format($servico->quantidade, 0, '', '.') }} {{ $tipo->desc }}
+		                    @endif
+
+		                    </h4>
 		                </div>
 		                <div class="price-table-body">
-		                    <p class="value">R$ {{ str_replace('.', ',', $servico->preco) }} @if($servico->plano == 5)<small>/mês</small>@endif</p>
+		                    <p class="value">R$ {{ str_replace('.', ',', $servico->preco) }} @if($servico->plano == 7)<small>/mês</small>@endif</p>
 		                </div>
 		                <ul class="list-group">
 		                    
@@ -74,7 +86,16 @@
 		                    <li class="list-group-item">Garantimos reembolso</li>
 
 		                    <li class="list-group-item">
-		                    		@if($servico->plano == 5) 
+		                    		@if($servico->id == 107) 
+		                    	 		Cobrança recorrente <strong>mensal</strong>
+
+		                    	 	 @elseif($servico->id == 112)
+				                    	Cobrança recorrente <strong>trimestral</strong>
+				                    @elseif($servico->id == 116)
+				                    	Cobrança recorrente <strong>semestral</strong>
+				                    @elseif($servico->id == 117)
+				                    	Cobrança recorrente <strong>anual</strong>
+		                    	 	@elseif($servico->plano == 7)
 		                    	 		Cobrança recorrente
 		                    	 	@else
 		                    		Entre 1x e 12x no cartão

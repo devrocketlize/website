@@ -146,6 +146,21 @@
                         <div class="form-group col-md-12">
                             <div class="row">
                                 <div class="form-group col-md-12">
+                                    <div class="form-radio">
+                                        <label class="form-radio-label">
+                                          <input type="radio" id="paypal" name="paypal" checked="true" class="form-radio-input">
+                                         Pagar com PayPal 
+                                        </label>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <div class="row">
+                                <div class="form-group col-md-12">
                                     <div class="form-check">
                                         <label class="form-check-label">
                                           <input type="checkbox" id="termos" name="termos" checked="true" class="form-check-input">
@@ -184,9 +199,13 @@
                                 <div class="col-md-6 c-font-20">
                                     <h2>Serviço</h2>
                                 </div>
+                                @if($servico->plano == 5)
+
+                                @else
                                 <div class="col-md-6 c-font-20">
                                     <h2>Quantidade</h2>
                                 </div>
+                                @endif
                             </li>
                             <li class="row c-border-bottom"></li>
                             
@@ -194,20 +213,15 @@
                                 <div class="col-md-6 c-font-20">
                                     <a href="shop-product-details.html" class="c-theme-link">{{ $servico->tiposervico->desc }} no {{ $servico->tiposervico->media->desc }}</a>
                                 </div>
+                                 @if($servico->plano == 5)
+
+                                @else
                                 <div class="col-md-6 c-font-20">
                                     <p class="">{{ number_format($servico->quantidade, 0, '', '.') }}</p>
                                 </div>
+                                @endif
                             </li>
 
-                              <li class="row c-margin-b-15 c-margin-t-15">
-                                <div class="col-md-6 c-font-20">
-                                    <a href="shop-product-details.html" class="c-theme-link">Forma de pagamento</a>
-                                </div>
-                                <div class="col-md-6 c-font-20">
-                                    <p class="">Mercadopago</p>
-                                </div>
-                            </li>
-                          
                            
                             <li class="row c-border-top c-margin-b-15"></li>
                             <li class="row">
