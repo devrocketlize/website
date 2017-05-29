@@ -14,8 +14,7 @@ class PaymentController extends Controller
 {
   public function checkout($id, Request $request){
 
-    $teste = $request->metodoPagamento;
-     dd($teste);
+
 
     // Objeto do Serviço Vendido
     $servico = Servico::find($id);
@@ -66,6 +65,9 @@ class PaymentController extends Controller
       return redirect()->to('https://rocketlize.com');
 
     }else{
+
+      $teste = $request->metodoPagamento;
+     dd($teste);
       return redirect()->to($url);
     }
 
