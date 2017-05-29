@@ -66,15 +66,25 @@ class PaymentController extends Controller
 
     }else{
 
-      $teste = $request->metodoPagamento;
+            $metodo = $request->metodoPagamento;
 
-      if($teste == 'payPal'){
-           
-           return "Estamos melhorando sua experiência de compra, caso queira algum serviço, contate (11) 97064 - 1485";
-      
-      }else{
-           return "Estamos melhorando sua experiência de compra via MP, caso queira algum serviço, contate (11) 97064 - 1485";
-      }
+            if($metodo == 'payPal'){
+                 
+                 return redirect()->to($servico->linkBtn);
+            
+            }elseif ($metodo == 'mercadoPago') {
+
+                  return redirect()->to($servico->linkMP);
+            
+            }elseif ($metodo == 'pagSeguro') {
+             
+            }elseif ($metodo == 'pagCoin') {
+              # code...
+            }else{
+
+              return redirect()->to('https://rocketlize.com');
+
+            }
      
     }
 
