@@ -148,9 +148,18 @@
                                 <div class="form-group col-md-12">
                                     <div class="form-radio">
                                         <label class="form-radio-label">
-                                          <input type="radio" id="paypal" name="paypal" checked="true" class="form-radio-input">
+                                          <input type="radio" id="metodoPagamento" name="metodoPagamento" value="payPal" checked="true" class="form-radio-input">
                                          Pagar com PayPal 
                                         </label>
+
+                                      </div>
+
+                                      <div class="form-radio">
+                                        <label class="form-radio-label">
+                                          <input type="radio" id="metodoPagamento" name="metodoPagamento" value="mercadoPago"  class="form-radio-input">
+                                         Pagar com MercadoPago 
+                                        </label>
+                                        
                                       </div>
                                 </div>
                             </div>
