@@ -66,9 +66,7 @@ class PaymentController extends Controller
 
     }else{
 
-      $teste = $request->metodoPagamento;
-     dd($teste);
-      return redirect()->to($url);
+      return "Estamos melhorando sua experiência de compra, caso queira algum serviço, contate (11) 97064 - 1485";
     }
 
     // Cria Pagamento para o Pedido
