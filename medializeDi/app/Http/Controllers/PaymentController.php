@@ -51,7 +51,9 @@ class PaymentController extends Controller
     $pedido->whatsapp = $request->whatsapp;
     $pedido->andamento = 'pending';
 
-   
+    
+     $teste = $request->metodoPagamento;
+     dd($teste);
 
     $url = $pedido->servico_linkBtn = $servico->linkBtn;
 
