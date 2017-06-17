@@ -232,7 +232,7 @@
                                                 </h4>
                                             </div>
                                             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                                <div class="panel-body c-font-18">  Pague com todos os cartões de crédito ou débito em ambiente seguro feito em até 12x com Mercadopago. </div>
+                                                <div class="panel-body c-font-18">  Pague com todos os cartões de crédito ou débito em ambiente seguro feito em até 12x. </div>
                                             </div>
                                         </div>
                                         <div class="panel">

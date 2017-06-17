@@ -1,128 +1,29 @@
-<!-- BEGIN: CONTENT/TILES/TILE-3 -->
-<div class="c-content-box c-size-md c-bg-white">
-    <div class="c-content-tile-grid c-bs-grid-reset-space" data-auto-height="true">
-        <div class="c-content-title-1 wow animate fadeInDown">
-            <h3 class="c-font-uppercase c-center c-font-bold">Serviços em destaque</h3>
-            <div class="c-line-center"></div>
-        </div>
-        <div class="row wow animate fadeInUp">
-            <div class="col-md-6">
-                <div class="c-content-tile-1 c-bg-green">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="c-tile-content c-content-v-center" data-height="height">
-                                <div class="c-wrapper">
-                                    <div class="c-body c-center">
-                                        <h2 class="c-tile-title c-font-25 c-line-height-34 c-font-uppercase c-font-bold c-font-white"> SEGUIDORES BRASILEIROS REAIS NO INSTAGRAM </h2>
-                                        <a href="https://rocketlize.com/comprar-seguidoresbrasileiros-instagram" class="btn btn-sm c-btn-white c-btn-uppercase c-btn-bold c-btn-border-1x c-btn-square">COMPRAR</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="c-tile-content c-arrow-right c-arrow-green c-content-overlay">
-                                <div class="c-overlay-wrapper">
-                                    <div class="c-overlay-content">
-                                        
-                                        <a href="" data-lightbox="fancybox" data-fancybox-group="gallery-4">
-                                            
-                                        </a>
-                                    </div>
-                                </div>
-                                <div id="instaImageCard" class="c-image c-overlay-object" data-height="height" ></div>
-                            </div>
-                        </div>
+<div class="c-content-box c-size-md c-bg-grey-1">
+    <div class="container">
+        <div class="c-content-bar-2 c-opt-1">
+            <div class="row" data-auto-height="true">
+                <div class="col-md-6">
+                    <!-- Begin: Title 1 component -->
+                    <div class="c-content-title-1" data-height="height" style="height: 225px;">
+                        <h3 class="c-font-uppercase c-font-bold">Variedade no método de pagamento!</h3>
+                        <p class="c-font-uppercase c-font-sbold">
+                            Na Rocketlize, você possui a disponibilidade de pagar como quiser, seja boleto ou cartão de crédito, parcelado ou à vista!
+                        </p>
+                        
                     </div>
+                    <!-- End-->
                 </div>
-            </div>
-            <div class="col-md-6">
-                <div class="c-content-tile-1 c-bg-brown-2">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="c-tile-content c-content-v-center" data-height="height">
-                                <div class="c-wrapper">
-                                    <div class="c-body c-center">
-                                        <h2 class="c-tile-title c-font-25 c-line-height-34 c-font-uppercase c-font-bold c-font-white"> CURTIDAS EM FAN PAGE NO FACEBOOK </h2>
-                                        <a href="https://rocketlize.com/comprar-curtidasfanpage-facebook" class="btn btn-sm c-btn-white c-btn-uppercase c-btn-bold c-btn-border-1x c-btn-square">COMPRAR</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="c-tile-content c-arrow-right c-arrow-brown-2 c-content-overlay">
-                                <div class="c-overlay-wrapper">
-                                    <div class="c-overlay-content">
-                                        
-                                        <a href="" data-lightbox="fancybox" data-fancybox-group="gallery-4">
-                     
-                                        </a>
-                                    </div>
-                                </div>
-                                <div id="faceImageCard" class="c-image c-overlay-object" data-height="height"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="c-content-tile-1 c-bg-red-2">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="c-tile-content c-arrow-left c-arrow-red-2 c-content-overlay">
-                                <div class="c-overlay-wrapper">
-                                    <div class="c-overlay-content">
-                                      
-                                        <a href="" data-lightbox="fancybox" data-fancybox-group="gallery-4">     
-                                        </a>
-                                    </div>
-                                </div>
-                                <div id="youImageCard" class="c-image c-overlay-object" data-height="height" ></div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="c-tile-content c-content-v-center" data-height="height">
-                                <div class="c-wrapper">
-                                    <div class="c-body c-center">
-                                        <h2 class="c-tile-title c-font-25 c-line-height-34 c-font-uppercase c-font-bold c-font-white"> INSCRITOS NO YOUTUBE </h2>
-                                        <a href="https://rocketlize.com/comprar-inscritos-youtube" class="btn btn-sm c-btn-white c-btn-uppercase c-btn-bold c-btn-border-1x c-btn-square">COMPRAR</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="c-content-tile-1 c-bg-blue-3">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="c-tile-content c-arrow-left c-arrow-blue-3 c-content-overlay">
-                                <div class="c-overlay-wrapper">
-                                    <div class="c-overlay-content">
-                                      
-                                        <a href="" data-lightbox="fancybox" data-fancybox-group="gallery-4">
-                                            
-                                        </a>
-                                    </div>
-                                </div>
-                                <div id="soundImageCard" class="c-image c-overlay-object" data-height="height"></div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="c-tile-content c-content-v-center" data-height="height">
-                                <div class="c-wrapper">
-                                    <div class="c-body c-center">
-                                        <h2 class="c-tile-title c-font-25 c-line-height-34 c-font-uppercase c-font-bold c-font-white"> DOWNLOADS NO SOUNDCLOUD </h2>
-                                        
-                                        <a href="https://rocketlize.com/comprar-downloads-soundcloud" class="btn btn-sm c-btn-white c-btn-uppercase c-btn-bold c-btn-border-1x c-btn-square">COMPRAR</a>
-                                    </div>
-                                </div>
+                <div class="col-md-6">
+                    <div class="c-content-v-center c-bg-red" data-height="height" style="height: 225px;">
+                        <div class="c-wrapper">
+                            <div class="c-body">
+                                <h3 class="c-font-white c-font-bold">Serviços de pagamento seguros!</h3>
+                                <center><img width="80%" src="./img/pagamentos.png"></center>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
 </div>
-<!-- END: CONTENT/TILES/TILE-3 -->
